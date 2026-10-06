@@ -1,5 +1,6 @@
 #!/bin/bash
 set -euo pipefail
+repo_root=$(realpath "$(dirname "$0")/..")
 artifacts=$(realpath "${1:?artifacts}")
 site=$(realpath "${2:?site}")
 : "${APT_SIGNING_KEY:?Set Actions secret APT_SIGNING_KEY to ASCII-armored private key}"
@@ -35,8 +36,7 @@ for suite in bookworm trixie jammy noble resolute; do
   apt-ftparchive packages "$directory" >> "dists/$suite/main/binary-amd64/Packages"
  done
  gzip -n -9 -c "dists/$suite/main/binary-amd64/Packages" > "dists/$suite/main/binary-amd64/Packages.gz"
- apt-ftparchive -o APT::FTPArchive::Release::Origin=HerNet -o APT::FTPArchive::Release::Label=HerNet -o APT::FTPArchive::Release::Suite="$suite" -o APT::FTPArchive::Release::Codename="$suite" -o APT::FTPArchive::Release::Architectures=amd64 -o APT::FTPArchive::Release::Components=main release "dists/$suite" > "dists/$suite/Release.new"
- mv "dists/$suite/Release.new" "dists/$suite/Release"
+ bash "$repo_root/scripts/release.sh" "$site" "$suite"
  printf '%s' "${APT_SIGNING_PASSPHRASE:-}" | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 --local-user "$APT_SIGNING_FINGERPRINT" --clearsign --output "dists/$suite/InRelease" "dists/$suite/Release"
  printf '%s' "${APT_SIGNING_PASSPHRASE:-}" | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 --local-user "$APT_SIGNING_FINGERPRINT" --armor --detach-sign --output "dists/$suite/Release.gpg" "dists/$suite/Release"
  gpg --verify "dists/$suite/InRelease"
