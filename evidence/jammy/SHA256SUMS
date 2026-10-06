@@ -1,4 +1,10 @@
-9c45d705660dad6330c3e78e4b920cacbb5a1add43b87b8875419811de90a095  nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
-6cb6af6a4b0659d3d1d2c0be2dac30391c009ac40309f4a8ae5aacadf4264eab  nginx-module-extras-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
-8a08c434f668345223831cca21bd8d6f53f4c47cc5ea3401ed691e12904d0b52  nginx-module-njs-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
-6ea38964e45745b8310251de867047a2043d367cfa9946168ccbc5a67f39ba78  njs-cli-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+725e6a6c581d631f6842b98c733185c54228c01dba6a1b560d55ff15e36974e9  nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+59e9b6a16552fb259ffac25727eadaa06e41dd743ff73a7e5dce0120623267ae  nginx-module-fancyindex-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+640d68cc1c3aa872e5151f1bddacc00abde4ecdd842edd772fbfcc26418e1b0a  nginx-module-http-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+cfca86a84a16d0119868eee886b3bd214ad56146c066a86b8913883e68edeb80  nginx-module-http-njs-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+922fb2b7e20ba04c2462421c0416e47280e6f8f0c1396b3f0085d1005f53c840  nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+d8869e90aeaad42227652ad76d04562ae947d4227edff60d0541eb5418e89816  nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+cb4a93fbec765e24d1d32bace9e88e9410e7369c486532cca346d89335df7b8e  nginx-module-stream-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+61423d9d69bac04328f8bc12f90991bb11750d62e1a70ee1228d705eaa2ffffa  nginx-module-stream-njs-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+28e189448bdd6712f7c7b693cc958e3c957749fd571b806248cd8caea3d8847c  nginx-module-vts-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+553299c63599f6192b2d52d11c2011838738638c566affeb6a35700ce4d0e4c5  njs-cli-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb

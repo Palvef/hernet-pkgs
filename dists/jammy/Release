@@ -1,19 +1,23 @@
 Architectures: amd64
 Codename: jammy
 Components: main
-Date: Tue, 06 Oct 2026 10:39:15 +0000
+Date: Tue, 06 Oct 2026 10:59:33 +0000
 Label: HerNet
 Origin: HerNet
 Suite: jammy
 MD5Sum:
- f6a07ee7df766ce7dc95bd4efda2f178             2819 main/binary-amd64/Packages
- d5cb199da4cd67be65dbcf161875f9f0             1143 main/binary-amd64/Packages.gz
+ 85211db514ff83b6e2aec5f2e1959c8b             1072 Release
+ 6acadd143a433c6abcd68037615f23ad             9885 main/binary-amd64/Packages
+ d8a4e1fccd91f2d496dd88962b8fc36a             3130 main/binary-amd64/Packages.gz
 SHA1:
- 640e57ed4a0d418314bdbf7c1325dbff4791d74a             2819 main/binary-amd64/Packages
- 64eb9ddbce9d7dea6eae46d2edb560a3d0beb6d2             1143 main/binary-amd64/Packages.gz
+ b90b1a72eca098ac1945f0e1791db94844e3bf82             1072 Release
+ 3c4fde7dec2f389f4d7ede3a779572edefb98f96             9885 main/binary-amd64/Packages
+ 25f04e0cd12ba9ef72eabaab5c08a3508e60a935             3130 main/binary-amd64/Packages.gz
 SHA256:
- 1d3ee5365e297a167bbcfe1f0566c722bb6fd01ff28a11d75f4d6ae7dad62380             2819 main/binary-amd64/Packages
- 6672707f0f7231bd85bdd267e9a94c7664a8db36ec9ee8e539d1398d10573a48             1143 main/binary-amd64/Packages.gz
+ 8fc05f400ca951c11a3751339acc2fd6eeba3782a6440dbd6752002a08682eca             1072 Release
+ 8d9c424b3e0257d57ee0754b719d39e31894f1fb874bbcf8fdfc89e2f87d489c             9885 main/binary-amd64/Packages
+ c1cb7c36beb63d34d7e2eda6bf79106ad69e92e4d0eb67bbacd4481999c8a99d             3130 main/binary-amd64/Packages.gz
 SHA512:
- 9485ed4d74484e3347b08fa29477127166170f09f9ced3acfa3bd188bf78e9a594bb79366b23497702022f5a7657639450bcf74380e65b443c0eef783a973d9a             2819 main/binary-amd64/Packages
- 741e2cc5a2d9593e024418271b9a74237b8f041e23ba08c0f54aaf598efeb86decf4e5d5b2432b078f50419ce193df30f8c5f1bd84c4a598a5caa8e920877e18             1143 main/binary-amd64/Packages.gz
+ 2808763507ea73d4c3d245086280579f72fc84a695a78babe0f4e4e45a2a0c4726e953a6ef574627b4087e8cfa7e032f8cdbfa8192b9da98510b5e403ce97b2b             1072 Release
+ bf7ea288df4da743ed2036e3a8e447007fe390eb2ba6c395da0888ca86104544d45cba462426c60495dd6a65407a80911d25a8939b7e9ef4bf0e163b9463ebb3             9885 main/binary-amd64/Packages
+ 07a2318216e03d6baf126a5f2e4fc2573e7953c81b5121af9a092277bb06faf0111be57f071e0e73148dfb5be9a3fc4531ce8b7e42b29219984270d5419a1727             3130 main/binary-amd64/Packages.gz

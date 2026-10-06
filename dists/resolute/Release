@@ -1,19 +1,23 @@
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Tue, 06 Oct 2026 10:39:15 +0000
+Date: Tue, 06 Oct 2026 10:59:33 +0000
 Label: HerNet
 Origin: HerNet
 Suite: resolute
 MD5Sum:
- cc6cc4e30e048629361215bf900ecaf4             2901 main/binary-amd64/Packages
- 80015801f1bcfef051b51e0a0eb658a5             1154 main/binary-amd64/Packages.gz
+ 7d475bac052d3cb29618e4a50bba6cd6             1078 Release
+ 5dfe6fea23c2b23c0d10c8a0e6720627            10128 main/binary-amd64/Packages
+ 9df1bb170d03cbff3e256a37605ac714             3154 main/binary-amd64/Packages.gz
 SHA1:
- c36496fe55abfba4c240953720e15e5a3bb60fcb             2901 main/binary-amd64/Packages
- 780a86dfdb52b744208b72905c7eeb6116eefc35             1154 main/binary-amd64/Packages.gz
+ ae497cbe42e44e912991df8e75200e58333db31a             1078 Release
+ 33a0de9f05c890e02586d236addd581297db9740            10128 main/binary-amd64/Packages
+ b09b15a71b054360d5c1886427d2daff37b83cf5             3154 main/binary-amd64/Packages.gz
 SHA256:
- 280d9cdc33c4ba72f4c7e7d692abceaa6d0bb52e2c91d597a05691b08bda9c4f             2901 main/binary-amd64/Packages
- a6accec21d3118f10cc5c12f2458a28e838d7ca22944f928b55fcd011713495b             1154 main/binary-amd64/Packages.gz
+ bff32f760b376fc91bd06634e34782cdf79ffaef1cc2a748f96c3184abcb163b             1078 Release
+ 7c505b58291b77ec12dd7f2c8652f98787f60ff83e88da0be109c07e26dd309f            10128 main/binary-amd64/Packages
+ 84a868b81be2cee2bfef59af3b56c6f665357d3d0b48343eb372f4801b6ca100             3154 main/binary-amd64/Packages.gz
 SHA512:
- 067f621f530b767da1b0918d1774a84db29a86c7fe9e45fb71f4da9ee7aca80b5d11cc5b84822b5f750bfa44e545732eef1f440da9e788bed4c33986204ffe22             2901 main/binary-amd64/Packages
- 684ddc7250ccc85a18b2c977473fd60f3379224681da4e67085956c230bd4f1845b304b5347a6007c56061c258e54ebe46cbeb74f53bbb2a7251254368a264aa             1154 main/binary-amd64/Packages.gz
+ ea8967b9641350f2d294eee070be0766577ad955ae3737e47638f2bf01b4e8c6ef7ce529842545f5409f0c20a19ab62406dd9a2249404e06cbbc68c6785155fe             1078 Release
+ 8e5aca614541bd888f2ac382215de78a0c7df6e02e560e555e86e7e0e021d8ad35bbe1e5809f2ac4820b95cd56985b63982fb80ee5319a1b2ac641784f290373            10128 main/binary-amd64/Packages
+ 92da03cca9bf59d13a12ebe4e23e97135b38ac373811b80c0b9d60c33a5baf7120b03eff74f4548f1fb8d09b9778ed1f724325fa4d70cf25eef95a665092f534             3154 main/binary-amd64/Packages.gz

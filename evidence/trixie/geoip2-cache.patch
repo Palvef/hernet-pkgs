@@ -1,5 +1,5 @@
 diff --git a/ngx_http_geoip2_module.c b/ngx_http_geoip2_module.c
-index 4667796..08659f8 100644
+index 4667796..824d2ff 100644
 --- a/ngx_http_geoip2_module.c
 +++ b/ngx_http_geoip2_module.c
 @@ -15,6 +15,7 @@
@@ -29,7 +29,16 @@ index 4667796..08659f8 100644
          if (mmdb_error != MMDB_SUCCESS) {
              goto not_found;
          }
-@@ -774,6 +776,8 @@ ngx_http_geoip2_log_handler(ngx_http_request_t *r)
+@@ -726,7 +728,7 @@ ngx_http_geoip2_log_handler(ngx_http_request_t *r)
+     gcf = ngx_http_get_module_main_conf(r, ngx_http_geoip2_module);
+ 
+     if (ngx_queue_empty(&gcf->databases)) {
+-        return NGX_OK;
++        return NGX_DECLINED;
+     }
+ 
+     for (q = ngx_queue_head(&gcf->databases);
+@@ -774,13 +776,15 @@ ngx_http_geoip2_log_handler(ngx_http_request_t *r)
          database->last_change = ngx_file_mtime(&fi);
          MMDB_close(&database->mmdb);
          database->mmdb = tmpdb;
@@ -38,6 +47,14 @@ index 4667796..08659f8 100644
  
          ngx_log_error(NGX_LOG_INFO, r->connection->log, 0,
                        "Reload MMDB \"%s\"",
+                       database->mmdb.filename);
+     }
+ 
+-    return NGX_OK;
++    return NGX_DECLINED;
+ }
+ 
+ 
 diff --git a/ngx_stream_geoip2_module.c b/ngx_stream_geoip2_module.c
 index eb59082..26e986e 100644
 --- a/ngx_stream_geoip2_module.c

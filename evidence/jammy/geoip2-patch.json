@@ -2,7 +2,7 @@
   "symbol": "ngx_http_geoip2_init",
   "virtual_address": "0x228d",
   "file_offset": "0x228d",
-  "before_sha256": "5d18e93d2764725be3be6144e7e19d2eedc3ce2431d342c569c5efa14538f9e8",
-  "after_sha256": "423d3f03b867d859b41c4387e7129d90edb682e23a0cbac404d5a63086513e9d",
+  "before_sha256": "e0b034eed3c725ccde54d7149f9a10370a5255369793233b247a5e453edfec36",
+  "after_sha256": "ee24ca2628d83ad6d50151bbc056310dc587f7426fe6143138ed95ac98aab344",
   "disassembly": "\nobjs/ngx_http_geoip2_module.so:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .plt.sec:\n\nDisassembly of section .text:\n\n0000000000002270 <ngx_http_geoip2_init>:\n    2270:\tf3 0f 1e fa          \tendbr64 \n    2274:\t48 83 ec 08          \tsub    $0x8,%rsp\n    2278:\t48 8b 47 38          \tmov    0x38(%rdi),%rax\n    227c:\t48 8b 15 55 2d 00 00 \tmov    0x2d55(%rip),%rdx        # 4fd8 <ngx_http_core_module@Base>\n    2283:\t48 8b 00             \tmov    (%rax),%rax\n    2286:\t48 8b 12             \tmov    (%rdx),%rdx\n    2289:\t48 8b 3c d0          \tmov    (%rax,%rdx,8),%rdi\n    228d:\t48 81 c7 e8 00 00 00 \tadd    $0xe8,%rdi\n    2294:\te8 d7 f0 ff ff       \tcall   1370 <ngx_array_push@plt>\n    2299:\t48 85 c0             \ttest   %rax,%rax\n    229c:\t74 11                \tje     22af <ngx_http_geoip2_init+0x3f>\n    229e:\t48 8d 0d 5b 01 00 00 \tlea    0x15b(%rip),%rcx        # 2400 <ngx_http_geoip2_log_handler>\n    22a5:\t48 89 08             \tmov    %rcx,(%rax)\n    22a8:\t31 c0                \txor    %eax,%eax\n    22aa:\t48 83 c4 08          \tadd    $0x8,%rsp\n    22ae:\tc3                   \tret    \n    22af:\t48 c7 c0 ff ff ff ff \tmov    $0xffffffffffffffff,%rax\n    22b6:\teb f2                \tjmp    22aa <ngx_http_geoip2_init+0x3a>\n\nDisassembly of section .fini:\n"
 }

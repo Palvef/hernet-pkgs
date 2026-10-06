@@ -44,7 +44,7 @@ cc   -Wl,-E -o build/unicode_unit_test -Isrc -Iexternal -Ibuild -I/usr/include/l
 	 -lm 
 build/random_unit_test
 random unit test passed
-random unit test: 0x1F8F0D23
+random unit test: 0xF57634CB
 build/rbtree_unit_test
 rbtree unit test started: 1000000 nodes
 rbtree unit test passed
