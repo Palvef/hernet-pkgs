@@ -4,9 +4,9 @@
 APT repository: https://hernet-pkgs.palve.moe/
 Package index: https://hernet-pkgs.palve.moe/dists/noble/main/binary-amd64/Packages
 Dependency packages: nginx-module-ndk-ha, nginx-lua-libraries-ha
-Lua module: https://hernet-pkgs.palve.moe/modules/lua/SUITE/
-NDK dependency: https://hernet-pkgs.palve.moe/modules/ndk/SUITE/
-Lua library downloads: https://hernet-pkgs.palve.moe/dependencies/lua-libraries/SUITE/
+Lua module: https://hernet-pkgs.palve.moe/pool/lua/SUITE/
+NDK dependency: https://hernet-pkgs.palve.moe/pool/ndk/SUITE/
+Lua library downloads: https://hernet-pkgs.palve.moe/pool/lua-libraries/SUITE/
 nginx-module-lua-ha depends on nginx-module-ndk-ha and nginx-lua-libraries-ha at the exact same package version.
 resty.redis: https://github.com/openresty/lua-resty-redis/archive/3fdc727f176f565adca8c2b350a636bd74e93de2.tar.gz
 resty.core: https://github.com/openresty/lua-resty-core/archive/768ce9631dd91f864ba454af9615a81847c3230c.tar.gz
@@ -16,24 +16,19 @@ ffi, bit: distro LuaJIT dependency automatically resolved by dpkg-shlibdeps.
 utils, acl, pow, rate_limit, redis_client, authd_client, lua_metrics and other local
 modules are deployment Lua source; they are not third-party dependency packages.
 
-# Available signed binary dependency packages (historical versions retained):
-https://hernet-pkgs.palve.moe/dependencies/lua-libraries/bookworm/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
-https://hernet-pkgs.palve.moe/dependencies/lua-libraries/jammy/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
-https://hernet-pkgs.palve.moe/dependencies/lua-libraries/noble/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
-https://hernet-pkgs.palve.moe/dependencies/lua-libraries/resolute/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
-https://hernet-pkgs.palve.moe/dependencies/lua-libraries/trixie/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/lua/bookworm/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/lua/jammy/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/lua/noble/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/lua/resolute/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/lua/trixie/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/ndk/bookworm/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/ndk/jammy/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/ndk/noble/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/ndk/resolute/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
-https://hernet-pkgs.palve.moe/modules/ndk/trixie/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
-https://hernet-pkgs.palve.moe/pool/bookworm/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
-https://hernet-pkgs.palve.moe/pool/jammy/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
-https://hernet-pkgs.palve.moe/pool/noble/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
-https://hernet-pkgs.palve.moe/pool/resolute/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
-https://hernet-pkgs.palve.moe/pool/trixie/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
+# Available signed Lua, NDK and library dependency packages:
+https://hernet-pkgs.palve.moe/pool/lua/bookworm/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua/jammy/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua/noble/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua/resolute/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua/trixie/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua-libraries/bookworm/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua-libraries/jammy/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua-libraries/noble/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua-libraries/resolute/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/lua-libraries/trixie/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/ndk/bookworm/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/ndk/jammy/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/ndk/noble/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/ndk/resolute/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/ndk/trixie/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb

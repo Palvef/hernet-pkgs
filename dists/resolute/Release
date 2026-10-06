@@ -1,19 +1,19 @@
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Tue, 06 Oct 2026 11:06:48 +0000
+Date: Tue, 06 Oct 2026 11:17:16 +0000
 Label: HerNet
 Origin: HerNet
 Suite: resolute
 MD5Sum:
- 5dfe6fea23c2b23c0d10c8a0e6720627            10128 main/binary-amd64/Packages
- 9df1bb170d03cbff3e256a37605ac714             3154 main/binary-amd64/Packages.gz
+ 741f09090dbb11b34f281238beffc465             7198 main/binary-amd64/Packages
+ b6f4a35db1144a3c4753e6d0a945c652             2347 main/binary-amd64/Packages.gz
 SHA1:
- 33a0de9f05c890e02586d236addd581297db9740            10128 main/binary-amd64/Packages
- b09b15a71b054360d5c1886427d2daff37b83cf5             3154 main/binary-amd64/Packages.gz
+ 7be5aca7d6443ce63a7661dfeb5a24e4628c6be6             7198 main/binary-amd64/Packages
+ aa6cb5653a9430a0bbd438baf2f67d1670751258             2347 main/binary-amd64/Packages.gz
 SHA256:
- 7c505b58291b77ec12dd7f2c8652f98787f60ff83e88da0be109c07e26dd309f            10128 main/binary-amd64/Packages
- 84a868b81be2cee2bfef59af3b56c6f665357d3d0b48343eb372f4801b6ca100             3154 main/binary-amd64/Packages.gz
+ 5072244017eed10ad0e1608c1c62adc1a516083ae73f44fc46ff57d4d167ca82             7198 main/binary-amd64/Packages
+ e55b09ab9a5a6bb2b4a0042c9d49bda950cce0c19419e08985979088a3334bb4             2347 main/binary-amd64/Packages.gz
 SHA512:
- 8e5aca614541bd888f2ac382215de78a0c7df6e02e560e555e86e7e0e021d8ad35bbe1e5809f2ac4820b95cd56985b63982fb80ee5319a1b2ac641784f290373            10128 main/binary-amd64/Packages
- 92da03cca9bf59d13a12ebe4e23e97135b38ac373811b80c0b9d60c33a5baf7120b03eff74f4548f1fb8d09b9778ed1f724325fa4d70cf25eef95a665092f534             3154 main/binary-amd64/Packages.gz
+ 2c23d0876406fc5527e1aaf3664d11882fc987f5f3285b57be6078fa8f6f44e4d5fbd45e1b001e8927eb541680ba8f9763a9c3dd223ab05be1d721a2d0f0518b             7198 main/binary-amd64/Packages
+ 24abc257d2ea7030dbe565cb4debd5df3093eddfef7603c6d558423752d5d7eeeeaeb7e1f8067f31ee3777bf21c0ab96d8fb733d1ef970ba68165a7f57684d3f             2347 main/binary-amd64/Packages.gz

@@ -4,33 +4,33 @@ Hash: SHA512
 Architectures: amd64
 Codename: bookworm
 Components: main
-Date: Tue, 06 Oct 2026 11:06:48 +0000
+Date: Tue, 06 Oct 2026 11:17:16 +0000
 Label: HerNet
 Origin: HerNet
 Suite: bookworm
 MD5Sum:
- 70489a3f4a2abeb18a346b09913aea1f            10092 main/binary-amd64/Packages
- 5c0a3bf0fb1cecea1b849bd3f55042da             3154 main/binary-amd64/Packages.gz
+ 09e7bb0790de0b4a1a73f2c775d37263             7178 main/binary-amd64/Packages
+ 0964ab4ebc4c2ae4b8951d777ee00c5a             2353 main/binary-amd64/Packages.gz
 SHA1:
- b9deebb871630ded6b0cf5c5f7dfa0d0f1521348            10092 main/binary-amd64/Packages
- 23fb730797eef277c4f4d6b2ec6ad034cbbc491e             3154 main/binary-amd64/Packages.gz
+ e48267a081ba2274a428dcbd456b78824189d740             7178 main/binary-amd64/Packages
+ 68d9241c3b125546d603f2dce6a1240311213fbe             2353 main/binary-amd64/Packages.gz
 SHA256:
- 55e8d9018c627511d14737ae4775983454b24745da2de993675a5ce15f6cfe1c            10092 main/binary-amd64/Packages
- d009434d2558fb13a4eda6650e1c160f000458b2beccbc57f185fabae0b28665             3154 main/binary-amd64/Packages.gz
+ 7ac7022dd9ad90a377199df68276efe30c47c60178dc55ea620e6898288c7764             7178 main/binary-amd64/Packages
+ 8cdcd7f292dfe51e9e7ff9b50fe3c46273e9f1675542547af04ed5dae941f831             2353 main/binary-amd64/Packages.gz
 SHA512:
- bd50c3263882a388f53aa0284ab79706c34dc7b7bab5afe5c95b5f5815f38d412b9b4fc768a6ecf11af36312168c36978eb04406a6a612d3bc6bee2e1353e900            10092 main/binary-amd64/Packages
- b80162fa636db95a3e0892998c18a232e7c4580630ece2f7fafeea60af59b817f3f4728f13012b57d484a4255b6bf6c0fa36635c660c5dbf90f4cb27109c2499             3154 main/binary-amd64/Packages.gz
+ 051f7348d68eb7ab7d8e22826dd14ddba869f65c5cee8bc0de83360b726656b2382809769ce1e7ec115eae8d323db601a7983cf8331116d53119683650585c24             7178 main/binary-amd64/Packages
+ ab95441235f1fd83dffc9a8dbd31f1b0965c925a08942f261e5d960d457e41d0b1bf09d4254524b2a55d44ff99e78c8cba40227e84932231e8b1bbcbeddf84c1             2353 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrE1kgACgkQtWh7jQGC
-sxL35gv/bD0C2sc42rHWbdzLWXFYYEJZHs4TYLWhYPDBhzZkhtBLT+iFl/oZq56X
-ku5LBMHv81gJDedIRJpYeMh9BG+omA4PaPvafUIvKTCZs2XNIH7aB4uYxRxv0/hW
-GFsumToA34gp9AO5gTeVctzsc2iwqrxNj8vke26u93nNykieGqLSwETC6/AXAoSR
-vLFZ/3SlHbm/Uv+1i8O+4BqCXcBcRmKScVyix7u2MdcBPfc9OTHnC+MMgiztZWlX
-nXdsjg/i70/BFeS3tXCGCmCBBlb0la+MofA8EA4g1Cqsre7JuqmpSfcYVUc5jcPH
-KUy+u8xk4pyee+4e+m5fNEZ/yK7j0SZHpPVnJhTX/sBRBfrPKrbxUtltcg/stwmF
-crPRoGydiSfs6pN8DpoPkXoNMqjd49AQ8zBeY6wtnKkkX4QTr24p86Y50EGdttCt
-fp1/elG/2PJPnZN87Cvr1K7pi60SD0NByqrFb37VktAo0HauGP67qaOdvZ6bonh7
-tkKudrRz
-=i5c1
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrE2LwACgkQtWh7jQGC
+sxLsrQv9EHf7ZioEnWl9X2pbm2owHMLn/e9MGHtz5oML/vPv/kFvTdip0VIDtr2U
+MxpI6b1Xvpj7k21jv3YQ7twYSX1M4+SyW7GlEHCabtBO3cD2DvRThiYJUqO/YFex
+nr+8B1+nfRidEM3fBPpDg1f0LhJWdfaUWdVcseGCP7C0z8o7HjWYZY70TfriWkgQ
+maoD80si584O/wSyVpye+1OEEHOH4isIG1qrZe2w2FaEerJLJs5Z48Cy53BFkJkQ
+XohAQXjLQoFl35XJ1BtQOtS6hUFAkWPQKtF6bZDjKJZxNT3fNY/ktd9l9S9khD3A
+YYGc+d7TerQH0ytLnkqMOFXRlDI8UnoeNYrWg0TOq5UamhX9cpg880yFhA76/uOA
+WXA5gGWOvLYhTianFrLyi3KBS5xPhEQFHvt9CWVNc+00cvVCSq4eY+Pl5pDXyuTd
+O7yzd+JMTQEjGW2WrVAUWPSW85ld9AYpMGkViuE9/w76EsfuTbvAiLdnZSMPK91x
+7Vlvy9NB
+=k7Fm
 -----END PGP SIGNATURE-----
