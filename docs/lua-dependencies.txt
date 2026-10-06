@@ -3,9 +3,11 @@
 # from dists/SUITE/main/binary-amd64/Packages (Filename field).
 APT repository: https://hernet-pkgs.palve.moe/
 Package index: https://hernet-pkgs.palve.moe/dists/noble/main/binary-amd64/Packages
-Dependency package: nginx-lua-libraries-ha
-Binary downloads: https://hernet-pkgs.palve.moe/pool/SUITE/
-nginx-module-extras-ha depends on nginx-lua-libraries-ha at the same package version.
+Dependency packages: nginx-module-ndk-ha, nginx-lua-libraries-ha
+Lua module: https://hernet-pkgs.palve.moe/modules/lua/SUITE/
+NDK dependency: https://hernet-pkgs.palve.moe/modules/ndk/SUITE/
+Lua library downloads: https://hernet-pkgs.palve.moe/dependencies/lua-libraries/SUITE/
+nginx-module-lua-ha depends on nginx-module-ndk-ha and nginx-lua-libraries-ha at the exact same package version.
 resty.redis: https://github.com/openresty/lua-resty-redis/archive/3fdc727f176f565adca8c2b350a636bd74e93de2.tar.gz
 resty.core: https://github.com/openresty/lua-resty-core/archive/768ce9631dd91f864ba454af9615a81847c3230c.tar.gz
 resty.lrucache: https://github.com/openresty/lua-resty-lrucache/archive/3ff6300e68b73ba20e909c7d16bd839aef2e5a4b.tar.gz

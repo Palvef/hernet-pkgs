@@ -19,7 +19,7 @@ import pathlib,sys
 root=pathlib.Path(sys.argv[1])
 with (root/'lua-dependencies.txt').open('a') as out:
  out.write('\n# Available signed binary dependency packages (historical versions retained):\n')
- for p in sorted((root/'pool').rglob('nginx-lua-libraries-ha_*.deb')):
+ for p in sorted(p for pattern in ['nginx-lua-libraries-ha_*.deb','nginx-module-ndk-ha_*.deb','nginx-module-lua-ha_*.deb'] for p in root.rglob(pattern)):
   out.write('https://hernet-pkgs.palve.moe/'+p.relative_to(root).as_posix()+'\n')
 PYINDEX
 printf 'hernet-pkgs.palve.moe\n' > "$site/CNAME"
@@ -29,7 +29,11 @@ gpg --batch --export "$APT_SIGNING_FINGERPRINT" > "$site/hernet-pkgs.gpg"
 cd "$site"
 for suite in bookworm trixie jammy noble resolute; do
  mkdir -p "dists/$suite/main/binary-amd64"
- apt-ftparchive packages "pool/$suite" > "dists/$suite/main/binary-amd64/Packages"
+ : > "dists/$suite/main/binary-amd64/Packages"
+ for directory in "pool/$suite" modules/*/"$suite" dependencies/*/"$suite" tools/*/"$suite"; do
+  [[ -d "$directory" ]] || continue
+  apt-ftparchive packages "$directory" >> "dists/$suite/main/binary-amd64/Packages"
+ done
  gzip -n -9 -c "dists/$suite/main/binary-amd64/Packages" > "dists/$suite/main/binary-amd64/Packages.gz"
  apt-ftparchive -o APT::FTPArchive::Release::Origin=HerNet -o APT::FTPArchive::Release::Label=HerNet -o APT::FTPArchive::Release::Suite="$suite" -o APT::FTPArchive::Release::Codename="$suite" -o APT::FTPArchive::Release::Architectures=amd64 -o APT::FTPArchive::Release::Components=main release "dists/$suite" > "dists/$suite/Release.new"
  mv "dists/$suite/Release.new" "dists/$suite/Release"

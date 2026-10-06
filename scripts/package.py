@@ -4,15 +4,18 @@ import os
 from pathlib import Path
 import shutil
 import subprocess
+from package_layout import MODULES, dependencies, module_directory
 v,pv=os.environ['NGINX_VERSION'],os.environ['pv']
 rel=dict(line.strip().split('=',1) for line in Path('/etc/os-release').read_text().splitlines() if '=' in line)['VERSION_CODENAME'].strip('"')
 objs=Path('/work/nginx-'+v+'/objs'); base=Path('/work/packages')
-groups={'nginx-module-njs-ha':['ngx_http_js_module.so','ngx_stream_js_module.so'],'nginx-module-extras-ha':['ndk_http_module.so','ngx_http_lua_module.so','ngx_http_fancyindex_module.so','ngx_http_geoip2_module.so','ngx_stream_geoip2_module.so','ngx_http_vhost_traffic_status_module.so'],'njs-cli-ha':[], 'nginx-lua-libraries-ha':[]}
+groups={name:[module] for name,module in MODULES.items()}
+groups.update({'njs-cli-ha':[], 'nginx-lua-libraries-ha':[]})
 lock=json.loads(Path('/repo/sources.json').read_text())
 for name,files in groups.items():
  root=base/name; root.mkdir(parents=True)
- dest=root/f'usr/lib/nginx/ha-modules/{pv}'; dest.mkdir(parents=True)
- for f in files: shutil.copy2(objs/f,dest/f)
+ if files:
+  dest=root/module_directory(pv,os.environ.get('BUILD_REVISION','1')).lstrip('/'); dest.mkdir(parents=True)
+  for f in files: shutil.copy2(objs/f,dest/f)
  if name=='njs-cli-ha':
   (root/'usr/bin').mkdir(parents=True); shutil.copy2('/work/sources/njs/build/njs',root/'usr/bin/njs-ha')
  if name=='nginx-lua-libraries-ha':
@@ -24,13 +27,12 @@ for name,files in groups.items():
  binaries=list(root.rglob('*.so'))+list((root/'usr/bin').glob('*'))
  (root/'debian').mkdir(); (root/'debian/control').write_text('Source: hernet-modules\n\nPackage: '+name+'\nArchitecture: any\nDescription: HerNet modules\n')
  dep=subprocess.check_output(['dpkg-shlibdeps','-O',*['-e'+str(p) for p in binaries]],cwd=root,text=True).strip().removeprefix('shlibs:Depends=')
- version=f'1.0.2+git.a3aec77d+nginx{pv}-{os.environ.get("BUILD_REVISION","1")}'
- if files: dep=f'nginx (= {pv}), '+dep
- if name=='nginx-module-extras-ha': dep+=f', nginx-lua-libraries-ha (= {version})'
+ version=f'1.0.3+git.a3aec77d+nginx{pv}-{os.environ.get("BUILD_REVISION","1")}'
+ dep=', '.join(dependencies(name,pv,version,[d for d in dep.split(', ') if d]))
  (root/'DEBIAN').mkdir()
  (root/'DEBIAN/control').write_text(f'Package: {name}\nVersion: {version}\nArchitecture: amd64\nMaintainer: Palvef <packages@palve.moe>\nDepends: {dep}\nDescription: HerNet patched modules for official NGINX mainline\n')
  docs=root/('usr/share/doc/'+name); docs.mkdir(parents=True)
- (docs/'source-manifest.json').write_text(json.dumps(dict(sources=lock,nginx_package_version=pv,distribution=rel,patches=['geoip2-cache-valid-source','geoip2-http-log-to-post-read-binary']),indent=2)+'\n')
+ (docs/'source-manifest.json').write_text(json.dumps(dict(sources=lock,nginx_package_version=pv,distribution=rel,patches=['geoip2-cache-valid-source','geoip2-http-log-to-post-read-binary','geoip2-http-post-read-continue-source']),indent=2)+'\n')
  shutil.copy2('/out/geoip2-patch.json',docs/'geoip2-patch.json')
  shutil.copy2('/out/geoip2-cache.patch',docs/'geoip2-cache.patch')
  for source in Path('/work/sources').iterdir():

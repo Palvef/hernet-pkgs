@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent source fix: invalidate cached MMDB entries on successful reload."""
+"""Source fixes: invalidate reloaded MMDB cache and continue POST_READ handlers."""
 import pathlib
 import sys
 for name in ['ngx_http_geoip2_module.c','ngx_stream_geoip2_module.c']:
@@ -14,4 +14,11 @@ for name in ['ngx_http_geoip2_module.c','ngx_stream_geoip2_module.c']:
  for old,new in substitutions:
   if s.count(old)!=1: raise ValueError(f'{name}: expected exactly one {old!r}')
   s=s.replace(old,new)
+ if name=='ngx_http_geoip2_module.c':
+  start=s.index('\nngx_http_geoip2_log_handler(ngx_http_request_t *r)\n{')
+  end=s.index('\nstatic ngx_int_t\nngx_http_geoip2_init',start)
+  handler=s[start:end]
+  if handler.count('return NGX_OK;')!=2: raise ValueError('Expected two HTTP handler success returns')
+  # POST_READ must continue to other handlers, especially the RealIP handler.
+  s=s[:start]+handler.replace('return NGX_OK;','return NGX_DECLINED;')+s[end:]
  p.write_text(s)

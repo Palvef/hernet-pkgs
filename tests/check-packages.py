@@ -2,19 +2,35 @@
 import os
 import pathlib
 import subprocess
+import sys
+sys.path.insert(0,'/repo/scripts')
+from package_layout import MODULES,module_directory
 pv=os.environ['pv']
-expected={'ndk_http_module.so','ngx_http_lua_module.so','ngx_http_fancyindex_module.so','ngx_http_geoip2_module.so','ngx_stream_geoip2_module.so','ngx_http_vhost_traffic_status_module.so','ngx_http_js_module.so','ngx_stream_js_module.so'}
-found=set()
+found={}
 for p in pathlib.Path('/out').glob('*.deb'):
  name=subprocess.check_output(['dpkg-deb','-f',str(p),'Package'],text=True).strip()
  dep=subprocess.check_output(['dpkg-deb','-f',str(p),'Depends'],text=True).strip()
- if name.startswith('nginx-module-'):
+ version=subprocess.check_output(['dpkg-deb','-f',str(p),'Version'],text=True).strip()
+ assert name not in ['nginx-module-extras-ha','nginx-module-njs-ha'],name
+ if name in MODULES:
+  assert name not in found,name
   assert f'nginx (= {pv})' in dep,(name,dep)
   listing=subprocess.check_output(['dpkg-deb','-c',str(p)],text=True)
+  modules=[]
   for line in listing.splitlines():
    if line.endswith('.so'):
     file=line.split()[-1]
-    assert '/usr/lib/nginx/ha-modules/'+pv+'/' in file,file
-    found.add(pathlib.PurePosixPath(file).name)
-assert found==expected,(found,expected)
-print('PASS: all eight version-isolated modules have exact official NGINX dependencies')
+    assert file=='.'+module_directory(pv,os.environ.get('BUILD_REVISION','1'))+'/'+MODULES[name],file
+    modules.append(pathlib.PurePosixPath(file).name)
+  assert modules==[MODULES[name]],(name,modules)
+  found[name]=modules[0]
+  for field in ['Breaks','Replaces','Conflicts']:
+   relation=subprocess.check_output(['dpkg-deb','-f',str(p),field],text=True).strip()
+   assert not relation,(name,field,relation)
+  if name=='nginx-module-lua-ha':
+   assert f'nginx-module-ndk-ha (= {version})' in dep,dep
+   assert f'nginx-lua-libraries-ha (= {version})' in dep,dep
+  else:
+   assert 'nginx-module-lua-ha' not in dep and 'nginx-lua-libraries-ha' not in dep,(name,dep)
+assert found==MODULES,(found,MODULES)
+print('PASS: eight independent module DEBs, exact NGINX dependencies, Lua/NDK dependency and legacy coexistence policy')

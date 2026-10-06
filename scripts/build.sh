@@ -58,8 +58,9 @@ export NGINX_VERSION pv
 python3 /repo/scripts/package.py
 python3 /repo/tests/check-packages.py > /out/package-check.txt
 apt-get install -y --no-install-recommends /out/*.deb
-export HA_MODULE_DIR="/usr/lib/nginx/ha-modules/$pv"
+export HA_MODULE_DIR="/usr/lib/nginx/ha-modules/$pv/hernet-1.0.3-r${BUILD_REVISION:-1}"
 touch /work/MODULES_READY
 python3 /repo/tests/runtime-smoke.py > /out/runtime-smoke.txt 2>&1
 python3 /repo/tests/rsync-queue.py > /out/rsync-queue.txt 2>&1
+python3 /repo/tests/geoip2-live.py --module-dir "$HA_MODULE_DIR" --empty /repo/tests/fixtures/empty.mmdb --populated /repo/tests/fixtures/populated.mmdb > /out/geoip2-live.txt 2>&1
 (cd /out && sha256sum *.deb > SHA256SUMS)
