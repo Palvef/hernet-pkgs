@@ -1,23 +1,19 @@
 Architectures: amd64
 Codename: trixie
 Components: main
-Date: Tue, 06 Oct 2026 10:59:33 +0000
+Date: Tue, 06 Oct 2026 11:06:48 +0000
 Label: HerNet
 Origin: HerNet
 Suite: trixie
 MD5Sum:
- 2ff8004606e72ca737e853c4f59d0a4c             1074 Release
  e9fad6ca98add729ba425a6782014b3e             9998 main/binary-amd64/Packages
  66a1ccc8d2ec99f161a12713321dbc62             3154 main/binary-amd64/Packages.gz
 SHA1:
- 305df8076f3f652042d9149c7d1812037fa03978             1074 Release
  f537ca76ca1725e043ba6c33d202c73cebf1b5ad             9998 main/binary-amd64/Packages
  a2bdb383f6461428a026e1aedde563c0891b3d23             3154 main/binary-amd64/Packages.gz
 SHA256:
- d9d9e9ae477ba1f67a0766261780891f67e8282362b0b3d9e8d9599d6fbd7d00             1074 Release
  8c3283beda1c38f9d1f10a246fc31ea9a9a501ee329554c106fa534a58c9851e             9998 main/binary-amd64/Packages
  b804f3d47cf1e2dc1ae8a92800acaece88c0e57360ce710d046fdad338bee0b2             3154 main/binary-amd64/Packages.gz
 SHA512:
- 9bc15cf7b13b690fc37f4a45030d3677e822cf9e4c674ac4c8e17e4ab9365f827c4237b510a2a423403c18bf8f1fe1cb08ed6a6cb09b7ea0c201cfadedb12a31             1074 Release
  406ec75c5215b1e06ee939d84be22ff9d54e74679581cd634cbd9f162025798ec828bb12de84f6707898f829b8fb24f6b0ba43209055cd77fda6a0321bc2ee71             9998 main/binary-amd64/Packages
  56c96f7b7b5e49a0d35d12ed03e5ffb18f8739172d650aaf6c6eca99e2125f4f504e8689565da542abc2e08e374a9a9f1295144f523e3bc9571edca89a80ab4f             3154 main/binary-amd64/Packages.gz

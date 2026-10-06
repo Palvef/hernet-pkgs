@@ -1,23 +1,19 @@
 Architectures: amd64
 Codename: noble
 Components: main
-Date: Tue, 06 Oct 2026 10:59:33 +0000
+Date: Tue, 06 Oct 2026 11:06:48 +0000
 Label: HerNet
 Origin: HerNet
 Suite: noble
 MD5Sum:
- 3890376da1f8455c8f94226eb508a392             1072 Release
  c7e289fecbb37736b937b5d6ab604c9a             9933 main/binary-amd64/Packages
  46fad28ecf43118425536e8cd6c0d23c             3149 main/binary-amd64/Packages.gz
 SHA1:
- aa4d854ac4e31f7bce03abe753fde95aabe267b3             1072 Release
  3b74dff576c676ba130626c3418829fed33f4407             9933 main/binary-amd64/Packages
  3acfd8315e7bcdeef38139cc8cf1cd9693e9b524             3149 main/binary-amd64/Packages.gz
 SHA256:
- 2044585830322e6581ac35cec14bac3bbdb0ebe91c1c04062df69def1f62daa2             1072 Release
  8150a24ebba45493a926844d3e0583663aaff8ca76e4ab251c7855ee2e0d7b22             9933 main/binary-amd64/Packages
  72a37ab5c313d5ff772671bc9e188d35ef8d4b946b1405a53314bd0df5376ffe             3149 main/binary-amd64/Packages.gz
 SHA512:
- fdd902744058fc206d612f3c84df7a453bdebcb2f25876aedac42921884b869203a951b126dcaf422481f54b1dd634a55ede90b1355797bc400b353193f35a5b             1072 Release
  cf518ac6b6b25a64d5ea905fcb99ab8821e5c8fafc3ac1a0760b5ca212e09b5cd1487d8cc7c6a07a32d1f841b26ccbb9c510db2ab7ad05bcf56b711bcb7561bc             9933 main/binary-amd64/Packages
  7daf9fad9a574eff0a8ff4e46b7784357a539f6ff7ce1ae88a34feaab9357c7186c9ff3fcbbbbc1b986e092702bf725c5523df98fd381a4371f155483323a483             3149 main/binary-amd64/Packages.gz

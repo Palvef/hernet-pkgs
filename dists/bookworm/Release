@@ -1,23 +1,19 @@
 Architectures: amd64
 Codename: bookworm
 Components: main
-Date: Tue, 06 Oct 2026 10:59:33 +0000
+Date: Tue, 06 Oct 2026 11:06:48 +0000
 Label: HerNet
 Origin: HerNet
 Suite: bookworm
 MD5Sum:
- f524cabb9bafa614ac7624c05e5b612e             1078 Release
  70489a3f4a2abeb18a346b09913aea1f            10092 main/binary-amd64/Packages
  5c0a3bf0fb1cecea1b849bd3f55042da             3154 main/binary-amd64/Packages.gz
 SHA1:
- fae929c893c48662f7933033431596c41e0d048d             1078 Release
  b9deebb871630ded6b0cf5c5f7dfa0d0f1521348            10092 main/binary-amd64/Packages
  23fb730797eef277c4f4d6b2ec6ad034cbbc491e             3154 main/binary-amd64/Packages.gz
 SHA256:
- d29cd85c651f7512db3f1d6a39c9b1eba0b1cc242c3f88100f07aed6471fee85             1078 Release
  55e8d9018c627511d14737ae4775983454b24745da2de993675a5ce15f6cfe1c            10092 main/binary-amd64/Packages
  d009434d2558fb13a4eda6650e1c160f000458b2beccbc57f185fabae0b28665             3154 main/binary-amd64/Packages.gz
 SHA512:
- 0585fbb61e58c14339af21f60437c9b92e12f1969b2d7d2a2446d56b20a854a1d4812cae461df37864d95fd8d8f4a4515ac958cacb16457243f0d5a7992cc5d9             1078 Release
  bd50c3263882a388f53aa0284ab79706c34dc7b7bab5afe5c95b5f5815f38d412b9b4fc768a6ecf11af36312168c36978eb04406a6a612d3bc6bee2e1353e900            10092 main/binary-amd64/Packages
  b80162fa636db95a3e0892998c18a232e7c4580630ece2f7fafeea60af59b817f3f4728f13012b57d484a4255b6bf6c0fa36635c660c5dbf90f4cb27109c2499             3154 main/binary-amd64/Packages.gz
