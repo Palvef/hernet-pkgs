@@ -1,0 +1,4 @@
+a8ce81a60b2bbf1fc6c51c219a821c9e679070d76932c0d90c4257a06fd1d9ef  nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
+9f6862597d81f135fb6e6b7844a54d277ae8570237652e60ec5850b25d7be411  nginx-module-extras-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
+c97a629caf9e813a23feb5e0806e9f3e44280fc94cdfb8fc59f3f56b1252b975  nginx-module-njs-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
+5b8236e0e4344b2f14a6e8a0824e2c529a069b8eefd3a85cf33b1e233460d0a5  njs-cli-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb

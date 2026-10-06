@@ -1,0 +1,1 @@
+PASS: official Nginx loads all modules and serves real Lua/njs requests

@@ -1,0 +1,36 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: bookworm
+Components: main
+Date: Tue, 06 Oct 2026 10:39:15 +0000
+Label: HerNet
+Origin: HerNet
+Suite: bookworm
+MD5Sum:
+ b66854509fa23b34a63db0932bec97fc             2885 main/binary-amd64/Packages
+ b72c252e5a25919769ae98f3f5251f7c             1146 main/binary-amd64/Packages.gz
+SHA1:
+ 483207d9d80a0a62ba5b7893a13de256e8cbb349             2885 main/binary-amd64/Packages
+ 3903775e419e92d5bcb4e10cda3b28d0b7783526             1146 main/binary-amd64/Packages.gz
+SHA256:
+ f9371e401a89cdaf1671968c27f86c6300e766f6d6351dd9c7cf587c3e381452             2885 main/binary-amd64/Packages
+ d7159f85a1220fdd31dc50184b166a0880095012cf629225198a584afb30daed             1146 main/binary-amd64/Packages.gz
+SHA512:
+ 9fcba7892200c549c4017490fd114e3be57b774f906f00ea906643e07bd30044f5489ca2167a3b303dc78ccc565f54bde4cd9860c48ae643c15268c26e8bf364             2885 main/binary-amd64/Packages
+ c81437990f49921a99c41d9057e86f5c271cbbab0cbbcfc5f8f967806f92b66f2b785b08567020560e698b1f1ac2f813d0cb111cb99602f7bf759ffa7ef5161e             1146 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrEz9MACgkQtWh7jQGC
+sxJPVAwApw7O/RTIRM+5esQBsR7554yIadzuLdJwwb8ODH9kaUF/0j2mSa+iLfha
+tYWnih9m3Pef3AYnVF92C4oQejzuz3d6h5hl0mQev+fpWYLCKr9OrqgoNyx8BM6V
+dBsJufvwMm5MEXgdTC2SLWFkRRQdLTvNjuaS0DhE5/wRwaJz1na7wQI846nvDkZi
+dDDlUIpvdcg04n8RRlmL6TjHX/e0qQiME5Of9jEo+/diXGWJhQVqTIeyxGkkU/Rr
+gH64dlj5o7d/S9FR3FGzIQLPkLw4vgAjgvOOvP3w+z6QA9MH9kgH2p/nkN+sxZt9
+dotSYNB9+wNchzLDyx584rTLlOALAcWmc5zv84tCy9rMMFGm4t8oIEzh+JkJnmbq
+eK0Gdk+dLpByWxcIfLoql//5e5d+xxGAe78eXvn0WdC+KLjxJUex+og9E74kKv5N
+/3HTkGmnAjMUtPAs2vufEdoyvbY1Ij/94i7vawjq+6ZiV+07HtCWn5IKMONjqcD1
+zYSPxlKH
+=gVQZ
+-----END PGP SIGNATURE-----

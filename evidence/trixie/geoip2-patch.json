@@ -1,0 +1,8 @@
+{
+  "symbol": "ngx_http_geoip2_init",
+  "virtual_address": "0x131d",
+  "file_offset": "0x131d",
+  "before_sha256": "714ac86cf67731c825930e52f69b6b8ee0b33e990a284d48933f8e65edca829b",
+  "after_sha256": "fad0f2de13040295315ad82eb446a2e769f0c116c56bcfe5013d1f01d0a86603",
+  "disassembly": "\nobjs/ngx_http_geoip2_module.so:     file format elf64-x86-64\n\n\nDisassembly of section .init:\n\nDisassembly of section .plt:\n\nDisassembly of section .plt.got:\n\nDisassembly of section .text:\n\n0000000000001300 <ngx_http_geoip2_init>:\n    1300:\tf3 0f 1e fa          \tendbr64\n    1304:\t48 83 ec 08          \tsub    $0x8,%rsp\n    1308:\t48 8b 47 38          \tmov    0x38(%rdi),%rax\n    130c:\t48 8b 15 c5 3c 00 00 \tmov    0x3cc5(%rip),%rdx        # 4fd8 <ngx_http_core_module@Base>\n    1313:\t48 8b 00             \tmov    (%rax),%rax\n    1316:\t48 8b 12             \tmov    (%rdx),%rdx\n    1319:\t48 8b 3c d0          \tmov    (%rax,%rdx,8),%rdi\n    131d:\t48 81 c7 e8 00 00 00 \tadd    $0xe8,%rdi\n    1324:\te8 57 fe ff ff       \tcall   1180 <ngx_array_push@plt>\n    1329:\t48 85 c0             \ttest   %rax,%rax\n    132c:\t74 11                \tje     133f <ngx_http_geoip2_init+0x3f>\n    132e:\t48 8d 0d eb 09 00 00 \tlea    0x9eb(%rip),%rcx        # 1d20 <ngx_http_geoip2_log_handler>\n    1335:\t48 89 08             \tmov    %rcx,(%rax)\n    1338:\t31 c0                \txor    %eax,%eax\n    133a:\t48 83 c4 08          \tadd    $0x8,%rsp\n    133e:\tc3                   \tret\n    133f:\t48 c7 c0 ff ff ff ff \tmov    $0xffffffffffffffff,%rax\n    1346:\teb f2                \tjmp    133a <ngx_http_geoip2_init+0x3a>\n\nDisassembly of section .fini:\n"
+}

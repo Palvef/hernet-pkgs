@@ -1,0 +1,52 @@
+Package: nginx-lua-libraries-ha
+Architecture: amd64
+Version: 1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: libc6 (>= 2.38)
+Filename: pool/resolute/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
+Size: 194010
+MD5sum: 34da4807ebc1538347b5628e97aa6509
+SHA1: a53f7d861943069a87c603770b739c0cbc2e32a5
+SHA256: 302b32435e5f186e2393c5499f64f926cdf8d949b0e69a4d0b8ea60a7fad32e2
+SHA512: dbb58c721c7e3a25a92857d5fb730e22b96bf6153a769fb36ce3bd91a46159e4843d3d143bf3270c5fc8d8072ea50104315a35040a4d792848187998b390f41e
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-extras-ha
+Architecture: amd64
+Version: 1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.6-1~resolute), libc6 (>= 2.33), libluajit-5.1-2 (>= 2.1.0) | libluajit-5.1-2 (>= 2.1.0+openresty), libmaxminddb0 (>= 1.0.2), nginx-lua-libraries-ha (= 1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1)
+Filename: pool/resolute/nginx-module-extras-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
+Size: 1169298
+MD5sum: ab7c2f1010073718911b6338a2ad8b61
+SHA1: 09b8fc9181b7e70b52051f73b4777f85e86ed6c8
+SHA256: 1786747b0a4ce31633223337ab547389ef9703e89e1443e160471a8f60b8a07f
+SHA512: 6fba0599ecadbfdd7c7c79d9b09e722c7c3e7baffb84a2149e66f50cfcbdd650afe10468258ced8efaa33793e39e0fb3d87b6213d50a684835780f1281c32460
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-njs-ha
+Architecture: amd64
+Version: 1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.6-1~resolute), libc6 (>= 2.38), libxml2-16 (>= 2.14.1)
+Filename: pool/resolute/nginx-module-njs-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
+Size: 2567748
+MD5sum: 983fb678c6770df6a95fc5441c1443db
+SHA1: 475cd7932202489a4d7102b84a4e2b90a1426840
+SHA256: 214ddc60839e7204405e55748c58c88f368830cde8066b064dbcb90dc94f977c
+SHA512: a7646cbb1830c5aad8dc9a2754747b5ad18dc48c9a7d04a0b91e3ab654b9c95c913e7504f7f85d3db1707939c192d86c819b10c848d47b3c8d5bcae94527b1c4
+Description: HerNet patched modules for official NGINX mainline
+
+Package: njs-cli-ha
+Architecture: amd64
+Version: 1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: libc6 (>= 2.38), libpcre2-8-0 (>= 10.32), libssl3t64 (>= 3.0.0), libxml2-16 (>= 2.14.1), zlib1g (>= 1:1.1.4)
+Filename: pool/resolute/njs-cli-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
+Size: 1392130
+MD5sum: 2ef3e318329dfd755d68a7fcddd8c68a
+SHA1: 8f8b1aad7ce01adc0eb66083bf194c0393584a9f
+SHA256: 7ceb2f9b1f162ad8bc5da14f371956336f678b234a5cad9a1ff4a2dbd7cb1205
+SHA512: 6670d4dead0b4e7d1a293c611c95c89df96b0c8cd6b1f20f13e0f7d3c23ae8f1aae186fabb8689abbb05edac087ddedb8f2ab49aa642fc8edd937eb539493ae5
+Description: HerNet patched modules for official NGINX mainline
+

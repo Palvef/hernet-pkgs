@@ -1,0 +1,4 @@
+80374c9c3eaa9e69aebe7a1fea2de5dd7e95ecf8f056779b9c515f0c268dc6ae  nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
+1e842046a610ba457b7a97219b36ec9543cad136d7f816051d9c6bad51c6a08e  nginx-module-extras-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
+ce7258c9d34c8a71efa2941acd2731e7e97fd91f5b667b666956184d6b32fd58  nginx-module-njs-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb
+7ad0930490e65de68d6a397c06f32ac597be76eaf0b251971802bfbc697c1bb8  njs-cli-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb

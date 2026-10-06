@@ -1,0 +1,22 @@
+# Lua script dependencies (plain text). Paths are served after a successful signed build.
+# Replace SUITE with bookworm/trixie/jammy/noble/resolute and obtain exact filenames
+# from dists/SUITE/main/binary-amd64/Packages (Filename field).
+APT repository: https://hernet-pkgs.palve.moe/
+Package index: https://hernet-pkgs.palve.moe/dists/noble/main/binary-amd64/Packages
+Dependency package: nginx-lua-libraries-ha
+Binary downloads: https://hernet-pkgs.palve.moe/pool/SUITE/
+nginx-module-extras-ha depends on nginx-lua-libraries-ha at the same package version.
+resty.redis: https://github.com/openresty/lua-resty-redis/archive/3fdc727f176f565adca8c2b350a636bd74e93de2.tar.gz
+resty.core: https://github.com/openresty/lua-resty-core/archive/768ce9631dd91f864ba454af9615a81847c3230c.tar.gz
+resty.lrucache: https://github.com/openresty/lua-resty-lrucache/archive/3ff6300e68b73ba20e909c7d16bd839aef2e5a4b.tar.gz
+cjson: https://github.com/openresty/lua-cjson/archive/5f53e878d0441e1555f53060178c61d161079e06.tar.gz
+ffi, bit: distro LuaJIT dependency automatically resolved by dpkg-shlibdeps.
+utils, acl, pow, rate_limit, redis_client, authd_client, lua_metrics and other local
+modules are deployment Lua source; they are not third-party dependency packages.
+
+# Available signed binary dependency packages (historical versions retained):
+https://hernet-pkgs.palve.moe/pool/bookworm/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/jammy/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~jammy-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/noble/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~noble-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/resolute/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~resolute-1_amd64.deb
+https://hernet-pkgs.palve.moe/pool/trixie/nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~trixie-1_amd64.deb

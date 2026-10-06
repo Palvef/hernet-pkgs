@@ -1,0 +1,4 @@
+c51badbc2498602be241b88a7c091e35d5c7158d6066d71ee1f9133060f0fb59  nginx-lua-libraries-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
+c93a2fc9587908683068e6afecb0ba8dac5982be250908f072ea5d28314bd700  nginx-module-extras-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
+f0c7ef0b4dad1dd8f594fbc8b55f773a5b61c92e2316e3b8374ff96a878ba8c3  nginx-module-njs-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb
+54bdaea6b3564b0faba9959159041a3f1c1dc079f1601add3a218c9c926824d2  njs-cli-ha_1.0.2+git.a3aec77d+nginx1.31.6-1~bookworm-1_amd64.deb

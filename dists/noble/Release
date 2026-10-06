@@ -1,0 +1,19 @@
+Architectures: amd64
+Codename: noble
+Components: main
+Date: Tue, 06 Oct 2026 10:39:15 +0000
+Label: HerNet
+Origin: HerNet
+Suite: noble
+MD5Sum:
+ beecf1c40ce484b7da0019ad66fb60d4             2843 main/binary-amd64/Packages
+ 9c9e8d23a4f7bc279504f075f09ee887             1147 main/binary-amd64/Packages.gz
+SHA1:
+ df1071150cddf76b9c813d53f5c6d0b68922224e             2843 main/binary-amd64/Packages
+ 96406e3bd70f1324a19aa73729be61bb41dca3b7             1147 main/binary-amd64/Packages.gz
+SHA256:
+ fd574c06ce023945774b04e0c37a4e366284de81733ba2bafc3250b3becf32ed             2843 main/binary-amd64/Packages
+ 42fbeedca7d532c10882e32b4b251acbb7f92c57f1a39c4ccc87548886c8c3fc             1147 main/binary-amd64/Packages.gz
+SHA512:
+ d70f115e534f587cb4f006cc10a405d267c06dfd3954980a841e0532d3207c9832191c7480403e61590b17d63927705abdbe0724eb95e31085b86c0086133e77             2843 main/binary-amd64/Packages
+ 353b82dd6b6a76d40702adb06854e5286f1df3c87abe13ef076c4e2a37634b3e6b5b0b2d09f422ac4510abbfbdbd6bfbf3dd95a1fb7ace1c15c7d0619e87d6cb             1147 main/binary-amd64/Packages.gz

@@ -1,0 +1,19 @@
+Architectures: amd64
+Codename: trixie
+Components: main
+Date: Tue, 06 Oct 2026 10:39:15 +0000
+Label: HerNet
+Origin: HerNet
+Suite: trixie
+MD5Sum:
+ e4f496554a666c105de418ab2ad3dfd1             2863 main/binary-amd64/Packages
+ 3d5030d37adbc2cd7f875ce1d9e1a866             1147 main/binary-amd64/Packages.gz
+SHA1:
+ c8e7ebf561439fc31635b3cf8d956fabecc04e4d             2863 main/binary-amd64/Packages
+ 200d8b95a274d9728da9a0276c8dfd44aeee31fa             1147 main/binary-amd64/Packages.gz
+SHA256:
+ 7ed7eabfec081a52be2c95418b4e2b86b914190a178b9c49e7ce0bc59d0ae1b5             2863 main/binary-amd64/Packages
+ da5ec4a9d42b11454e64f919857e3410cdfa8d4e4fc449c06373e12abb6cb5ff             1147 main/binary-amd64/Packages.gz
+SHA512:
+ 4b6d51ea1d5e7c3106a1f5788181257565cf446205797720508fef01536566bced6c0c4933dc455c8853520fa893c433d4f5c9ecb05df4caf1446449fdfc3117             2863 main/binary-amd64/Packages
+ 085fdef9a7e36da3a39d1ea43ef363283c5f4aa88f9ce7b61c3a62a6661435d6f95131891aabfbde7e91c79bd9811c9048a652595048d2bc90bb87847feb7f07             1147 main/binary-amd64/Packages.gz

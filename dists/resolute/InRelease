@@ -1,0 +1,36 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: resolute
+Components: main
+Date: Tue, 06 Oct 2026 10:39:15 +0000
+Label: HerNet
+Origin: HerNet
+Suite: resolute
+MD5Sum:
+ cc6cc4e30e048629361215bf900ecaf4             2901 main/binary-amd64/Packages
+ 80015801f1bcfef051b51e0a0eb658a5             1154 main/binary-amd64/Packages.gz
+SHA1:
+ c36496fe55abfba4c240953720e15e5a3bb60fcb             2901 main/binary-amd64/Packages
+ 780a86dfdb52b744208b72905c7eeb6116eefc35             1154 main/binary-amd64/Packages.gz
+SHA256:
+ 280d9cdc33c4ba72f4c7e7d692abceaa6d0bb52e2c91d597a05691b08bda9c4f             2901 main/binary-amd64/Packages
+ a6accec21d3118f10cc5c12f2458a28e838d7ca22944f928b55fcd011713495b             1154 main/binary-amd64/Packages.gz
+SHA512:
+ 067f621f530b767da1b0918d1774a84db29a86c7fe9e45fb71f4da9ee7aca80b5d11cc5b84822b5f750bfa44e545732eef1f440da9e788bed4c33986204ffe22             2901 main/binary-amd64/Packages
+ 684ddc7250ccc85a18b2c977473fd60f3379224681da4e67085956c230bd4f1845b304b5347a6007c56061c258e54ebe46cbeb74f53bbb2a7251254368a264aa             1154 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrEz9MACgkQtWh7jQGC
+sxIoiQv/c2MX80WSYZGwdmnGASOLvqDGKXZClvXkiPwcVH7HML4Yc1GrX2v2V7kk
+LA1LOxit7kd7XQnpvmwWBMsv2DiPtsgOUe0F36vP8ATDyZjBsPltzb0MOuTAjTCw
+/utQppJGRkMDbAwjKqO1OOcoIp+rzH1wzXgsFYbDhrFOS8RVV+enCVeb+M+wEsCX
+IdIhmpM9ECHq4TDkkKHNNWK5ulP1t5t5XtxTbBPDV9nR17x/VAxBxXAVT4x/kin1
+l1Lz7WjbXFcxsNnw76JU/E2SsyHS73TjTuTcf6jFcoZgIZVI2N1iJ9RGXWLx7lIJ
+hou2iUs4WIx2z3ufxORru1pH32aWOlRIH7Jv9nElr8c9a2eNOtMQLUu3F7l6DsAp
+9TGOfZRFbBw6FZCdYf9ENslfvGUQWlkMWmkzM/8iTfbALMdZ4BDLiQvDb0lGUQ13
+amME0RY7a1bU9P+Vm5bIVDns/XVJIxQjDesMmg+ZNCqX2JwuXEswR85Q32xZKF/F
+KQ91RVEm
+=fifv
+-----END PGP SIGNATURE-----

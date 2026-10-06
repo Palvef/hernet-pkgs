@@ -1,0 +1,1 @@
+PASS: all eight version-isolated modules have exact official NGINX dependencies
