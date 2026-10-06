@@ -8,16 +8,16 @@ Each module has its own DEB and download directory:
 
 | Package | Payload | Downloads |
 | --- | --- | --- |
-| `nginx-module-ndk-ha` | NDK HTTP | [ndk](https://hernet-pkgs.palve.moe/modules/ndk/) |
-| `nginx-module-lua-ha` | Lua HTTP | [lua](https://hernet-pkgs.palve.moe/modules/lua/) |
-| `nginx-module-fancyindex-ha` | fancyindex HTTP | [fancyindex](https://hernet-pkgs.palve.moe/modules/fancyindex/) |
-| `nginx-module-http-geoip2-ha` | GeoIP2 HTTP | [http-geoip2](https://hernet-pkgs.palve.moe/modules/http-geoip2/) |
-| `nginx-module-stream-geoip2-ha` | GeoIP2 stream | [stream-geoip2](https://hernet-pkgs.palve.moe/modules/stream-geoip2/) |
-| `nginx-module-vts-ha` | VTS HTTP | [vts](https://hernet-pkgs.palve.moe/modules/vts/) |
-| `nginx-module-http-njs-ha` | njs HTTP | [http-njs](https://hernet-pkgs.palve.moe/modules/http-njs/) |
-| `nginx-module-stream-njs-ha` | njs stream | [stream-njs](https://hernet-pkgs.palve.moe/modules/stream-njs/) |
+| `nginx-module-ndk-ha` | NDK HTTP | [ndk](https://hernet-pkgs.palve.moe/pool/ndk/) |
+| `nginx-module-lua-ha` | Lua HTTP | [lua](https://hernet-pkgs.palve.moe/pool/lua/) |
+| `nginx-module-fancyindex-ha` | fancyindex HTTP | [fancyindex](https://hernet-pkgs.palve.moe/pool/fancyindex/) |
+| `nginx-module-http-geoip2-ha` | GeoIP2 HTTP | [http-geoip2](https://hernet-pkgs.palve.moe/pool/http-geoip2/) |
+| `nginx-module-stream-geoip2-ha` | GeoIP2 stream | [stream-geoip2](https://hernet-pkgs.palve.moe/pool/stream-geoip2/) |
+| `nginx-module-vts-ha` | VTS HTTP | [vts](https://hernet-pkgs.palve.moe/pool/vts/) |
+| `nginx-module-http-njs-ha` | njs HTTP | [http-njs](https://hernet-pkgs.palve.moe/pool/http-njs/) |
+| `nginx-module-stream-njs-ha` | njs stream | [stream-njs](https://hernet-pkgs.palve.moe/pool/stream-njs/) |
 
-Directories contain distribution subdirectories and direct DEB links. `njs-cli-ha` is under `tools/njs/<suite>/`. `nginx-lua-libraries-ha` contains Actions-compiled OpenResty cjson and pinned resty-core/lrucache/redis under `dependencies/lua-libraries/<suite>/`. Lua requires the exact same release of both `nginx-module-ndk-ha` and `nginx-lua-libraries-ha`; APT installs those dependencies when only Lua is selected. Dependency download URLs and local Lua requirements are listed in [plain text](docs/lua-dependencies.txt), linked on the repository index.
+Directories contain distribution subdirectories and direct DEB links. `njs-cli-ha` is under `pool/njs-cli/<suite>/`. `nginx-lua-libraries-ha` contains Actions-compiled OpenResty cjson and pinned resty-core/lrucache/redis under `pool/lua-libraries/<suite>/`. Lua requires the exact same release of both `nginx-module-ndk-ha` and `nginx-lua-libraries-ha`; APT installs those dependencies when only Lua is selected. Dependency download URLs and local Lua requirements are listed in [plain text](docs/lua-dependencies.txt), linked on the repository index.
 
 Every module requires `nginx (= EXACT_PACKAGE_VERSION)`. Packages install under `/usr/lib/nginx/ha-modules/EXACT_PACKAGE_VERSION/hernet-1.0.3-rBUILD_REVISION/`; default revision is 1. Explicit `load_module` paths must point to the selected release directory, and NDK must load before Lua. Deployments using the rate-limit fallback need `lua_shared_dict rate_limit_fallback 64m;` in the HTTP context.
 
@@ -32,9 +32,9 @@ sudo apt install nginx-module-ndk-ha nginx-module-lua-ha \
   nginx-module-http-njs-ha nginx-module-stream-njs-ha
 ```
 
-Old aggregate DEBs remain in historical `pool/<suite>/` downloads, but new builds do not create them. New packages have distinct release paths and no Breaks/Conflicts/Replaces relationship with old aggregate packages. The earlier 1.0.1 aggregate packages and their currently loaded files can remain held during installation of the split packages. The exact Lua library dependency in 1.0.2 needs the migration handling below. Validate the complete new `load_module` set before a graceful reload. Keep the old packages and previous config for rollback; uninstalling a split package does not delete the old release. Optional legacy cleanup can happen after the new config has been verified. Independent GeoIP2 and njs HTTP/stream packages do not force installation of their other family member.
+The published repository uses only `dists/` metadata and `pool/<package>/<suite>/` DEB payloads. The deprecated `modules/`, `dependencies/`, `tools/` directories and old 1.0.2 aggregate/library/CLI outputs are removed after current independent DEBs have been copied and hash-verified at their canonical pool paths. Builds produce only the independent packages. New packages have distinct release paths and no Breaks/Conflicts/Replaces relationship with old aggregate packages. The earlier 1.0.1 aggregate packages and their currently loaded files can remain held during installation of the split packages. The exact Lua library dependency in 1.0.2 needs the migration handling below. Validate the complete new `load_module` set before a graceful reload. Keep the old packages and previous config for rollback; uninstalling a split package does not delete the old release. Optional legacy cleanup can happen after the new config has been verified. Independent GeoIP2 and njs HTTP/stream packages do not force installation of their other family member.
 
-The published `nginx-module-extras-ha` 1.0.2 additionally requires its older `nginx-lua-libraries-ha` at an exact version. Holding that aggregate prevents installation of the newer Lua library package; the earlier 1.0.1 production aggregate has no such library constraint. Before migrating 1.0.2, snapshot the active configuration, Lua libraries and module files. Prepare the complete independent module paths, with NDK before Lua, and remove/unhold the older aggregate when its dependency blocks the selected new packages. Preserve the official NGINX core version and its hold. Run `nginx -t` against the new configuration before a graceful reload, and retain the snapshot for rollback. A successful migration does not require restarting the core service.
+The former `nginx-module-extras-ha` 1.0.2 required its older `nginx-lua-libraries-ha` at an exact version. Holding that aggregate prevents installation of the newer Lua library package; the earlier 1.0.1 production aggregate has no such library constraint. Before migrating 1.0.2, snapshot the active configuration, Lua libraries and module files. Prepare the complete independent module paths, with NDK before Lua, and remove/unhold the older aggregate when its dependency blocks the selected new packages. Preserve the official NGINX core version and its hold. Run `nginx -t` against the new configuration before a graceful reload, and retain the snapshot for rollback. A successful migration does not require restarting the core service.
 
 
 ## Source and patch policy
@@ -47,7 +47,7 @@ GeoIP2 is fixed to `445df24ef3781e488cee3dfe8a1e111997fc1dfe`. After compilation
 
 Pages must use **GitHub Actions**. Set repository secrets `APT_SIGNING_KEY` (ASCII-armored private signing key) and optionally `APT_SIGNING_PASSPHRASE`. Set repository variable `APT_SIGNING_FINGERPRINT` to its full fingerprint. Published fingerprint: `FC18C0BCE21885538FFA4010B5687B8D0182B312` ([public key](docs/hernet-pkgs.asc)). Private keys are imported into an ephemeral GNUPGHOME only in the publication job. Set no key file in Git. Configure DNS for `hernet-pkgs.palve.moe` to the GitHub Pages domain; CNAME is included.
 
-Publication exports public `.asc`/`.gpg` keys, creates Packages/Packages.gz and SHA256 Release indexes, signs both InRelease and Release.gpg and verifies signatures before deployment. The `apt-archive` branch preserves historical package payloads; same filename with a different checksum fails rather than replacing a published package. Set/increase repository variable `BUILD_REVISION` (default 1) after an intentional package change/rebuild. The archive commit happens before Pages deployment so retries cannot lose history.
+Publication exports public `.asc`/`.gpg` keys, creates Packages/Packages.gz and SHA256 Release indexes, signs both InRelease and Release.gpg and verifies signatures before deployment. The `apt-archive` branch stores the canonical pool and signed indexes, preserving independent releases while cleaning the deprecated aggregation layout; same filename with a different checksum fails rather than replacing a published package. Set/increase repository variable `BUILD_REVISION` (default 1) after an intentional package change/rebuild. Payload migration verifies SHA256 before deleting obsolete paths. The archive commit happens before Pages deployment so retries use the same canonical repository.
 
 ## Local validation
 

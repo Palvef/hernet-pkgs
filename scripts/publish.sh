@@ -11,7 +11,7 @@ trap 'rm -rf "$GNUPGHOME"' EXIT
 printf '%s' "$APT_SIGNING_KEY" | gpg --batch --import
 unset APT_SIGNING_KEY
 gpg --batch --list-secret-keys "$APT_SIGNING_FINGERPRINT" >/dev/null
-mkdir -p "$site/pool" "$site/evidence"
+mkdir -p "$site/pool" "$site/dists"
 python3 scripts/archive.py "$artifacts" "$site"
 cp docs/index.html "$site/index.html"
 cp docs/lua-dependencies.txt "$site/lua-dependencies.txt"
@@ -19,7 +19,7 @@ python3 - "$site" <<'PYINDEX'
 import pathlib,sys
 root=pathlib.Path(sys.argv[1])
 with (root/'lua-dependencies.txt').open('a') as out:
- out.write('\n# Available signed binary dependency packages (historical versions retained):\n')
+ out.write('\n# Available signed Lua, NDK and library dependency packages:\n')
  for p in sorted(p for pattern in ['nginx-lua-libraries-ha_*.deb','nginx-module-ndk-ha_*.deb','nginx-module-lua-ha_*.deb'] for p in root.rglob(pattern)):
   out.write('https://hernet-pkgs.palve.moe/'+p.relative_to(root).as_posix()+'\n')
 PYINDEX
@@ -31,7 +31,7 @@ cd "$site"
 for suite in bookworm trixie jammy noble resolute; do
  mkdir -p "dists/$suite/main/binary-amd64"
  : > "dists/$suite/main/binary-amd64/Packages"
- for directory in "pool/$suite" modules/*/"$suite" dependencies/*/"$suite" tools/*/"$suite"; do
+ for directory in pool/*/"$suite"; do
   [[ -d "$directory" ]] || continue
   apt-ftparchive packages "$directory" >> "dists/$suite/main/binary-amd64/Packages"
  done
