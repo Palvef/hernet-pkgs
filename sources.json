@@ -1,0 +1,12 @@
+{
+ "njs": {"repo":"Palvef/njs","commit":"a3aec77d909a18a3d0ca14ee3f094cda29425cc5"},
+ "lua-nginx-module": {"repo":"openresty/lua-nginx-module","commit":"a1ec138e98801400832fee6030120777bf9bb435"},
+ "ngx_devel_kit": {"repo":"vision5/ngx_devel_kit","commit":"91e30eb05085e7f9762f130cbb883a0e753cf74d"},
+ "ngx-fancyindex": {"repo":"aperezdc/ngx-fancyindex","commit":"70311f239ec1e88ff79c669d126d08532ddb8554"},
+ "ngx_http_geoip2_module": {"repo":"leev/ngx_http_geoip2_module","commit":"445df24ef3781e488cee3dfe8a1e111997fc1dfe"},
+ "nginx-module-vts": {"repo":"vozlt/nginx-module-vts","commit":"724b34d7f1eff083860e3ac613a2c1d66a238dfd"},
+ "lua-resty-core": {"repo":"openresty/lua-resty-core","commit":"cb7264da6d94c259c4ad01ee5c61b5f65e3c7eb4"},
+ "lua-resty-lrucache": {"repo":"openresty/lua-resty-lrucache","commit":"3ff6300e68b73ba20e909c7d16bd839aef2e5a4b"},
+ "lua-resty-redis": {"repo":"openresty/lua-resty-redis","commit":"3fdc727f176f565adca8c2b350a636bd74e93de2"},
+ "lua-cjson": {"repo":"openresty/lua-cjson","commit":"5f53e878d0441e1555f53060178c61d161079e06"}
+}

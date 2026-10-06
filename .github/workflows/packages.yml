@@ -1,0 +1,91 @@
+name: Build and publish signed APT
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: apt-pages
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -m unittest discover -s tests -v
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {image: 'debian:bookworm', suite: bookworm}
+          - {image: 'debian:trixie', suite: trixie}
+          - {image: 'ubuntu:jammy', suite: jammy}
+          - {image: 'ubuntu:noble', suite: noble}
+          - {image: 'ubuntu:resolute', suite: resolute}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build, patch, package, install and exercise modules
+        run: |
+          mkdir -p out
+          docker run --rm --platform linux/amd64 -e NGINX_VERSION=1.31.6 -e BUILD_REVISION="${{ vars.BUILD_REVISION || '1' }}" -v "$PWD:/repo:ro" -v "$PWD/out:/out" '${{ matrix.image }}' bash /repo/scripts/build.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: packages-${{ matrix.suite }}
+          path: out/
+          if-no-files-found: error
+  publish:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Restore append-only package archive
+        run: |
+          if git ls-remote --exit-code origin refs/heads/apt-archive; then
+            git clone --branch apt-archive --single-branch "https://github.com/${{ github.repository }}.git" site
+          else
+            mkdir site
+          fi
+      - name: Sign repository
+        env:
+          APT_SIGNING_KEY: ${{ secrets.APT_SIGNING_KEY }}
+          APT_SIGNING_PASSPHRASE: ${{ secrets.APT_SIGNING_PASSPHRASE }}
+          APT_SIGNING_FINGERPRINT: ${{ vars.APT_SIGNING_FINGERPRINT }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y apt-utils gnupg
+          bash scripts/publish.sh artifacts site
+      - name: Persist package archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd site
+          if [ ! -d .git ]; then git init -b apt-archive; git remote add origin "https://github.com/${{ github.repository }}.git"; fi
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git diff --cached --quiet || git commit -m 'Update signed APT archive'
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:apt-archive
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4
+        id: deploy

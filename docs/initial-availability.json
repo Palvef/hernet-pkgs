@@ -1,0 +1,37 @@
+[
+  {
+    "distribution": "bookworm",
+    "versions": [
+      "1.31.6-1~bookworm"
+    ],
+    "source": "https://nginx.org/packages/mainline/debian/dists/bookworm/nginx/binary-amd64/Packages.gz"
+  },
+  {
+    "distribution": "trixie",
+    "versions": [
+      "1.31.6-1~trixie"
+    ],
+    "source": "https://nginx.org/packages/mainline/debian/dists/trixie/nginx/binary-amd64/Packages.gz"
+  },
+  {
+    "distribution": "jammy",
+    "versions": [
+      "1.31.6-1~jammy"
+    ],
+    "source": "https://nginx.org/packages/mainline/ubuntu/dists/jammy/nginx/binary-amd64/Packages.gz"
+  },
+  {
+    "distribution": "noble",
+    "versions": [
+      "1.31.6-1~noble"
+    ],
+    "source": "https://nginx.org/packages/mainline/ubuntu/dists/noble/nginx/binary-amd64/Packages.gz"
+  },
+  {
+    "distribution": "resolute",
+    "versions": [
+      "1.31.6-1~resolute"
+    ],
+    "source": "https://nginx.org/packages/mainline/ubuntu/dists/resolute/nginx/binary-amd64/Packages.gz"
+  }
+]
