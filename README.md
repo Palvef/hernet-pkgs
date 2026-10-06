@@ -34,6 +34,9 @@ sudo apt install nginx-module-ndk-ha nginx-module-lua-ha \
 
 Old aggregate DEBs remain in historical `pool/<suite>/` downloads, but new builds do not create them. New packages have distinct release paths and no Breaks/Conflicts/Replaces relationship with old aggregate packages. Existing held aggregate packages and their currently loaded files remain available while selected split packages are installed. Validate the complete new `load_module` set before a graceful reload. Keep the old packages and previous config for rollback; uninstalling a split package does not delete the old release. Optional legacy cleanup can happen after the new config has been verified. Independent GeoIP2 and njs HTTP/stream packages do not force installation of their other family member.
 
+The published `nginx-module-extras-ha` 1.0.2 additionally requires its older `nginx-lua-libraries-ha` at an exact version. Holding that aggregate prevents installation of the newer Lua library package; the earlier 1.0.1 production aggregate has no such library constraint. Before migrating 1.0.2, snapshot the active configuration, Lua libraries and module files. Prepare the complete independent module paths, with NDK before Lua, and remove/unhold the older aggregate when its dependency blocks the selected new packages. Preserve the official NGINX core version and its hold. Run `nginx -t` against the new configuration before a graceful reload, and retain the snapshot for rollback. A successful migration does not require restarting the core service.
+
+
 ## Source and patch policy
 
 `sources.json` locks all Git commits; production njs/fancyindex/vts/GeoIP2 revisions are retained. Lua NGINX v0.10.29, NDK v0.3.3 and companion resty libraries are pinned. No uncommitted local source enters the build. Source locks and upstream licenses travel with every package.
