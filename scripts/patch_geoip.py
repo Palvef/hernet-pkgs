@@ -18,8 +18,8 @@ def patch(path):
     shentsize,shnum=struct.unpack_from('<HH',data,58)
     offsets=[]
     for i in range(shnum):
-        _,_,_,addr,offset,length=struct.unpack_from('<IIQQQQ',data,shoff+i*shentsize)
-        if addr <= address and address+size <= addr+length:
+        _,section_type,flags,addr,offset,length=struct.unpack_from('<IIQQQQ',data,shoff+i*shentsize)
+        if section_type == 1 and flags & 6 == 6 and addr <= address and address+size <= addr+length and offset+length <= len(data):
             offsets.append(offset+address-addr)
     if len(offsets)!=1: raise ValueError('Cannot map function to unique file section')
     start=offsets[0]
