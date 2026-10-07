@@ -89,6 +89,19 @@ SHA256: efb4c65018f92be22d50c72e9abbd9087f0d0a7697d003852bc1b6a90342312a
 SHA512: 13ca3cbfe01eedd84e0a040b70c682c831897834ea6b40cf7c02eefa7e913935f68afd48bb41a50f45b080cd6397db2b649eb4c3442463cb1b34c1a3563d9eb6
 Description: HerNet patched modules for official NGINX mainline
 
+Package: nginx-module-rtmp-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.6-1~resolute-r1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.6-1~resolute), libc6 (>= 2.38)
+Filename: pool/rtmp/resolute/nginx-module-rtmp-ha_1.0.3+rtmp1.2.2+nginx1.31.6-1~resolute-r1_amd64.deb
+Size: 467446
+MD5sum: dfc10e0e1c2ae64017c5e7f14b4b2c6d
+SHA1: 761e8173d1b75b1cd850bca0b06c669c7753cc4e
+SHA256: 82a673b956a30c4f318256fc93d7f6ae7298557d826cf11aa9c2806ac6b62d5d
+SHA512: 81a5e7743e52a1bbe819885499f5086f5891633f69275d1b5e5390db6891b20362f5559fe2f6280386b4020f57417c52df31cf5a61076e8d695e60a3f419539d
+Description: RTMP and HLS dynamic module for official NGINX 1.31.6
+
 Package: nginx-module-stream-geoip2-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.6-1~resolute-1
@@ -114,6 +127,19 @@ SHA1: 36346f27e0b063abe1b08abd18830205310bd561
 SHA256: a9f478321cabbf7026855df5afe7a3882440c578bd201c3f1dbd1ce9ea70a58e
 SHA512: 7d0dd1edfb1ce431d8d6129f363f8f44959dd18ab6f7e40034d18aae151e5d8317956ee12d5c9282bdc3517007bc2d0709205f4b77367c51396e213ca5fde18a
 Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-stream-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.6-1~resolute-r1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.6-1~resolute)
+Filename: pool/stream/resolute/nginx-module-stream-ha_1.0.3+rtmp1.2.2+nginx1.31.6-1~resolute-r1_amd64.deb
+Size: 3178
+MD5sum: c492dd9a63e8a509972fac4ce13324d4
+SHA1: 4ad1315fcf0b06bdc0323d2ae740f718fd8e4e73
+SHA256: a5ba5e9e5b9a7e7d8b11d136b4e0f10390330e5c6d03d62ad2d18b7cf9f7ef4c
+SHA512: cfd3595be2305c03d8ad93b4dd79172ce48d4505971c8d86432764802e38b0b971569eafed257eb6aaf3d52cc06ae7ce1f84541838f956758867cf2cbaf144a6
+Description: Official built-in stream TCP UDP support for RTSP TCP forwarding for official NGINX 1.31.6
 
 Package: nginx-module-vts-ha
 Architecture: amd64

@@ -89,6 +89,19 @@ SHA256: 8516088dfc08607c76b4e21655b25151c554d4f6e3e7f099ea304c0fe64e5831
 SHA512: b529f02edddf4def46c0935e99df55bcc086c510c301202717849b91b2e8bc27f1d745eb0746820a960eb44dbe09e8282ac47030734866a600e2bebfd5bc87f2
 Description: HerNet patched modules for official NGINX mainline
 
+Package: nginx-module-rtmp-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.6-1~noble-r1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.6-1~noble), libc6 (>= 2.38)
+Filename: pool/rtmp/noble/nginx-module-rtmp-ha_1.0.3+rtmp1.2.2+nginx1.31.6-1~noble-r1_amd64.deb
+Size: 468936
+MD5sum: c82e9361195fbc19a955158af15a2fad
+SHA1: 375480f05170943bb46441f782eac245322a81f2
+SHA256: 0fedb04d1775935c797adf05a62eb109ffc7baff911506985bf850e84cb31d80
+SHA512: 11d5956177d0e7829a8a0d5e32981a35940d0f04c6d6e2706555520b66e0804db2af5b18efdd71b8c8efa9487010e2b3cb868a445752affc0a6ade62218918f0
+Description: RTMP and HLS dynamic module for official NGINX 1.31.6
+
 Package: nginx-module-stream-geoip2-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.6-1~noble-1
@@ -114,6 +127,19 @@ SHA1: a196346c61298e8732e37a38ba239cd5039bebe6
 SHA256: 45098e32d5c67b3c951c90e04dac994e1cea3cbc7d812600c57447b79af912d0
 SHA512: baa71afc3d2743382ab5a0292d726bca5e0b6f19fb730716f2cdb8b7f74c3f99810cdac80cc345e7d18198d71bb0cc5aa3154fad77a1aa960bd8e63ab2564e26
 Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-stream-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.6-1~noble-r1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.6-1~noble)
+Filename: pool/stream/noble/nginx-module-stream-ha_1.0.3+rtmp1.2.2+nginx1.31.6-1~noble-r1_amd64.deb
+Size: 3176
+MD5sum: eb6ff7cc9df1497026cd909dcdf3fa3a
+SHA1: f087421e8d4c38718a77b3b0fe41472c30be7fa2
+SHA256: 67cdd49b8acdebb605c348d1e334ddd25548f41fc821335739be45bf962067bd
+SHA512: a51b120d4270326ca297a84f74d782572aba378e49dd12a9145a1f8cc7cb23ed85bb9799593df88ed0333fad6d4d76178f43b3256d235f77188e06efcd2551ef
+Description: Official built-in stream TCP UDP support for RTSP TCP forwarding for official NGINX 1.31.6
 
 Package: nginx-module-vts-ha
 Architecture: amd64

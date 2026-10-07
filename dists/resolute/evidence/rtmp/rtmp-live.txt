@@ -1,0 +1,6 @@
+nginx: the configuration file /tmp/hernet-rtmp-dntuldst/etc/nginx.conf syntax is ok
+nginx: configuration file /tmp/hernet-rtmp-dntuldst/etc/nginx.conf test is successful
+PASS official built-in stream forwards real RTSP OPTIONS request/response
+PASS installed RTMP module publishes live/probe, HTTP HLS advances with 3s fragments, video/audio decode
+{"programs": [{"streams": [{"codec_name": "h264", "height": 240, "width": 320}, {"codec_name": "aac"}]}], "stream_groups": [], "streams": [{"codec_name": "h264", "height": 240, "width": 320}, {"codec_name": "aac"}]}
+Decoded frames: 24
