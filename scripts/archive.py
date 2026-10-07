@@ -10,6 +10,7 @@ import json
 SUITES=['bookworm','trixie','jammy','noble','resolute']
 SLUGS=['ndk','lua','fancyindex','http-geoip2','stream-geoip2','vts','http-njs','stream-njs']
 PACKAGES={'nginx-module-'+slug+'-ha' for slug in SLUGS}|{'nginx-lua-libraries-ha','njs-cli-ha'}
+RTMP_PACKAGES={'nginx-module-rtmp-ha', 'nginx-module-stream-ha'}
 
 def digest(path): return hashlib.sha256(path.read_bytes()).digest()
 
@@ -22,7 +23,7 @@ def copy_immutable(source,dest):
     if digest(dest)!=checksum: raise ValueError('Migration checksum mismatch: '+str(dest))
 
 def package_directory(name,suite):
-    if name not in PACKAGES or suite not in SUITES: raise ValueError('Unknown package or suite: '+name+' '+suite)
+    if name not in PACKAGES | RTMP_PACKAGES or suite not in SUITES: raise ValueError('Unknown package or suite: '+name+' '+suite)
     slug=name.removeprefix('nginx-module-').removesuffix('-ha')
     if name=='nginx-lua-libraries-ha': slug='lua-libraries'
     if name=='njs-cli-ha': slug='njs-cli'
@@ -69,7 +70,7 @@ def archive(artifacts,site):
     for family in ['modules','dependencies','tools','pool']:
         for p in (site/family).rglob('*.deb'):
             parts=p.name.split('_')
-            if len(parts)!=3 or parts[0] not in PACKAGES: continue
+            if len(parts)!=3 or parts[0] not in PACKAGES | RTMP_PACKAGES: continue
             if subprocess.run(['dpkg','--compare-versions',parts[1],'ge','1.0.3'],check=False).returncode: continue
             register(p,p.parent.name)
     for dest,source in retained.items(): copy_immutable(source,site/dest)
@@ -94,4 +95,34 @@ def archive(artifacts,site):
     for folder in sorted(pool.rglob('*'),key=lambda p:len(p.parts),reverse=True):
         if folder.is_dir() and not any(folder.iterdir()): folder.rmdir()
     download_indexes(site)
-if __name__=='__main__': archive(pathlib.Path(sys.argv[1]),pathlib.Path(sys.argv[2]))
+def archive_rtmp(artifacts,site):
+    """Append independently tested RTMP packages without rebuilding other modules."""
+    pending=[]
+    for suite in SUITES:
+        source=artifacts/('rtmp-'+suite)
+        status=json.loads((source/'availability.json').read_text())['status']
+        packages=list(source.glob('*.deb'))
+        names={p.name.split('_',1)[0] for p in packages}
+        if status not in ['available','unavailable']:
+            raise ValueError('Unknown availability: '+suite)
+        if status=='available' and names!=RTMP_PACKAGES:
+            raise ValueError('Incomplete RTMP package set: '+suite)
+        if status=='unavailable' and packages:
+            raise ValueError('Unavailable target has packages: '+suite)
+        for package in packages:
+            dest=site/package_directory(package.name.split('_',1)[0],suite)/package.name
+            if dest.exists() and digest(dest)!=digest(package):
+                raise ValueError('Immutable artifact collision: '+str(dest))
+            pending.append((package,dest))
+    for source,dest in pending:
+        copy_immutable(source,dest)
+    for suite in SUITES:
+        evidence=site/'dists'/suite/'evidence/rtmp'
+        evidence.mkdir(parents=True,exist_ok=True)
+        for p in (artifacts/('rtmp-'+suite)).iterdir():
+            if p.is_file() and p.suffix!='.deb': shutil.copy2(p,evidence/p.name)
+    download_indexes(site)
+
+if __name__=='__main__':
+    operation=archive_rtmp if '--rtmp' in sys.argv[3:] else archive
+    operation(pathlib.Path(sys.argv[1]),pathlib.Path(sys.argv[2]))

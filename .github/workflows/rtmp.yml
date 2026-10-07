@@ -1,24 +1,10 @@
-name: Build and publish signed APT
+name: Build and publish RTMP and official stream packages
 on:
   push:
-    branches: [main]
-    # RTMP-only publications have their own signed workflow and module tests.
-    paths-ignore:
-      - '.github/workflows/rtmp.yml'
-      - 'rtmp-sources.json'
-      - 'config/iptv/**'
-      - 'scripts/build_rtmp.sh'
-      - 'scripts/package_rtmp.py'
-      - 'scripts/archive.py'
-      - 'scripts/publish.sh'
-      - 'tests/rtmp-live.py'
-      - 'tests/test_rtmp_archive.py'
-      - 'docs/**'
-      - 'README.md'
-      - '.gitignore'
+    branches: [main, 'feat/iptv-rtmp-*']
   workflow_dispatch:
   schedule:
-    - cron: '17 3 * * 1'
+    - cron: '37 3 * * 1'
 permissions:
   contents: read
 concurrency:
@@ -44,14 +30,14 @@ jobs:
           - {image: 'ubuntu:resolute', suite: resolute}
     steps:
       - uses: actions/checkout@v4
-      - name: Build, patch, package, install and exercise modules
+      - name: Build, package and test RTMP HLS and RTSP TCP
         run: |
           mkdir -p out
-          docker run --rm --platform linux/amd64 -e NGINX_VERSION=1.31.6 -e BUILD_REVISION="${{ vars.BUILD_REVISION || '1' }}" -v "$PWD:/repo:ro" -v "$PWD/out:/out" '${{ matrix.image }}' bash /repo/scripts/build.sh
+          docker run --rm --platform linux/amd64 -e RTMP_BUILD_REVISION="${{ vars.RTMP_BUILD_REVISION || '1' }}" -v "$PWD:/repo:ro" -v "$PWD/out:/out" '${{ matrix.image }}' bash /repo/scripts/build_rtmp.sh
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: packages-${{ matrix.suite }}
+          name: rtmp-${{ matrix.suite }}
           path: out/
           if-no-files-found: error
   publish:
@@ -79,6 +65,7 @@ jobs:
           fi
       - name: Sign repository
         env:
+          HERNET_PUBLISH_RTMP: 1
           APT_SIGNING_KEY: ${{ secrets.APT_SIGNING_KEY }}
           APT_SIGNING_PASSPHRASE: ${{ secrets.APT_SIGNING_PASSPHRASE }}
           APT_SIGNING_FINGERPRINT: ${{ vars.APT_SIGNING_FINGERPRINT }}

@@ -1,5 +1,7 @@
 # HerNet packages
 
+RTMP / HLS is additionally available as `nginx-module-rtmp-ha`; `nginx-module-stream-ha` binds the exact official core containing built-in stream support for RTSP TCP forwarding. These two independently built packages are published without rebuilding existing extras. Configuration stays separate from both DEBs. See [RTMP / HLS usage and configuration layout](docs/iptv-rtmp.md).
+
 Actions builds eight patched dynamic modules against the **signed official** NGINX mainline binary, initially 1.31.6. It never replaces/rebuilds the NGINX core. Targets are Debian bookworm/trixie and Ubuntu jammy/noble/resolute, amd64. Signed repository: https://hernet-pkgs.palve.moe.
 
 Each container verifies the nginx.org repository key fingerprint and source tarball signature, selects the exact available official package, mirrors its configure flags, compiles the modules, patches GeoIP2, builds njs and its unit tests, packages and installs the resulting deliverables, then performs real Lua/njs HTTP, rsync queue TCP and two-worker GeoIP2/RealIP/rewrite/database replacement checks. Unavailable official versions produce an availability record and no modules. Other errors fail publication.

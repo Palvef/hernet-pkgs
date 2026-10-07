@@ -12,9 +12,14 @@ printf '%s' "$APT_SIGNING_KEY" | gpg --batch --import
 unset APT_SIGNING_KEY
 gpg --batch --list-secret-keys "$APT_SIGNING_FINGERPRINT" >/dev/null
 mkdir -p "$site/pool" "$site/dists"
-python3 scripts/archive.py "$artifacts" "$site"
+if [[ "${HERNET_PUBLISH_RTMP:-0}" == 1 ]]; then
+ python3 scripts/archive.py "$artifacts" "$site" --rtmp
+else
+ python3 scripts/archive.py "$artifacts" "$site"
+fi
 cp docs/index.html "$site/index.html"
 cp docs/lua-dependencies.txt "$site/lua-dependencies.txt"
+cp docs/iptv-rtmp.md "$site/iptv-rtmp.md"
 python3 - "$site" <<'PYINDEX'
 import pathlib,sys
 root=pathlib.Path(sys.argv[1])
