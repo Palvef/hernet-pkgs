@@ -11,6 +11,15 @@ from archive_latest import publish
 from archive import PACKAGES,RTMP_PACKAGES
 
 class LatestTests(unittest.TestCase):
+    def test_homepage_preserved(self):
+        with tempfile.TemporaryDirectory() as t:
+            root=Path(t);(root/'mainline/debian/pool').mkdir(parents=True)
+            repo=Path(__file__).resolve().parents[1]
+            subprocess.run([sys.executable,str(repo/'scripts/index_latest.py'),str(root)],check=True)
+            self.assertEqual((root/'index.html').read_bytes(),(repo/'docs/index.html').read_bytes())
+            self.assertTrue((root/'mainline/index.html').exists())
+            self.assertIn('mainline/debian/pool/nginx-module-lua-ha/',(root/'index.html').read_text())
+            self.assertNotIn('href="pool/',(root/'index.html').read_text())
     def test_floor(self):
         for v in ['1.31.6','1.31.6-2~noble','1.30.99','bad']:
             self.assertFalse(eligible(v))

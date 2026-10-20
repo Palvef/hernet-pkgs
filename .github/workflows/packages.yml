@@ -27,7 +27,7 @@ jobs:
         run: git clone --branch apt-archive --single-branch "https://github.com/${{ github.repository }}.git" site
       - id: versions
         env:
-          FORCE_BUILD: ${{ github.event_name == 'push' || inputs.rebuild == true }}
+          FORCE_BUILD: ${{ inputs.rebuild == true }}
         run: python3 scripts/discover.py
   test:
     runs-on: ubuntu-latest

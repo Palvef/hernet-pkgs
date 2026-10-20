@@ -2,7 +2,7 @@
 
 Independent patched module packages for official NGINX mainline, **versions newer than 1.31.6 only**, on amd64.
 
-GitHub Actions checks official package indexes daily at 03:17 UTC. Each target builds against its own latest official NGINX package. Successful versions are recorded in `releases.json`; missing or failed releases are retried. Pushes and manual rebuilds can rebuild the latest eligible packages. Increase `BUILD_REVISION` / `RTMP_BUILD_REVISION` before changing an already published payload: published package bytes are immutable.
+GitHub Actions checks official package indexes daily at 03:17 UTC. Each target builds against its own latest official NGINX package. Successful versions are recorded in `releases.json`; missing or failed releases are retried. Pushes check for missing versions and publish website changes without rebuilding completed versions. Use the manual rebuild input to rebuild existing eligible packages. Increase `BUILD_REVISION` / `RTMP_BUILD_REVISION` before changing an already published payload: published package bytes are immutable.
 
 Supported targets:
 

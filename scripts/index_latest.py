@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import html
+import shutil
 from pathlib import Path
 import sys
 root=Path(sys.argv[1])
@@ -14,7 +15,7 @@ sudo apt install nginx-module-lua-ha nginx-module-http-njs-ha nginx-module-http-
 # Packages require the exact official NGINX package version used for the build.
 ''')
 
-for folder in [root, root/'mainline', *(p for p in (root/'mainline').rglob('*') if p.is_dir())]:
+for folder in [root/'mainline', *(p for p in (root/'mainline').rglob('*') if p.is_dir())]:
     links=[]
     for p in sorted(folder.iterdir()):
         if p.name.startswith('.') or p.name == 'index.html': continue
@@ -23,3 +24,6 @@ for folder in [root, root/'mainline', *(p for p in (root/'mainline').rglob('*') 
     title=folder.relative_to(root).as_posix()
     intro='<p>NGINX mainline &gt; 1.31.6; independent modules. <a href="install.txt">APT setup</a></p>' if folder==root else ''
     (folder/'index.html').write_text(f'<!doctype html><meta charset="utf-8"><title>HerNet {title}</title><h1>HerNet {title}</h1>{intro}<ul>'+''.join(links)+'</ul>')
+
+# Preserve the designed homepage; generate directory indexes only below it.
+shutil.copy2(Path(__file__).resolve().parents[1]/'docs/index.html', root/'index.html')
