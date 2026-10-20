@@ -1,9 +1,9 @@
 Architectures: amd64
 Codename: trixie
 Components: main
-Date: Tue, 20 Oct 2026 04:34:29 +0000
-Label: HerNet
-Origin: HerNet
+Date: Tue, 20 Oct 2026 04:38:27 +0000
+Label: Hernet Packages
+Origin: Hernet Packages
 Suite: trixie
 MD5Sum:
  8ab61b7c04e5e740bd060e57c9c891e8             8638 main/binary-amd64/Packages

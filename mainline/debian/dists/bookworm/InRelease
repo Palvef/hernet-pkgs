@@ -4,9 +4,9 @@ Hash: SHA512
 Architectures: amd64
 Codename: bookworm
 Components: main
-Date: Tue, 20 Oct 2026 04:34:29 +0000
-Label: HerNet
-Origin: HerNet
+Date: Tue, 20 Oct 2026 04:38:27 +0000
+Label: Hernet Packages
+Origin: Hernet Packages
 Suite: bookworm
 MD5Sum:
  3cbbc60dcfdbe26eaaa2671a7b639250             8726 main/binary-amd64/Packages
@@ -22,15 +22,15 @@ SHA512:
  9a31d62009f952463c89436420266348295f5b58c6716bc50bf1fd72ad69775a78d3390165706bd172883937f4591bf8a22ed7439afb9bf5bafd8429c9af92d3             2830 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrW71UACgkQtWh7jQGC
-sxJnzQv/RSNHYdk4PO6qWpvSOSfPIUoVoxyg66k7Nttn++rmZyBoD3pYWYnwhM+X
-UHUP4Xb2HkeFsqhqUziCmIIik3kXW1Qxq9n9SqQyncRCOmTAhPd4wVLZ4rdHHwic
-jmOZBZU9igYGUshXEN/BOFJd9MLLpXVsJOSJi/h2FG4E7uwvihjyDd1QYIz/x9UE
-Yn25t18yM0jGEgNiDhYaDgIXGlZT/p5jB/HrnWqCjSd8yMH3n3elma+oVTuP1sz7
-DOlqfvh6L6/fzDfeLvvt+xvWJiaFRKyXtSp79adMOjgfEsSjjbD90PDtDoiUh9Ft
-+M0PZ35sCvK/dbEkNYQENJo/AXZBVY7ag1Qn/PKNLHLyx4fBDOzvZmfJqs0a7U3k
-hkCrJFwuILWGb632c9qaYMm8lsm4ZQGiHhrlX/Q5+F7eJkdRNMmfMR8k3cXVLZ5Z
-JKzNT+zweaRJxSqXlpL9jNZpRxNuWiPXgOOL9KGNHDytLxEDWv0goFfKOy5dcUBU
-UiiBA39f
-=+VKf
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrW8EMACgkQtWh7jQGC
+sxLZLQv+I1OJsdNpZLmaLNYQNu0pzINkXTcw377BnmziHj36r2TBWGgV5HNSYPeE
+aIpENxOW7e26MBsuMaNSnImbIc5NUop+4LqWv7d03Rpz50bM2oUKKweei+phoSPO
+I/sbBmJnJqC2Is6vs6/2ASUZW7LuYDiMws6isgqY5+tGLPlNF+PjwMDzPCfJQ68z
+xUgh8jXBobIG5MdQ6m52L9mexVNBonxLlddjZgI/0JpsPcdJwaKVPdV7ql8pVlTQ
+zQS9uvbJ26NIelafh9XT9N6j7E/sPdgXROgAN/MY9aQflIxbIAtbBiIkh0CVyC7Q
+0nFUjmkF8zFWHYpuDZ1i/AAxY8Tr1PCP2tlW6jrknfPX4swoI2pUop0h5VqJJCdn
+WqEob0UTGFf/sMDCUdHmlHVekEMXWv2cy62BzC+pvFarv2s1d9E///b786wpTPGD
+bS81yJWTsm27DR8FUojNMtnfkQtR6mVtR2gsktsMj5yTik0AuoH6MVF/hpCF4qAE
+tH5An/LR
+=wLmr
 -----END PGP SIGNATURE-----

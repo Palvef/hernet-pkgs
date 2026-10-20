@@ -1,9 +1,9 @@
 Architectures: amd64
 Codename: noble
 Components: main
-Date: Tue, 20 Oct 2026 04:34:30 +0000
-Label: HerNet
-Origin: HerNet
+Date: Tue, 20 Oct 2026 04:38:28 +0000
+Label: Hernet Packages
+Origin: Hernet Packages
 Suite: noble
 MD5Sum:
  88e3e230db94c028afa776ba00589ac4             8585 main/binary-amd64/Packages

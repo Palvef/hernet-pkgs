@@ -2,7 +2,7 @@
 
 `nginx-module-rtmp-ha` is the third-party arut RTMP module v1.2.2 built against the exact signed official NGINX package. NGINX itself has no official RTMP module. Official `stream` is already built into nginx.org packages; it supports TCP/UDP forwarding, not RTMP-to-HLS conversion. This package implements the user's explicit `rtmp { application live { ... } }` request.
 
-Install both module packages from the signed HerNet repository:
+Install both module packages from the signed Hernet Packages repository:
 
 ```sh
 apt install nginx-module-rtmp-ha nginx-module-stream-ha
