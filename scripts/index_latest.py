@@ -15,15 +15,16 @@ sudo apt install nginx-module-lua-ha nginx-module-http-njs-ha nginx-module-http-
 # Packages require the exact official NGINX package version used for the build.
 ''')
 
-for folder in [root/'mainline', *(p for p in (root/'mainline').rglob('*') if p.is_dir())]:
+for folder in [root/'mainline', *(p for p in (root/'mainline').rglob('*') if p.is_dir() and 'evidence' not in p.relative_to(root).parts)]:
     links=[]
     for p in sorted(folder.iterdir()):
-        if p.name.startswith('.') or p.name == 'index.html': continue
+        if p.name.startswith('.') or p.name in {'index.html', 'evidence', 'CNAME', 'releases.json'}: continue
+        if p.is_file() and p.name not in {'Packages', 'Packages.gz', 'Release', 'Release.gpg', 'InRelease'} and p.suffix != '.deb': continue
         name=p.name+('/' if p.is_dir() else '')
         links.append(f'<li><a href="{html.escape(name)}">{html.escape(name)}</a></li>')
     title=folder.relative_to(root).as_posix()
     intro='<p>NGINX mainline &gt; 1.31.6; independent modules. <a href="install.txt">APT setup</a></p>' if folder==root else ''
-    (folder/'index.html').write_text(f'<!doctype html><meta charset="utf-8"><title>HerNet {title}</title><h1>HerNet {title}</h1>{intro}<ul>'+''.join(links)+'</ul>')
+    (folder/'index.html').write_text(f'<!doctype html><meta charset="utf-8"><title>Hernet Packages {title}</title><h1>Hernet Packages {title}</h1>{intro}<ul>'+''.join(links)+'</ul>')
 
 # Preserve the designed homepage; generate directory indexes only below it.
 shutil.copy2(Path(__file__).resolve().parents[1]/'docs/index.html', root/'index.html')

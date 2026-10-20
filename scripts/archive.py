@@ -41,7 +41,7 @@ def download_indexes(site):
             if child.is_dir() or child.suffix=='.deb':
                 name=child.name+('/' if child.is_dir() else '')
                 links.append(f'<li><a href="{html.escape(name)}">{html.escape(name)}</a></li>')
-        (folder/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>HerNet downloads</title><h1>'+html.escape(folder.relative_to(site).as_posix())+'</h1><ul>'+''.join(links)+'</ul>')
+        (folder/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>Hernet Packages downloads</title><h1>'+html.escape(folder.relative_to(site).as_posix())+'</h1><ul>'+''.join(links)+'</ul>')
 
 def archive(artifacts,site):
     retained={}

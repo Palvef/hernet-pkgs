@@ -14,5 +14,5 @@ cleanup() {
 }
 trap cleanup EXIT
 if [[ -f "$dist/Release" ]]; then mv "$dist/Release" "$release_tmp/Release"; fi
-apt-ftparchive -o APT::FTPArchive::Release::Origin=HerNet -o APT::FTPArchive::Release::Label=HerNet -o APT::FTPArchive::Release::Suite="$suite" -o APT::FTPArchive::Release::Codename="$suite" -o APT::FTPArchive::Release::Architectures=amd64 -o APT::FTPArchive::Release::Components=main release "$dist" > "$dist/Release.new"
+apt-ftparchive -o "APT::FTPArchive::Release::Origin=Hernet Packages" -o "APT::FTPArchive::Release::Label=Hernet Packages" -o APT::FTPArchive::Release::Suite="$suite" -o APT::FTPArchive::Release::Codename="$suite" -o APT::FTPArchive::Release::Architectures=amd64 -o APT::FTPArchive::Release::Components=main release "$dist" > "$dist/Release.new"
 mv "$dist/Release.new" "$dist/Release"

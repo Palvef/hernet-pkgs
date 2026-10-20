@@ -1,4 +1,4 @@
-# HerNet NGINX modules
+# Hernet Packages
 
 Independent patched module packages for official NGINX mainline, **versions newer than 1.31.6 only**, on amd64.
 
@@ -37,3 +37,5 @@ The website provides directory indexes, `install.txt`, and `lua-dependencies.txt
 - Variables: `APT_SIGNING_FINGERPRINT`, optional `BUILD_REVISION` and `RTMP_BUILD_REVISION`.
 - GitHub Pages: GitHub Actions deployment, custom domain `hernet-pkgs.palve.moe`.
 - `apt-archive` stores signed repositories and version state. One workflow builds all module families and serializes publication.
+
+Pages exports only the website, DEBs, signed APT metadata, public keys and installation/dependency TXT files. Publication state and build evidence remain in the archive branch; CNAME and internal files are excluded from the public export.

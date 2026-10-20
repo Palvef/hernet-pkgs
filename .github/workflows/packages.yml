@@ -101,9 +101,11 @@ jobs:
           git add .
           git diff --cached --quiet || git commit -m 'Update signed APT archive'
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:apt-archive
+      - name: Export public package files
+        run: python3 scripts/prepare_pages.py site public
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: public
       - uses: actions/deploy-pages@v4
         id: deploy

@@ -36,7 +36,7 @@ def publish(artifacts, site):
             if names != PACKAGES | RTMP_PACKAGES or len(packages) != len(names):
                 raise ValueError('Incomplete module set: ' + suite)
             state[suite] = {'package': package, 'distro': distro}
-            evidence.append((source, site / 'mainline' / distro / 'dists' / suite / 'evidence' / package))
+            evidence.append((source, site / 'build-evidence' / distro / suite / package))
     for source, dest in staged:
         copy_immutable(source, dest)
     for source, dest in evidence:
@@ -44,6 +44,10 @@ def publish(artifacts, site):
         for p in source.iterdir():
             if p.is_file() and p.suffix != '.deb':
                 shutil.copy2(p, dest / p.name)
+    for old in (site / 'mainline').glob('*/dists/*/evidence'):
+        dest = site / 'build-evidence' / old.parts[-4] / old.parts[-2]
+        shutil.copytree(old, dest, dirs_exist_ok=True)
+        shutil.rmtree(old)
     # Only explicitly obsolete releases/layouts are removed. Retain all >1.31.6 releases.
     for p in (site / 'mainline').rglob('*.deb'):
         match = re.search(r'\+nginx(\d+\.\d+\.\d+)', p.name)
