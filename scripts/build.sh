@@ -3,7 +3,7 @@ set -euo pipefail
 [[ -f /.dockerenv && -d /repo ]] || { echo 'Disposable container required' >&2; exit 1; }
 export DEBIAN_FRONTEND=noninteractive
 . /etc/os-release
-: "${NGINX_VERSION:=1.31.6}"
+: "${NGINX_VERSION:?NGINX_VERSION required}"
 mkdir -p /work /out
 cd /work
 printf '#!/bin/sh\nexit 101\n' > /usr/sbin/policy-rc.d
@@ -18,9 +18,9 @@ gpg --dearmor < nginx.key > /usr/share/keyrings/nginx-build.gpg
 printf 'deb [signed-by=/usr/share/keyrings/nginx-build.gpg] https://nginx.org/packages/mainline/%s %s nginx\n' "$ID" "$VERSION_CODENAME" > /etc/apt/sources.list.d/nginx.list
 apt-get update
 pv=$(apt-cache madison nginx | awk -v v="$NGINX_VERSION-" '/nginx.org/ && index($3,v)==1 {print $3; exit}')
-if [[ -z $pv ]]; then
- printf '{"status":"unavailable","distribution":"%s","nginx":"%s"}\n' "$VERSION_CODENAME" "$NGINX_VERSION" > /out/availability.json
- exit 0
+if [[ -z "$pv" || "$pv" != "${NGINX_PACKAGE_VERSION:?exact package version required}" ]]; then
+ echo 'Official package changed or is unavailable; retry discovery before building' >&2
+ exit 1
 fi
 printf '{"status":"available","distribution":"%s","nginx_package_version":"%s"}\n' "$VERSION_CODENAME" "$pv" > /out/availability.json
 apt-get install -y --no-install-recommends "nginx=$pv"

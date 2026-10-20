@@ -28,7 +28,7 @@ revision = os.environ.get('RTMP_BUILD_REVISION', '1')
 module = f'/usr/lib/nginx/ha-modules/{pv}/hernet-rtmp-1.0.3-r{revision}/ngx_rtmp_module.so'
 assert Path(module).is_file()
 flags = subprocess.check_output(['nginx', '-V'], stderr=subprocess.STDOUT).decode()
-assert 'nginx/1.31.6' in flags and '--with-stream ' in flags
+assert ('nginx/' + os.environ['NGINX_VERSION']) in flags and '--with-stream ' in flags
 for deb in Path('/out').glob('*.deb'):
     listing = subprocess.check_output(['dpkg-deb', '-c', str(deb)], text=True)
     assert './etc/nginx' not in listing and 'nginx-iptv-config' not in listing, listing

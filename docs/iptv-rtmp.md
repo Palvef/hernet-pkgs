@@ -1,4 +1,4 @@
-# NGINX 1.31.6 RTMP / HLS
+# NGINX mainline RTMP / HLS
 
 `nginx-module-rtmp-ha` is the third-party arut RTMP module v1.2.2 built against the exact signed official NGINX package. NGINX itself has no official RTMP module. Official `stream` is already built into nginx.org packages; it supports TCP/UDP forwarding, not RTMP-to-HLS conversion. This package implements the user's explicit `rtmp { application live { ... } }` request.
 

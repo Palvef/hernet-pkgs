@@ -8,16 +8,17 @@ import subprocess
 
 repo = Path('/repo')
 pv = os.environ['pv']
+v = os.environ['NGINX_VERSION']
 revision = os.environ.get('RTMP_BUILD_REVISION', '1')
 version = f'1.0.3+rtmp1.2.2+nginx{pv}-r{revision}'
 module_dir = f'/usr/lib/nginx/ha-modules/{pv}/hernet-rtmp-1.0.3-r{revision}'
-module = Path('/work/nginx-1.31.6/objs/ngx_rtmp_module.so')
+module = Path(f'/work/nginx-{v}/objs/ngx_rtmp_module.so')
 epoch = int(os.environ['SOURCE_DATE_EPOCH'])
 manifest = {
     'sources': json.loads((repo / 'rtmp-sources.json').read_text()),
     'nginx_package_version': pv,
     'module_directory': module_dir,
-    'nginx_version': '1.31.6',
+    'nginx_version': v,
 }
 
 for name in ['nginx-module-rtmp-ha', 'nginx-module-stream-ha']:
@@ -40,13 +41,13 @@ for name in ['nginx-module-rtmp-ha', 'nginx-module-stream-ha']:
     if name.endswith('stream-ha'):
         package_manifest['module_directory'] = None
     (docs / 'source-manifest.json').write_text(json.dumps(package_manifest, indent=2) + '\n')
-    shutil.copy2('/work/nginx-1.31.6/LICENSE', docs / 'nginx-LICENSE')
+    shutil.copy2(f'/work/nginx-{v}/LICENSE', docs / 'nginx-LICENSE')
     shutil.copy2('/work/nginx-rtmp-module/LICENSE', docs / 'rtmp-LICENSE')
     shutil.copy2(repo / 'docs/iptv-rtmp.md', docs / 'README.md')
     control = root / 'DEBIAN'
     control.mkdir()
     description = 'RTMP and HLS dynamic module' if name.endswith('rtmp-ha') else 'Official built-in stream TCP UDP support for RTSP TCP forwarding'
-    (control / 'control').write_text(f'Package: {name}\nVersion: {version}\nArchitecture: amd64\nMaintainer: Palvef <packages@palve.moe>\nDepends: {depends}\nDescription: {description} for official NGINX 1.31.6\n')
+    (control / 'control').write_text(f'Package: {name}\nVersion: {version}\nArchitecture: amd64\nMaintainer: Palvef <packages@palve.moe>\nDepends: {depends}\nDescription: {description} for official NGINX {v}\n')
     for item in root.rglob('*'):
         if not item.is_symlink():
             os.utime(item, (epoch, epoch))

@@ -1,62 +1,68 @@
-name: Build and publish signed APT
+name: Build and publish latest mainline modules
 on:
   push:
     branches: [main]
-    # RTMP-only publications have their own signed workflow and module tests.
-    paths-ignore:
-      - '.github/workflows/rtmp.yml'
-      - 'rtmp-sources.json'
-      - 'config/iptv/**'
-      - 'scripts/build_rtmp.sh'
-      - 'scripts/package_rtmp.py'
-      - 'scripts/archive.py'
-      - 'scripts/publish.sh'
-      - 'tests/rtmp-live.py'
-      - 'tests/test_rtmp_archive.py'
-      - 'docs/**'
-      - 'README.md'
-      - '.gitignore'
   workflow_dispatch:
+    inputs:
+      rebuild:
+        description: Rebuild the latest eligible versions (increment build revisions for changed payloads)
+        type: boolean
+        default: false
   schedule:
-    - cron: '17 3 * * 1'
+    - cron: '17 3 * * *'
 permissions:
   contents: read
 concurrency:
   group: apt-pages
   cancel-in-progress: false
 jobs:
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.versions.outputs.matrix }}
+      build: ${{ steps.versions.outputs.build }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore published state
+        run: git clone --branch apt-archive --single-branch "https://github.com/${{ github.repository }}.git" site
+      - id: versions
+        env:
+          FORCE_BUILD: ${{ github.event_name == 'push' || inputs.rebuild == true }}
+        run: python3 scripts/discover.py
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: python3 -m unittest discover -s tests -v
   build:
-    needs: test
+    needs: [discover, test]
+    if: needs.discover.outputs.build == 'true'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matrix:
-        include:
-          - {image: 'debian:bookworm', suite: bookworm}
-          - {image: 'debian:trixie', suite: trixie}
-          - {image: 'ubuntu:jammy', suite: jammy}
-          - {image: 'ubuntu:noble', suite: noble}
-          - {image: 'ubuntu:resolute', suite: resolute}
+      matrix: ${{ fromJSON(needs.discover.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
-      - name: Build, patch, package, install and exercise modules
+      - name: Build and exercise every independent module
+        env:
+          NGINX_VERSION: ${{ matrix.version }}
+          NGINX_PACKAGE_VERSION: ${{ matrix.package }}
+          TARGET_JSON: ${{ toJSON(matrix) }}
+          BUILD_REVISION: ${{ vars.BUILD_REVISION || '1' }}
+          RTMP_BUILD_REVISION: ${{ vars.RTMP_BUILD_REVISION || '1' }}
         run: |
           mkdir -p out
-          docker run --rm --platform linux/amd64 -e NGINX_VERSION=1.31.6 -e BUILD_REVISION="${{ vars.BUILD_REVISION || '1' }}" -v "$PWD:/repo:ro" -v "$PWD/out:/out" '${{ matrix.image }}' bash /repo/scripts/build.sh
+          docker run --rm --platform linux/amd64 -e NGINX_VERSION -e NGINX_PACKAGE_VERSION -e BUILD_REVISION -v "$PWD:/repo:ro" -v "$PWD/out:/out" '${{ matrix.image }}' bash /repo/scripts/build.sh
+          docker run --rm --platform linux/amd64 -e NGINX_VERSION -e NGINX_PACKAGE_VERSION -e RTMP_BUILD_REVISION -v "$PWD:/repo:ro" -v "$PWD/out:/out" '${{ matrix.image }}' bash /repo/scripts/build_rtmp.sh
+          printf '%s\n' "$TARGET_JSON" > out/target.json
       - uses: actions/upload-artifact@v4
-        if: always()
         with:
           name: packages-${{ matrix.suite }}
           path: out/
           if-no-files-found: error
   publish:
-    if: github.ref == 'refs/heads/main'
-    needs: build
+    if: ${{ always() && github.ref == 'refs/heads/main' && needs.test.result == 'success' && needs.discover.result == 'success' && (needs.build.result == 'success' || needs.build.result == 'skipped') }}
+    needs: [discover, test, build]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -68,16 +74,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
+        if: needs.build.result == 'success'
         with:
           path: artifacts
-      - name: Restore append-only package archive
+      - name: Restore package archive
         run: |
-          if git ls-remote --exit-code origin refs/heads/apt-archive; then
-            git clone --branch apt-archive --single-branch "https://github.com/${{ github.repository }}.git" site
-          else
-            mkdir site
-          fi
-      - name: Sign repository
+          mkdir -p artifacts
+          git clone --branch apt-archive --single-branch "https://github.com/${{ github.repository }}.git" site
+      - name: Sign repositories
         env:
           APT_SIGNING_KEY: ${{ secrets.APT_SIGNING_KEY }}
           APT_SIGNING_PASSPHRASE: ${{ secrets.APT_SIGNING_PASSPHRASE }}
@@ -85,7 +89,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y apt-utils gnupg
-          bash scripts/publish.sh artifacts site
+          bash scripts/publish_latest.sh artifacts site
       - name: Persist package archive
         env:
           GH_TOKEN: ${{ github.token }}
