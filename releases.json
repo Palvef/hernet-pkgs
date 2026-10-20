@@ -1,0 +1,22 @@
+{
+  "bookworm": {
+    "package": "1.31.7-1~bookworm",
+    "distro": "debian"
+  },
+  "trixie": {
+    "package": "1.31.7-1~trixie",
+    "distro": "debian"
+  },
+  "jammy": {
+    "package": "1.31.7-1~jammy",
+    "distro": "ubuntu"
+  },
+  "noble": {
+    "package": "1.31.7-1~noble",
+    "distro": "ubuntu"
+  },
+  "resolute": {
+    "package": "1.31.7-1~resolute",
+    "distro": "ubuntu"
+  }
+}

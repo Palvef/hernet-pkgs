@@ -1,0 +1,36 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: noble
+Components: main
+Date: Tue, 20 Oct 2026 04:31:04 +0000
+Label: HerNet
+Origin: HerNet
+Suite: noble
+MD5Sum:
+ 88e3e230db94c028afa776ba00589ac4             8585 main/binary-amd64/Packages
+ 0dff4dc954c3d313239795e970c6daef             2837 main/binary-amd64/Packages.gz
+SHA1:
+ 844451a20fcab03b7525da239875d42db5798ee3             8585 main/binary-amd64/Packages
+ 86ed7b79511e9b5925ad716d06ba0246836b2ec6             2837 main/binary-amd64/Packages.gz
+SHA256:
+ 37497a2cfb52d6e6923ee7236a21a43b4d1d3affe522741fee4191532d4b5d76             8585 main/binary-amd64/Packages
+ 14bbb622f400f2c7d68bab4f2d097f00862b3dcae46e3dd9f8dd77a494b25e51             2837 main/binary-amd64/Packages.gz
+SHA512:
+ 7adbb47384bbe1533fd74f433535fbd9ac45dfa096b77a311c5bade3589cea44b08c0d3ef951e3d2dcc038780208c9e01515c1c69260b6953913a533c2b15bf9             8585 main/binary-amd64/Packages
+ ca668480f56947ab617f85521fecf79b5bfb9ef8c03ec60f9f6e9eee13ee42a6e8248d3117f0848d025d49e355dc3a63f7d09348452abce327cf8bc83384c0ba             2837 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrW7ogACgkQtWh7jQGC
+sxIEpgwAi/Z148oSJGUco1HGnwNSRBFRpnJvDWyqO8rmJ9V/ICUMJcrmcpQsdsCy
+UrbLSZsCaF5kW8F97MleYn16s1XOyQBa8tp+hISVjTCUGSXyMPOu412Lx5FRP1Tq
+8Mxqctfj6wEzrgtHGgQo3P5td8DXYNBNCR5m3Rsw+YdVtODGKLuD9px5BJ+/TwyS
+Q/GeoPNScWIwj31fW/aTQEHUwdD0mfxD7OZF2cbEiSvUxq7YqDrXni2gARJ6Hncx
+9VWZ0l4Yvv2pJzQ4G0ih39y3dAe+bW1Nqu5DtXUO5s8pVzRkL8Rio3cqutrHRQlf
+jzs2f9F4er5EkLKY8fe8z3j4x9DvoJE0q4p8zkogYuZTQJvPsu2f5JTsdm4ex+9T
+jGvAlhAbykqs8ReElPvRxgJOPOASHDL8wn+O4XYzzBBGvmFC4HckITzecM1xg9+o
+H01Wk2R+on8EEhqWTJPzEC1Thu+j+PHH/btI+2gW6Eh3TLcF7JivN/YoB8lZ8i1B
+01OlrNMA
+=q1Cz
+-----END PGP SIGNATURE-----

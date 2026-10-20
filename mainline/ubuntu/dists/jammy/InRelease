@@ -1,0 +1,36 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64
+Codename: jammy
+Components: main
+Date: Tue, 20 Oct 2026 04:31:03 +0000
+Label: HerNet
+Origin: HerNet
+Suite: jammy
+MD5Sum:
+ 5c4b048d036364b931d758b08d519b7a             8561 main/binary-amd64/Packages
+ 3986df05bea534d52f6342ef6ca2894b             2818 main/binary-amd64/Packages.gz
+SHA1:
+ b55d1dfb110cd4dfe80e295a21e2fb63a2ac5250             8561 main/binary-amd64/Packages
+ f7da04a69dd50a7c85d1198d57735df0e6e9f743             2818 main/binary-amd64/Packages.gz
+SHA256:
+ 871ae28feb25f54002029e53a32eb98c3e54622d058675165ecedb8fb90c6e9e             8561 main/binary-amd64/Packages
+ 11af33fce4b8ab28f3959fdafc3bec471c28456bacebb16261c84c229b9b83aa             2818 main/binary-amd64/Packages.gz
+SHA512:
+ 87ec0572226a883dcf1d29e7bcb4f0b6a2da2af38b36b1b9d22afe2dcb3365e1bc6237014e7e1c79539c3dd7ec43cc59f82182fd4950f9b730b10ba6612d79fc             8561 main/binary-amd64/Packages
+ 146dd08c0c274f71686a4256c8547f03635e64c9fc13bad88833df437fee5d8a7dcc723e6038a3e3f9ff005ca292d929ffbdbd56a68ca0955795c41f40e94da7             2818 main/binary-amd64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrW7ocACgkQtWh7jQGC
+sxIjIAv/UBx3dYLPIQUl/uyYB51lLaJZfYSXOh0p60dq8wbd4v+IIVuBOxXC62t3
+1rATPRVABCqryaYbiThA7BHUAhQcKMgI99TXEOdWi+juffAfVF3iiL+Q3HTgWDHu
+WTA7odcpLwx1OFHzPwrH+mUMBmVTg6Y4xLRP4xEr3604Cj+oYENvnr1nXSvgW0Cu
+j3csSwjDWUz0ew/ayXLkxButVO8QcovRTiqK/qoyXDWajRb+BnAeqEXH92KeeVhr
+fZ+Gu8QuGO23cK0HGrcUBOoini1AE+IvBCURiTCri+WvCmTs1KMPGzDuZKM+RwyZ
+lE6SAYRauBKR7vQiXNlYmlJEvqKmXqp/sic9ZW5PP7/7L00kgxEymQ0xz7odDNBa
+riG4h/uv33+nkn1CMEB6uZstlpWr5uS/e8NgNWCEVyScjSaFimFUsYhgl7ENZWdR
+ZWGZcHQIMnPNN1HmGhdq+WZ67I+H6cyR+qs200A8Uhb2nAL6S9DdCdZdBz8/jPYm
+IPVuEdtX
+=W/oe
+-----END PGP SIGNATURE-----

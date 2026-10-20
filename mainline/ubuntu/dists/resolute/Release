@@ -1,0 +1,19 @@
+Architectures: amd64
+Codename: resolute
+Components: main
+Date: Tue, 20 Oct 2026 04:31:04 +0000
+Label: HerNet
+Origin: HerNet
+Suite: resolute
+MD5Sum:
+ 397bd39d724e6f62d75f4db30d22d5a8             8746 main/binary-amd64/Packages
+ a1c7c9434165f0fd460160d3b2bdc2b4             2841 main/binary-amd64/Packages.gz
+SHA1:
+ 7ae92fff64817fc7016d58f5f38b8ed45814e54d             8746 main/binary-amd64/Packages
+ e770fb607b69f9fbb859e6244918345d725f899c             2841 main/binary-amd64/Packages.gz
+SHA256:
+ 67c30b3014e9e8893dc5a661d790695f69fcdcf84068ccee7557366cd2ae477f             8746 main/binary-amd64/Packages
+ a77af94f54a1ca2cd0e75f942da6fb43133bea7e3c1fdeb04622b1f363a87ad5             2841 main/binary-amd64/Packages.gz
+SHA512:
+ b9168b0fc03e62d1c7bf08008c324292e25efa03a37eb8aed8a19b55eacd4b0c5bf7906a14d7378e2b8a0f0bf6737c197e87f523441c3d55b774ce12534989a7             8746 main/binary-amd64/Packages
+ 2c7635118ad5b835ad242d0bd932af715e6f892abff6c10ab2fc9847cb68ac324a7c64be97078723ea86604bcc9a006003136d49ca34d20c8a452f61e04ae41a             2841 main/binary-amd64/Packages.gz

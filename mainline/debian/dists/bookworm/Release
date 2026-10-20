@@ -1,0 +1,19 @@
+Architectures: amd64
+Codename: bookworm
+Components: main
+Date: Tue, 20 Oct 2026 04:31:03 +0000
+Label: HerNet
+Origin: HerNet
+Suite: bookworm
+MD5Sum:
+ 3cbbc60dcfdbe26eaaa2671a7b639250             8726 main/binary-amd64/Packages
+ 667722e6f0c7729b222dd0907018ef5e             2830 main/binary-amd64/Packages.gz
+SHA1:
+ 3e67b425ad57f4ca6cd2aab6eb2211bfbc24109c             8726 main/binary-amd64/Packages
+ dab184ebdbf9f62ee5606e06ca67e449c4b7c7e7             2830 main/binary-amd64/Packages.gz
+SHA256:
+ f7b926de25d8e2e90477e9c927bb5d03b569d590e54cbc19ac6813d53d4b9eeb             8726 main/binary-amd64/Packages
+ 453e0334f2da061a8227b5895e1b41b3410472607f561f3e809a1dcb46ff2d3a             2830 main/binary-amd64/Packages.gz
+SHA512:
+ 5cb391c7ac89a6a635d99098d9b8a4a56a4f2669bbbc5aaa7b2ef17a2f17415367e4328f779533b6dc19a2ff383086503b7d775b15cd7cd64814205ad7cefb0d             8726 main/binary-amd64/Packages
+ 9a31d62009f952463c89436420266348295f5b58c6716bc50bf1fd72ad69775a78d3390165706bd172883937f4591bf8a22ed7439afb9bf5bafd8429c9af92d3             2830 main/binary-amd64/Packages.gz

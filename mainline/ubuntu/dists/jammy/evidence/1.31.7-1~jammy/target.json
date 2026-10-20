@@ -1,0 +1,7 @@
+{
+  "image": "ubuntu:jammy",
+  "suite": "jammy",
+  "distro": "ubuntu",
+  "version": "1.31.7",
+  "package": "1.31.7-1~jammy"
+}

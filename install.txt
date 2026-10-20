@@ -1,0 +1,8 @@
+# Debian / Ubuntu, NGINX official mainline > 1.31.6, amd64
+curl -fsS https://hernet-pkgs.palve.moe/hernet-pkgs.gpg | sudo tee /usr/share/keyrings/hernet-pkgs.gpg >/dev/null
+. /etc/os-release
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/hernet-pkgs.gpg] https://hernet-pkgs.palve.moe/mainline/$ID $VERSION_CODENAME main" | sudo tee /etc/apt/sources.list.d/hernet-pkgs.list
+# Also configure the official NGINX mainline repository: https://nginx.org/en/linux_packages.html
+sudo apt update
+sudo apt install nginx-module-lua-ha nginx-module-http-njs-ha nginx-module-http-geoip2-ha
+# Packages require the exact official NGINX package version used for the build.

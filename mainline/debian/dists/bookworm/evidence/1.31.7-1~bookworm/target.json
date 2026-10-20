@@ -1,0 +1,7 @@
+{
+  "image": "debian:bookworm",
+  "suite": "bookworm",
+  "distro": "debian",
+  "version": "1.31.7",
+  "package": "1.31.7-1~bookworm"
+}

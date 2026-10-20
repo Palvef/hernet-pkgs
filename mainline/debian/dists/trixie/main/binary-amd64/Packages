@@ -1,0 +1,156 @@
+Package: nginx-lua-libraries-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: libc6 (>= 2.14)
+Filename: pool/nginx-lua-libraries-ha/trixie/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 184448
+MD5sum: 7609d2b64aafe2a6069f2182160665e1
+SHA1: eb8f370abe82f410c4f60d7d2406071bc01d95cb
+SHA256: efc888466040a75b5a43816825fb4ac01a3cf8e57480e727f761c1ed30dd8be0
+SHA512: 27747062931c2d711bb4c11d686b9ae83f9f2f373fc3e97f4b4f544238a47e61733df85aba0c06dd8c39569964751576cc833ab09e32a2630106288ad40366fb
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-fancyindex-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.33)
+Filename: pool/nginx-module-fancyindex-ha/trixie/nginx-module-fancyindex-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 120608
+MD5sum: cc657b9621fc98527dd8fca78d3aeefe
+SHA1: cd7bec215a221697643b5b88a6cc9ea03f8e437a
+SHA256: 80d3c7767c00102b571a782d3fe51cfbb0f75fdcee59a2e3c4a5153c7af68c3a
+SHA512: d8943028097713011f23b14e6ea506d44299b989a172bd5f951093ac06a6e3988b6fa1d063203b6df4030a104181b5110a24339bcbedee477a3e923a53bb28ac
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-http-geoip2-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.33), libmaxminddb0 (>= 1.0.2)
+Filename: pool/nginx-module-http-geoip2-ha/trixie/nginx-module-http-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 111252
+MD5sum: d3fa7d4acc0001fe47bced372964a70e
+SHA1: b69fc14345ad098b8a7c16b2931cfe358eb1817e
+SHA256: 907afbb6705ecb0263f0e371bbba195d326c44fac98a5819237e3728cdf0018e
+SHA512: b27a7940873629acbedd601525698cbf409ded595fc8de4cdd1f0961a4ba25e718cbcab5b8608fd423fc8ff01f4e1061a2e7c2003e16d2cf92fd0d07b8442a10
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-http-njs-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.38), libxml2 (>= 2.7.4)
+Filename: pool/nginx-module-http-njs-ha/trixie/nginx-module-http-njs-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 1554684
+MD5sum: 4a3c9718e051a7e1b857cb0e6cfa7888
+SHA1: 3c34700ee022d877e998a7ba2c6215871155ba84
+SHA256: 301c26bbaf6f5e46398656fb11042f39f4821c8b8e3c4c05cb94890f2a83d42f
+SHA512: d00194297d9e53cd649a1ab820552e04d3a5ef7e6759fb737b8e5e5567626e9e49dc883499430051f3f5a1f105705da06ab836bea9760c8821eff66f0259656a
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-lua-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.33), libluajit-5.1-2 (>= 2.1.0) | libluajit-5.1-2 (>= 2.1.0+openresty), nginx-module-ndk-ha (= 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1), nginx-lua-libraries-ha (= 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1)
+Filename: pool/nginx-module-lua-ha/trixie/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 809548
+MD5sum: bff97a4f43e752b17f7395404f0e465b
+SHA1: b52125ee406e0194484c9d5a012ff1f0f9c1bfe0
+SHA256: efe85abc234e10470a43f5b3fd85a42b96eb964305964920bb70fe2a2923dacf
+SHA512: 0a4cb5a4e41b55240cb8fc946eac2471a1f5067d649fd5e619e127f99c59122e5f434ab0f5710221c06764965b12bd9cf31bcfc626e7f2b36c0efc9b96673587
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-ndk-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.4)
+Filename: pool/nginx-module-ndk-ha/trixie/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 108560
+MD5sum: f95e5db8d9d9245f3ba6244c6950f6c7
+SHA1: e4238ebf1e23174ce4f2d9e372b375c74bac7dcc
+SHA256: ba5a6f2ab09c7ea65eefa8e497219d601d084f9824448fa28b4e0cd7bfa463f8
+SHA512: 73ac07248686f41e18194f89360a05c7f02775d084bed2f9bd0fc302775ae8f0275b440be5093eba7c536a8fda84a27bdfea4e4c60c435f6c23d3bf71b280135
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-rtmp-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.7-1~trixie-r1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.38)
+Filename: pool/nginx-module-rtmp-ha/trixie/nginx-module-rtmp-ha_1.0.3+rtmp1.2.2+nginx1.31.7-1~trixie-r1_amd64.deb
+Size: 453320
+MD5sum: fe0dd55a81312eababfce1a8844a9f48
+SHA1: 315968d498934ab54186389ef771df3fc0504605
+SHA256: af26e0bcef6851921dff5fcbf568192e2b5b9a04c1f6a346b8347da347f4a424
+SHA512: 47c1b924b28ebd54015044922e5bb16d132c3b787f43741d86086b940128edf52715180ef0e8e65486cc56a4205c6f5c323d9f364cc7c6a224acbc280298f5f6
+Description: RTMP and HLS dynamic module for official NGINX 1.31.7
+
+Package: nginx-module-stream-geoip2-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.33), libmaxminddb0 (>= 1.0.2)
+Filename: pool/nginx-module-stream-geoip2-ha/trixie/nginx-module-stream-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 100532
+MD5sum: a751b9feebe8395ce6427d0ec8145f70
+SHA1: 5fd06f43be4d2a463ea010d6c1600bcbd6079b19
+SHA256: f1a265d0194bd0a374aa4781d07d053681aa58fbc13af70a5b97ac7e85183cd8
+SHA512: 248a0dc1dd944dc536238ee82d6691bbf483412244945b87518a4a16accbefb1e5208e941949d1562c2df7a5b003e32f746ff51f176fb2057017eb8c25cdff1a
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-stream-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.7-1~trixie-r1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie)
+Filename: pool/nginx-module-stream-ha/trixie/nginx-module-stream-ha_1.0.3+rtmp1.2.2+nginx1.31.7-1~trixie-r1_amd64.deb
+Size: 3320
+MD5sum: ac2ddde49b8c62dcab86faf3050405da
+SHA1: 90c105490d17294ec9c1a337734fba66820b6434
+SHA256: 19716f7c6f5e4f4f370bfa3faffebcb06ed58867c3dca107353cbadcdca311e4
+SHA512: ced34b827471c1c08b7395b275eeb2f045138017ef3b71a4fa6676794c07665c6912206ffc1afb2e597035ac02b8071caf2769aa1791c29e1241784657dce363
+Description: Official built-in stream TCP UDP support for RTSP TCP forwarding for official NGINX 1.31.7
+
+Package: nginx-module-stream-njs-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.38), libxml2 (>= 2.7.4)
+Filename: pool/nginx-module-stream-njs-ha/trixie/nginx-module-stream-njs-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 1514828
+MD5sum: de66cefbe0cdba7f5bd9482c96395d87
+SHA1: 331f031ac9870422a719b2b2969dee3cd1ae2ac6
+SHA256: 7281ede93985fb26ddac1a336b50575d9fd85ff647ffe41922a405e46fe2994a
+SHA512: 80ae5aa71eba89db7b5bb4fbd1213afbe719fb010ff44bf0e30f3125d69d5f04287d709b926204ad210db504b94f78e5c21948ad6ae90c7c2f272fc620527260
+Description: HerNet patched modules for official NGINX mainline
+
+Package: nginx-module-vts-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.7-1~trixie), libc6 (>= 2.14)
+Filename: pool/nginx-module-vts-ha/trixie/nginx-module-vts-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 261748
+MD5sum: d5e7d4b1d39e1c2d0f35906b5e276c92
+SHA1: fba0fa8c00ae66cc6729698e2bc406364ad38b07
+SHA256: abe34d972281c3a5c85b8a1104e33ebb55661e1e95baa810a688abb30337d3d3
+SHA512: d3e57d55941589d3b86734ed8bdc608fb83dcca8e341830aa298d38773b3e213e0057156c2fb5ea5ea013eab65b4667f22f9b72aae9413dde7c2c29f351452a6
+Description: HerNet patched modules for official NGINX mainline
+
+Package: njs-cli-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: libc6 (>= 2.38), libpcre2-8-0 (>= 10.32), libssl3t64 (>= 3.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Filename: pool/njs-cli-ha/trixie/njs-cli-ha_1.0.3+git.a3aec77d+nginx1.31.7-1~trixie-1_amd64.deb
+Size: 1230252
+MD5sum: 8dfaf74f03d4816b70b4b93a31c3d9cf
+SHA1: 1311790ffa9d823a429391db9bbda5806c7a0e7d
+SHA256: 9ef164a328f26b6c4c9f2ed003e8ad8ce268d361ffd7acdf19e4c8065c77fbb2
+SHA512: 4bd53e09a6a6a776a165f8bbf41669fb339623743c8a3b0dd2f40355a4631e83c7c5495688ec81feb0c8555d17fb0ba207f3d5082ee1396c570326bb0536ba00
+Description: HerNet patched modules for official NGINX mainline
+
