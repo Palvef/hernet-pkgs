@@ -1,0 +1,12 @@
+84cee17c569b8907200cfa55f6a08a945a8469763d29646d05f02297c0899c16  nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+ad4c394df278c03b3ad1798058af5b849b522e1d5ec252f88dd7d3c100cc3116  nginx-module-fancyindex-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+b936ac23a20c1f84acff10f1f6cbf7ec73c49aa10b63bf62757bc829d1cb80d8  nginx-module-http-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+6cb48d52b18e7bd54d51e045eb1ee0be84018afa16bcacac3853136b969c0027  nginx-module-http-njs-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+cb69a87743241f0c3601f444b6b79f54d3b90f98635f41afcc087ae73adc8da7  nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+35cc7591b712e27ead3dceea475ba12f676a16df5d4504811854e49bca286192  nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+10a1b5eed0bcd2d5494e3507a746c0ce501c9a1ecf7781dd2266365b96c260e4  nginx-module-rtmp-ha_1.0.3+rtmp1.2.2+nginx1.31.8-1~trixie-r1_amd64.deb
+b7e789075e3670564c7b5c47b97a0e6832566167fbbd41e5007da28cf1299d69  nginx-module-stream-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+6e04279326c67df9fd4d13225e45ebe27051a1595d472c735f7e26680ba030eb  nginx-module-stream-ha_1.0.3+rtmp1.2.2+nginx1.31.8-1~trixie-r1_amd64.deb
+44cbd31615ad08ae2f9bf73314f3618b3ac0b2f7fff417b8a3fd049f9c4fd12a  nginx-module-stream-njs-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+9b25d016d7176553f2b26c52789ff71f156dbe8f875d7254f07bbeeddaa7a654  nginx-module-vts-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb
+06944259f30e6be2c21a291ed38627b9feba2a497892cc572d387e0a330cea5b  njs-cli-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~trixie-1_amd64.deb

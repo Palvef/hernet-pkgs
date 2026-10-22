@@ -1,0 +1,12 @@
+c2e8f8c543544ecc149c166af0bcc9c74e8b9d4dd481120bba4ef5c54bad4c64  nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+f240a3699558be7ff7cf5711ded9f3cbe525e257db926805385abf6d9b02b42e  nginx-module-fancyindex-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+14b78fe6ab69a9fa3e7f7cf20dd02b808bdb4cb06e19985c6f233fafcb4e2e9b  nginx-module-http-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+cfeb3dd458587bb970830d90da1294c67807c054e991dd183bc9aca6824fb7c7  nginx-module-http-njs-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+3436297b7165b0250ac0c6e5422f28c92650818309c765af303e39bb69ec576d  nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+d6fb8f47383de1fa386712e82e64754910e99edfaffb7d48aea6e54d088035b1  nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+7290b5047f6970c78c9ef190bbce7ef62c2806919016d9c3f36f52a7a298c8e7  nginx-module-rtmp-ha_1.0.3+rtmp1.2.2+nginx1.31.8-1~bookworm-r1_amd64.deb
+5e527c9d0054303c4c62e9bf8e4210bc5d2f2587019c4218b4d3e4558e242929  nginx-module-stream-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+af680dc80b853ef88228ec294e2824e76898cb607861124a8e592fe3455b6fed  nginx-module-stream-ha_1.0.3+rtmp1.2.2+nginx1.31.8-1~bookworm-r1_amd64.deb
+d257f72f13a0892e4880774c3f65c01b483ae1d759d4937be8ffb511b86a5992  nginx-module-stream-njs-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+b348a97cbf90f5fa461974f142c242bf36c883eaab0797b57222c67256a085c5  nginx-module-vts-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb
+99d96a2ab1ef671dd853691d69f2b33cb108ca2cbbd68cc451d4c515b17a82a1  njs-cli-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~bookworm-1_amd64.deb

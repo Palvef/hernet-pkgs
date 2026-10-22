@@ -1,0 +1,1 @@
+PASS: eight independent module DEBs, exact NGINX dependencies, Lua/NDK dependency and legacy coexistence policy

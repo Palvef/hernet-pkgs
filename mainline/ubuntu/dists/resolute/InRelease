@@ -4,33 +4,33 @@ Hash: SHA512
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Wed, 21 Oct 2026 08:30:42 +0000
+Date: Thu, 22 Oct 2026 08:47:32 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: resolute
 MD5Sum:
- 397bd39d724e6f62d75f4db30d22d5a8             8746 main/binary-amd64/Packages
- a1c7c9434165f0fd460160d3b2bdc2b4             2841 main/binary-amd64/Packages.gz
+ 9a352e99dff16d1565d54f617c9cdd0c            17582 main/binary-amd64/Packages
+ d9769ca2f60d7281fb73206dff6a9a7c             5135 main/binary-amd64/Packages.gz
 SHA1:
- 7ae92fff64817fc7016d58f5f38b8ed45814e54d             8746 main/binary-amd64/Packages
- e770fb607b69f9fbb859e6244918345d725f899c             2841 main/binary-amd64/Packages.gz
+ 9415573df97d49f00d384a4c071d1035e47f9f79            17582 main/binary-amd64/Packages
+ 37355e351d23b792f605f1c640ef0d9b9c269faf             5135 main/binary-amd64/Packages.gz
 SHA256:
- 67c30b3014e9e8893dc5a661d790695f69fcdcf84068ccee7557366cd2ae477f             8746 main/binary-amd64/Packages
- a77af94f54a1ca2cd0e75f942da6fb43133bea7e3c1fdeb04622b1f363a87ad5             2841 main/binary-amd64/Packages.gz
+ 53174aed8b53d61aaa338079c316bffa2376c1ebe0efc8a160c8979c240dd6bc            17582 main/binary-amd64/Packages
+ 608308eea44f8dea343d1ced90a19bb9aa0bf4212a4e765e3b0f2942553f55c7             5135 main/binary-amd64/Packages.gz
 SHA512:
- b9168b0fc03e62d1c7bf08008c324292e25efa03a37eb8aed8a19b55eacd4b0c5bf7906a14d7378e2b8a0f0bf6737c197e87f523441c3d55b774ce12534989a7             8746 main/binary-amd64/Packages
- 2c7635118ad5b835ad242d0bd932af715e6f892abff6c10ab2fc9847cb68ac324a7c64be97078723ea86604bcc9a006003136d49ca34d20c8a452f61e04ae41a             2841 main/binary-amd64/Packages.gz
+ 520a0931e8f423fc16f1e988a7edea31e32ea4f631c3f3883273acca03e8514ac820c1a7146e560910fd413d9305e8126aee7bd84edadd28882dfbfdd26e7628            17582 main/binary-amd64/Packages
+ 49bbd7581d6824e86d681f7ec053bff03ca6b770fc65b0dd15cc53d71f937a05b367872847d75eb614075df3e11e269cfe2515f85d166426d4bf4a7beb44836f             5135 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrYeDIACgkQtWh7jQGC
-sxKtlQwAg9QszwJnRCH/k0d8Cc+ZkJq+IOpsdHoCVIM5TihRM4epIcR7PFmb2lsB
-WAAYH+yTAVHYzQX+W+oSYiubXECT8H+ffShQoG5gGv3RbOlxEbuvzltQFNG4FbMf
-cwndVaDJJrstnclx1LdlMidriJsNxAmP1K5Ha81UQrMZNn+11/0FWHOecH8lewNl
-0z4wNYS2k8a2Qap6FPUGFttfgjDMmyTxGHEHKeHKp/zlbpLYErKHyvIWbIeoD9IV
-OLQ89i1rPc6hdWfIN/LaNKS0Ko1voV0oCs0hDjwlBpscPm8Ij6/HLSmFvPMT7eWF
-xfgS3HHMC5V3ckMvyvq8/LajqYAiPTgSjrB/jeoSErc+Uc2SSbs5PQl97PaQ3Ngg
-bVIJBp4xOJQJJXaW7dLQtXIQYhyljJ9pWny2bNV19wJCB/TZ2BTA1zFrGS0BueK8
-AX/rEXDx7m8swDvrkAoHXSJKYwrHoRfTMGfufx7JScsUNLqj2a6CHtEHWkOTZXTR
-bjd7kFXy
-=VTdx
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrZzaQACgkQtWh7jQGC
+sxILowwAl+LirGcWmX2YE0qY6YsqMBOhcHwfMehasbSkrw8RJp23wzhAoRwzKs4n
+0ESn4IGCDxsbD+w26LJYJeQspnPgibqKxEazQdUYjqxjK3GLtvfOk3AGZoFyA+ig
+ErND8LWJOOt83rUOXhytZT8UQr79hUVdu15lATIkZ0iH8EGb40xExGIWjnmozLTa
+xNsmvRpiuIE31NAeh1+TntXdSLt17nKXMhiHoyvxCE30XjUTzABiM/8SQpEubuaa
+lPflc2roKGy8SJBLwwi1h8F0lhhgRsrQMp+tbSsMYrLqQOkwjrw0Aj5f4hPBSAw5
+d6DY0/iN66IR8cb/3q+1JyJpr6pHymvi2PQUQqp/MHkromaHTzTWaGVsruShBiHM
+vqvbqpBTtk30l/crf/lAqMrEs0pCKH+WAZmSsFV8FR+1N97rD9JyvmCgGk5gC10C
+BeLYjqZhCqV9ymTFq8PUa/Svai5TuXS9yyMkiesGsGnL3cgEedrLX769FHH5Ka6t
+P8XUnuOt
+=XAEy
 -----END PGP SIGNATURE-----

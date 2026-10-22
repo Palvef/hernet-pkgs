@@ -1,19 +1,19 @@
 Architectures: amd64
 Codename: noble
 Components: main
-Date: Wed, 21 Oct 2026 08:30:42 +0000
+Date: Thu, 22 Oct 2026 08:47:32 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: noble
 MD5Sum:
- 88e3e230db94c028afa776ba00589ac4             8585 main/binary-amd64/Packages
- 0dff4dc954c3d313239795e970c6daef             2837 main/binary-amd64/Packages.gz
+ 12d7315d65a9e740ddff61e1b72773fc            17260 main/binary-amd64/Packages
+ f224a8f36e056e47b46e1ef43a6358ac             5129 main/binary-amd64/Packages.gz
 SHA1:
- 844451a20fcab03b7525da239875d42db5798ee3             8585 main/binary-amd64/Packages
- 86ed7b79511e9b5925ad716d06ba0246836b2ec6             2837 main/binary-amd64/Packages.gz
+ 3d92c6e40d532feb3cb228c1a8e95ee416f344f1            17260 main/binary-amd64/Packages
+ 22b77905dfc7fe90db38cfe12f9f74ff7ec71596             5129 main/binary-amd64/Packages.gz
 SHA256:
- 37497a2cfb52d6e6923ee7236a21a43b4d1d3affe522741fee4191532d4b5d76             8585 main/binary-amd64/Packages
- 14bbb622f400f2c7d68bab4f2d097f00862b3dcae46e3dd9f8dd77a494b25e51             2837 main/binary-amd64/Packages.gz
+ 9edc5f5b541846cf3f155472493549c77b96a5c5ab10cfc4f68e2bc6241e6532            17260 main/binary-amd64/Packages
+ affa037aa09bac2350e4aa19925ea6dda2123b307482e58d9e23dfd2b418c6e9             5129 main/binary-amd64/Packages.gz
 SHA512:
- 7adbb47384bbe1533fd74f433535fbd9ac45dfa096b77a311c5bade3589cea44b08c0d3ef951e3d2dcc038780208c9e01515c1c69260b6953913a533c2b15bf9             8585 main/binary-amd64/Packages
- ca668480f56947ab617f85521fecf79b5bfb9ef8c03ec60f9f6e9eee13ee42a6e8248d3117f0848d025d49e355dc3a63f7d09348452abce327cf8bc83384c0ba             2837 main/binary-amd64/Packages.gz
+ 71ef03492610c47b6c3820b7287cfa395c2d522469b835115fd767c404aeb2d893923b8072cc4704e4362da5a513625a9c22a3200153caac58468510dae8cd1b            17260 main/binary-amd64/Packages
+ a2c17471fddde9ef73910813f5a62c895fb3c417324980a0412209eaf06945b43a406c14a78d3d232a76ce4a4f4ca41180a46b95fe88576c9fce76c84577ed86             5129 main/binary-amd64/Packages.gz

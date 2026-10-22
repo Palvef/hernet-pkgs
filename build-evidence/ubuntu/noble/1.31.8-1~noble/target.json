@@ -1,0 +1,7 @@
+{
+  "image": "ubuntu:noble",
+  "suite": "noble",
+  "distro": "ubuntu",
+  "version": "1.31.8",
+  "package": "1.31.8-1~noble"
+}

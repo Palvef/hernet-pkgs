@@ -1,0 +1,7 @@
+{
+  "image": "debian:trixie",
+  "suite": "trixie",
+  "distro": "debian",
+  "version": "1.31.8",
+  "package": "1.31.8-1~trixie"
+}

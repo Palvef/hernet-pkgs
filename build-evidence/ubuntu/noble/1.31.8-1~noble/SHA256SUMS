@@ -1,0 +1,12 @@
+c69c12fe35b95e605e9bd836eb4d3be26d674fb5e8e1a85b5da2c2ffca76d6ff  nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+65045731e4fd6badd8d76b8c6be4f66414b0d8d050ceb51c51b160f6cdee8f5b  nginx-module-fancyindex-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+99d38b9f9a6d0f6d437b5add19614d8a17097defcd0aa0ecf4ec49101838eb2d  nginx-module-http-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+bce37c1cd8214f50fce04fc2cc44a31cc6bd0f1ff60ecb9d678cfe88e546e2d9  nginx-module-http-njs-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+d980e419c35a3579bfcb800fd21af2914106f0b512a63899df15294cdf6f3d9b  nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+df37dd557cd1cd880cd6b85377c5ed211c0f7dd21f7efc02f1aef40f61bd0772  nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+9e94dad0e3aac1403fa6988879e700322e49c7a7e0c5e5fe0f56e01ad70120ff  nginx-module-rtmp-ha_1.0.3+rtmp1.2.2+nginx1.31.8-1~noble-r1_amd64.deb
+0764c3ace3980c99c98622bf65ce0afc635b6d09ba1747971b03c29bb2303533  nginx-module-stream-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+2ed97cccdee59e494de0d38f1c88047bc518b2f4d655d1b9dc511e62d38dcd23  nginx-module-stream-ha_1.0.3+rtmp1.2.2+nginx1.31.8-1~noble-r1_amd64.deb
+e4e8698b3abfec7e74e80e246314b73ce31a4b6affd867560517709427bf87a2  nginx-module-stream-njs-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+94f79df93bf14fd373bccc4da27c49c00c54ea2d62c66c9e0d1dcc53a604d0f1  nginx-module-vts-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb
+60856152078fb8fab06d70ee5ccbe78ca82c4845f0d9367c19e2fa9544d8c0d7  njs-cli-ha_1.0.3+git.a3aec77d+nginx1.31.8-1~noble-1_amd64.deb

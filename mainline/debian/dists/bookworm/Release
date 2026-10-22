@@ -1,19 +1,19 @@
 Architectures: amd64
 Codename: bookworm
 Components: main
-Date: Wed, 21 Oct 2026 08:30:42 +0000
+Date: Thu, 22 Oct 2026 08:47:31 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: bookworm
 MD5Sum:
- 3cbbc60dcfdbe26eaaa2671a7b639250             8726 main/binary-amd64/Packages
- 667722e6f0c7729b222dd0907018ef5e             2830 main/binary-amd64/Packages.gz
+ ff5522e278f3be8097805fe30a861ca7            17542 main/binary-amd64/Packages
+ a65c88637d4ef00f68c37aee7c27c4f7             5111 main/binary-amd64/Packages.gz
 SHA1:
- 3e67b425ad57f4ca6cd2aab6eb2211bfbc24109c             8726 main/binary-amd64/Packages
- dab184ebdbf9f62ee5606e06ca67e449c4b7c7e7             2830 main/binary-amd64/Packages.gz
+ a23f1059cbac9545cbe239a2aee97602ccfcd70a            17542 main/binary-amd64/Packages
+ 1c16172005f5b0211c74f1e5eb4ed20d22395765             5111 main/binary-amd64/Packages.gz
 SHA256:
- f7b926de25d8e2e90477e9c927bb5d03b569d590e54cbc19ac6813d53d4b9eeb             8726 main/binary-amd64/Packages
- 453e0334f2da061a8227b5895e1b41b3410472607f561f3e809a1dcb46ff2d3a             2830 main/binary-amd64/Packages.gz
+ 8eef35005244cae2539dafdfec6c013036b9b8addbf4fb812aaba652e9d12a5a            17542 main/binary-amd64/Packages
+ f7facfd74b6727924e550f9d0cdbe6274951ca9299cd7e1f23da7882a39548b0             5111 main/binary-amd64/Packages.gz
 SHA512:
- 5cb391c7ac89a6a635d99098d9b8a4a56a4f2669bbbc5aaa7b2ef17a2f17415367e4328f779533b6dc19a2ff383086503b7d775b15cd7cd64814205ad7cefb0d             8726 main/binary-amd64/Packages
- 9a31d62009f952463c89436420266348295f5b58c6716bc50bf1fd72ad69775a78d3390165706bd172883937f4591bf8a22ed7439afb9bf5bafd8429c9af92d3             2830 main/binary-amd64/Packages.gz
+ 60478935ed9cb88d35ed1d63d6b4dfdd41dcb2485ffba196a9edd115698f939f6aed905f374cf1a6d7e0a95f1b9f763d94b851a8ced15887165192ecafc5a126            17542 main/binary-amd64/Packages
+ 12b6205a51eec74a49e11a350ace2a4185574a8f1fef63c723a2d9d6c276f0123f8c2ad5af24f432ceb2bcdce789067270f5517f3f28208e127a3d57db791e4b             5111 main/binary-amd64/Packages.gz
