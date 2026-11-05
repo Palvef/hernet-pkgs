@@ -4,7 +4,7 @@ Hash: SHA512
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Wed, 04 Nov 2026 10:50:24 +0000
+Date: Thu, 05 Nov 2026 10:48:48 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: resolute
@@ -22,15 +22,15 @@ SHA512:
  49bbd7581d6824e86d681f7ec053bff03ca6b770fc65b0dd15cc53d71f937a05b367872847d75eb614075df3e11e269cfe2515f85d166426d4bf4a7beb44836f             5135 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrrDfAACgkQtWh7jQGC
-sxKP+wv/RGfT8v679dVHE9pyu+1ZJl1k/W4B3bfkFaaseUpabG0Q5pX8vbG5WB3b
-SUojxNJJ5AmcgJXt9WtAKffBmnikfdOMuFKmhbU002PeZgcG5iamkQ6DaTxcFBIy
-en8IOxYP6jzZiRRZDOlTxEdUh1VHGcJhDEZ3rRMGPA75uWxyIinuvBGI+P+z3iV8
-jb97fgx9mhJw5YnaFJIMvGgq1AFR5r0j/HGT8+1cZgDxEZm3ckNRA1UfKs+5gSol
-zhw9CQY1GmFmpbVZ9EBPSCFmrRmsyKgAzNWWdmJmxnlqZ7Whoo0XjHx1k/e/UaN9
-1rwbY4982Uq4T4oNJGglgwwreFYbsi4SguUJi1zI+28ptt9DO9tHT0YupRtsDUx1
-MGfm/BS3FLxGjk/KDzV3rIsimyTVtM0GmZfZEIWSm3BrEjMzkt2ZdPunjXMu6lvV
-A6rVxdK5KonTpfMJDXP4523L4fciu7zY1cfnPM7upxRVLgbGFQyv10VdSLlng0/f
-3Pjus1OW
-=UxPy
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrsXxAACgkQtWh7jQGC
+sxKKkAv/a9ep/Tlk3p9RPG5RQrMUT5gIOZskRD0fCphh4F7x+ihC+v7qRbIsQ4zW
+wkjp4p1gXDAEMHnPOB+R+jpZJOnnXOFNoDe42Va3rsHJT/RdYXfP/WeNo5TBABuV
+tfBK03PVvhGI7Vyk6sOuLCz9whxheIav4F0Hnw5Ot7nDnAgmxgoTTFA086/7fHLv
+LHg/6emtUbPnBUDRgD12DA0L/4efJk//gT63G5J+Wa822+ulEH993LZpylbfZEST
+oJylJy8uXMG0sMwQ/tjuB8ARc2fdJcX3/vxHFak8NBLBnsFp1WsnbBhbY1V82YDc
+wtEvwmQbqZbJbgNcxJ/z4ykOyuEwkSiIzi9EbxmDmEgNfPEZqetIMbY9dWniAPJm
+C6AFFZ9YB+YbCVZHVws7h9Pq1FJqd+O2YRf+pKd3M49H+3d60Ysr1URYnwc3qgF0
+zOa+d+sNGsZL3f6jhn59IJBwsJF7GnXSvCL18FwC66hQKWln5GGCIjuk55mGSbGF
+0f50ItM9
+=e6hS
 -----END PGP SIGNATURE-----
