@@ -4,7 +4,7 @@ Hash: SHA512
 Architectures: amd64
 Codename: noble
 Components: main
-Date: Sun, 08 Nov 2026 10:14:25 +0000
+Date: Mon, 09 Nov 2026 11:25:31 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: noble
@@ -22,15 +22,15 @@ SHA512:
  a2c17471fddde9ef73910813f5a62c895fb3c417324980a0412209eaf06945b43a406c14a78d3d232a76ce4a4f4ca41180a46b95fe88576c9fce76c84577ed86             5129 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrwS4EACgkQtWh7jQGC
-sxKlEQwAlV07R+cwG0aMUU7U5xGBFN5wvyDQbsY2h0ildzG3xQaeDDL5dtJRSZ2p
-XMDhNrPNs9F5FgD0FpGN9RuFsIQzxxA0PIk7kVbTPUyMDqGmc6zfvHqonjPv0Ka0
-O2kJ4k5MZ9BT/Bv4WDidb8JhmNptDaMCvdduLCYaxwOYC0R6Pxp9+gm/sAFIjVIA
-fWDDUeAecweNVS+/O1Q2Robk/bTqWTJx79Mw0j5xcdHJEh+G8Ob42v2/pN12D7vi
-i3iJbQ6WvtQnpeRafYGzQs8YVlunJTU2YeEc6FQNouno6wcJlWUFDIzZIBb3aysQ
-aG5ayEH8rXLRkmo4KzoAHMxLNeWA5nBQQbn6pTrqxgunLOjVeGxzDOpU4xEDW+L1
-BnrAG2XWf7G8PACxRr3TKgL0pwdrmT0OhQJ4xENomMHE1/1TjU08OVklDeAalpyj
-hc4LvMP8+UVg8pE8mgPMetElK3nzgMceLkw4+g+3rTkSEqhUzl1WxYEul8tJPSSV
-nFVcws2c
-=l4E0
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmrxrasACgkQtWh7jQGC
+sxK1/Av/U1YrLxcETnLlCO4w8bu1tIEVjt4rKSMx5132joCD+Jb95CjOCrd5FZ0k
+KDeXT63JIxQRIPVK/hi0uwfUvjAJqq+Bid4tJNWm2gpIHtysjtfq3Ma89ft9Wjd/
+Sixn78Gr2X6Sxp7ClQusIFF1Vl5SgPWDHZFW/6OQAayRoPe8dzFpYlA+Za4cziej
+qyxckiZ1YMNurlHTZiMI4wBo3UyovhocBAJW+kpKHo3+SiXbq7Q8TnrmnVHg5mQC
+xmeWNkRrU794RPY2xrUt8pJpsEumNf0Z0jph7LqkBz/kjZQzrQAZ+izNshl9U2fr
+CnEwlRTfGSmPv+lCHangBnagKeWoxZKU8wf6/qBtaf/MfunM2bnXdyZ8cYbo2+aU
+1U7fuOLf4a52GfcAIqlNwgsHdtEPR/WAN0xNSCskqa4SgERheo4rE+cp9f19Uy7r
+1A75P26DwgZfw4NKPaVSYto844dt9AF5C9oC2mrevmzouxoGp8AT86hjb1PDPmv2
+QFAczw/f
+=TvC4
 -----END PGP SIGNATURE-----
