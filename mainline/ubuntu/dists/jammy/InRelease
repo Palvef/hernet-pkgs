@@ -4,7 +4,7 @@ Hash: SHA512
 Architectures: amd64
 Codename: jammy
 Components: main
-Date: Fri, 13 Nov 2026 10:54:19 +0000
+Date: Sat, 14 Nov 2026 10:17:34 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: jammy
@@ -22,15 +22,15 @@ SHA512:
  aadf5aaf74c02af04a247f1892ada018f4d03ee136ea6fe08661458342cb131c820b9955b5cfd497a03fe90f86ad8dc5a6218f9f671bf836b9519c44c6f4ab26             5103 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmr27FsACgkQtWh7jQGC
-sxKgAgv/dH6cR/eXKY/O3IkQPZkOjifK9uGXuyRJB+1kB8zNwu7UpQFwqhFA4IQo
-wolUslyGtxcn8uXnhDZ8moqK0UilnXn8lAMNGKlEOzYQ+JJsHUmg/PehPFyrEwww
-Zd4V/Yj51neKM2qoGJHyBzy+pb9HFnF20OP4N+7/eOPCKyIHHdW4oFmc8xXB2sq0
-S6Ej+EFFji9for20kQplvZMWxHy3eoe+202lhzum+Z86RPact+vhmDaHpHepR8DW
-FI1e1iM2fN9YZdWbHUYKxFCahuDYgCZMep/TtIPZgVjuapLg83Ja1emCjCFjVh3/
-b3/aaNbBl1ZXRKW/dFL/0kCSg6dDhu2R67UOROUYPKw39h+h+upExAe0M27YXaG3
-J8L9IINDEqwQYx0L4fQ3k/syusoIq0QBXQ12htroKfdRPzjdaqtUHrf7ULpxP3mX
-LgxKx3uLnxRdjRhsYZwnTVAkNWLzBPMPRstiGaakFKK/1h1oT5HzbdyY5yekdKqM
-MltuzUbX
-=7zJX
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmr4NT4ACgkQtWh7jQGC
+sxLXzwwAhItvjHdwBbyQdMma1dV9xutxm+niMP9yqrF4JhXPpkV/+FmqYVqLBloh
+Kvr27hYqiVsNiedTX0zhXBOI0/OZejbG4bRKxBf7QVvUV6B8EogHiIgeCh1mhTlB
+glVyDBZK/e0LyhP3Aq/fzfIXBaN3l79Eg7z4byGZTPoJL1jDJG80vxByAQGMXe1b
+CPvvAu3DLkEGzXPak/l6KtdwQWmYZD5L91BGKWApZg9aE3gkZ3fwDmYw1recPlqk
+LHtFsuqbadPb8DEr7mXmFigWWP2JOixTOkxrhW4NjRwkvIsFfAUyJgZgusEI4wwn
+Ey2FmvxveZjTarciL+cG74agji30nJOv43oeymjiaWgKot26ZFNlWRH04jZENyHe
+DU01djIlBykbV3P8xE8Ec0sxpsC0Qkij/2jQFelnNuAnzoZLEj+oNj5hdRDyoysh
+zn6oVyIFRrkZwYGWx+xnnnn0tKPpA411IWxX6tj/2YE+lSkrXC5p27n816Jor308
+glPrdPM7
+=SK0I
 -----END PGP SIGNATURE-----
