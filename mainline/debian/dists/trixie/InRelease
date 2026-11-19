@@ -4,7 +4,7 @@ Hash: SHA512
 Architectures: amd64
 Codename: trixie
 Components: main
-Date: Thu, 19 Nov 2026 03:34:41 +0000
+Date: Thu, 19 Nov 2026 11:32:35 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: trixie
@@ -22,15 +22,15 @@ SHA512:
  a52b8b9f48ef6ee8d2f6ef9fa60fe7046bed0c156b8a9cff4ef2bf26aea3a7c2a7f73f22719e060a678a26a775b3a671cbc529ccddf83c573f6485d3167dac07             9539 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmr+blEACgkQtWh7jQGC
-sxLQpQv/cg9WKbF/jcWC/3xtOu2z77yip3GhbE5FcCwUeQQq3Ze4MGf9imEUzX5q
-+U645B5tqABpvaDMHeGuSuR22ddfuaSlUg45LnW3wgTkVpdzdg4kWsMWKW++lrPB
-oZMQyi5VW1XcgWZ3ZJSRiDX+PlRISR2tLPdmPZvGmPxCpFulEwt8G+Ox0VdbWk54
-in3AQNBzJukiEsQErrfiA3rkK48celFd6B4PuuUxopbi+9ETL304U4MDqbXrzP/S
-CpaoFlcWRUgaxexc88ozBPgC0C9TOHvkYhcNSs69F5YcRY+sbQ/4pkyBEz43WeUL
-8b7jaUa0Yl5+GpHRDaj2gVoUmpp9F99gHgamWVll70K/Hul5JzmdsYU/GrY6QjNo
-YbAggsjVOJjAuZ7PHdvMP3a2Gjswv7SKUy+1faPS76zBpw4KGP0MFw4aOiGtoDkL
-V1eq1YNYzSAfc80bEtHmn6YFrtFTBe94P5f3GAKqy8fTigGWZ7H8cAq2G0UI+pHl
-lYae6lon
-=0Wej
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmr+3lMACgkQtWh7jQGC
+sxJIIQv/U2s7swFkCsjYJdrVVyQvRzuyHBnLsyRtB4YsHcpgAcRXce77LP3vBUND
+FAZYBwHOE1r1J0P67Fmfk8V2fYop6iVqbljq+F2MdLxvM1faWkYlE3K7yUD64USN
+kgvr8r6qhc+ajgnyWc1v4XfctAQ7FKW1cTtoPDJLvSNeAePx2A+QPhgO5ngLNE+t
+jFeOgGj/IEx9/8vmVOZ21xGcIBq6421zdz1+BGxSQIW17xU4pswRCLfO8gVKFRDh
+sC5Ubfsxib1Ldgbz2DP3MOKRoroTRvSHLgV/MMqZ1GOoS5qUhJxqMykhjhbae8dL
+DML5YJkWzd2oMj3eNV7qU0nMPrGF6diOxKR7zTmZdDSm4jk9+oqpLVIZ2s5U98CU
+DqDV2exqC2ypPA56TX/yYYy+OhzIGKGWSsmLwhKs9jbSrEmQuFq+oP80BQQMsGQc
+59l6mS285no56xAjcwtFNwhTLu2QG7UYvSLDhg0YEbJdPIroLca/3muUi+jltmf1
+6P/tGPKN
+=gQBE
 -----END PGP SIGNATURE-----
