@@ -4,33 +4,33 @@ Hash: SHA512
 Architectures: amd64
 Codename: bookworm
 Components: main
-Date: Thu, 19 Nov 2026 03:28:30 +0000
+Date: Thu, 19 Nov 2026 03:34:41 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: bookworm
 MD5Sum:
- 4bf01e107ac815a1a72ac2c79f457a5e            26358 main/binary-amd64/Packages
- ad0be528a1bd1c01b0b804f8158aeb48             7322 main/binary-amd64/Packages.gz
+ 898a9904c229efbfe5706efebdf83828            35174 main/binary-amd64/Packages
+ 11f20e592a956fb1b5e166d5652d2169             9527 main/binary-amd64/Packages.gz
 SHA1:
- f9dc54474781dff8f153d1db1eb68ad6f0426092            26358 main/binary-amd64/Packages
- 9891123a342f5d3ee050acbeda365b26410a9951             7322 main/binary-amd64/Packages.gz
+ ab2e557a38d1dc2a9bf575b9e2cc30ed2e7cb7c5            35174 main/binary-amd64/Packages
+ c4d6f846e201c6d4adfd9c1df22b72e607a35330             9527 main/binary-amd64/Packages.gz
 SHA256:
- e2447fd700fdd5c56a92fb88f90f229e6dd2ad7a27be00e40f29bb6cc40207a3            26358 main/binary-amd64/Packages
- ed80a1d0e7d8461c2951681e324c59077bf7b1ab58bca44133084306b225af2e             7322 main/binary-amd64/Packages.gz
+ 2fad23957ffee558652d41571fdbb1a899c1fb229e25f7826cc5e34b756634de            35174 main/binary-amd64/Packages
+ 3445b546b8ad769134c9593a7a25db7143aa0afe8bd9f3c8ec030e32ad56f425             9527 main/binary-amd64/Packages.gz
 SHA512:
- 7e5679f06293368730eb4c32f40b7989f3af43af2980f3dc24a88866bdf3f3e38a21b585e2bc13516f793e05501b4a55a8bda986fbe172505e1f55e764a378d2            26358 main/binary-amd64/Packages
- b64a707071e33a3389c92b8d5e26db852fe39a23383c966d5f24132d9b5562c110786228f4a7803cc75377590247f3d72c199e2555f61bd7a000b9aac4d4d49a             7322 main/binary-amd64/Packages.gz
+ 800a37d71af377e854265e322d7c877b277e11026a73b5ec6acc6acb3603094bd0a3b2aef94c52ce560b79df3fca2721a73af02f9fb0bc3fbe704eeff463c825            35174 main/binary-amd64/Packages
+ 641d53f7142255afd621dce89e2df9d15a3be3bb057cf4a3a0237ac2959d76e2005a2fc8f939505c282621db809b04ed7a1f2db4d7f6757d3c2e619177d2d090             9527 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmr+bN4ACgkQtWh7jQGC
-sxIfCQv8DzpV49qupEWvVc4cmzt25qUdyeEPKB8m/lFyBV+bsy0WsP4RxonNHYNx
-yYgK6zWYylRFsBMq18ojOGVmrqgKM5JdR2+7i3MCj7Fkaet5cwfkSjHRAeTCLcyL
-6FHXEaHRlSGkXk7j5UD2rJII103JJck3AwGdOF4sawzxjf9/XF8+JiAi+ysvHYlo
-cukn73cjh6auJm0CHL+JzJpTKkJtieXQP80uOxjGCWLv7WBD4GLSHVxSkF22i84K
-H1533Ry5Cw6gLeckk5ig6g/3wbjPyqy6UYE9mBnSwEBRyxvMKREu+5w9eFlQzsbp
-jItjPisVc2Hr7lvxw1yUcRFuYfhJJ3fhftp75vKQBxZjtiRh/WEYr3t6WaBhLkcw
-j/SPUQjBm0yDqp6L93RrFihftSyOBd9kZ57EExSzp9RFvS26v1hMgvVMruI9vF+n
-LtJvKYpb4l4+1n/OCac0kLGKcxdDjWLEEnSxXXvbZzc9Oy/K55pkyLKDEa39essL
-0cPnqk/W
-=LDF4
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmr+blEACgkQtWh7jQGC
+sxIGbwv/aQhXXx2sAranf3kGves0rnKoiQ+W0mtvv4jSHda762rxuPjD//TetGJY
+GpBdmwUwM8ue0vd9ehNQsCwkBi+4rHB8yikQgx/yxHXi3lCl6nwbg6GxtXU2GOkA
+1GLg1d5G4oL43m2n+RnqOZ5iqaw1B7kMILA8SxGKAPMeDgiLNupi3fdJIVVpPKPJ
+0YhcjSoBSwflC0CHckFjLE/aU8xMSEHiz/d1y5AT8lBTchBFRhnRngZnrsPnPM/E
+nxV5+v7RDDD3HO+nQjTFSTcFMEAKTgoRSvkpQIvTTWVzgGBzIjPOn6FRY8LKBItB
+bHK1Cu6F5pwG8P08aXqxwRg5GMdLmbD+UWgvMa3MwUnUIh7lkwXSeUBSj9DX71yE
+0aQiFaxUPBE1UPoms9I3BYknEfQY8iA3OuB272B+jc3kubIvBdam//U3VcEqtoFw
+tH1oKs/d/exEvlRAw3eRFW+mCdnnDNzH5kkLpuJT5/wwvuiPu+B59268KuZ+reoE
+xxZMduWc
+=5aBp
 -----END PGP SIGNATURE-----

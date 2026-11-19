@@ -37,6 +37,19 @@ SHA256: 60b7f203dd8e4f9a9907f08bf3d99e11212cd74e6ad0db0f39f358466100f6cb
 SHA512: 022ec6cdcce5f78a68448b81d19c571352b3d7e82674657be2ff037cbea9e61e54c9111e6641961fe45dfb9ae9c8a8a1dc59987badcf0eb1ce0c2cf278efb99e
 Description: Hernet Packages patched modules for official NGINX mainline
 
+Package: nginx-lua-libraries-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: libc6 (>= 2.14)
+Filename: pool/nginx-lua-libraries-ha/bookworm/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 184028
+MD5sum: 11782eea0604728713586918caee2f0a
+SHA1: bfd2b8611539e0cec1a25c2bcd304ea68e3d584c
+SHA256: a33e86b6b69ff332f84d682a28fc4a9d9b5444c9ed191e922272d4bc1130139a
+SHA512: 7f797428ff2781a1ec49efedddcb302fa89950aa4292e292e57f699162db911a57ca3a7279c695459a0a364930663b314f397ec1a6d63dee3e7c87e4edc04fd8
+Description: Hernet Packages patched modules for official NGINX mainline
+
 Package: nginx-module-fancyindex-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~bookworm-1
@@ -74,6 +87,19 @@ MD5sum: fbb3b8d68ae41f23846fa2a2fd1d24fb
 SHA1: 9e7d4196bb64063c10f49b2a60a6b94bbb835340
 SHA256: ff197d6ce60204245baba86fe2cad965e2e5fdc7dd033938b1f89c887f1536f1
 SHA512: 2746ffc379b109afb20eb66c57e7ad2433d77b3723d4f26deda84f7427a28cf4c0f30f3b06efdaa9c93393446819f65d36a0e4ff7c7461d97c0d2261ac8aa235
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-fancyindex-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.33)
+Filename: pool/nginx-module-fancyindex-ha/bookworm/nginx-module-fancyindex-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 121180
+MD5sum: 9354c5327caa4ed951cb60aba3a5c5ea
+SHA1: 3efdc1bbf97d2abcd8b37fbdbc5f668834b26837
+SHA256: a93d9fd7b95b488bbdbcd32641bc4c49e62ffaba841c4e46496076e15d28a740
+SHA512: 2c67c41267d1f3312093b5203d621dd70f53a360b4809df1b792938984472a5df55556f8a3195bded156e4f4ccae57eddcf3118cf8700b8023e86afbcd901f0b
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-http-geoip2-ha
@@ -115,6 +141,19 @@ SHA256: 6115cc56a5b9ba06dcd82ed66e8f674181549c097dd02abe812f0971f7b0215f
 SHA512: 47d8504263322f0d597f8dce4dce4ea0c9992c74fef62c42488d4212fa1e7c3bf2d875aef0d2bb3c5d0a70e010f7fe47207f526b535e7cf74efa6264baf7aff5
 Description: Hernet Packages patched modules for official NGINX mainline
 
+Package: nginx-module-http-geoip2-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.33), libmaxminddb0 (>= 1.0.2)
+Filename: pool/nginx-module-http-geoip2-ha/bookworm/nginx-module-http-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 111960
+MD5sum: a829f483ef176ae478a486ace340a58c
+SHA1: 5a992a965e5d29fa2c1f4d938a65038a1900676b
+SHA256: 0c1fba29aa05845cd63389147eb1d1e84ad4b80e2afcd9862c338c60cc9f0aeb
+SHA512: 862ac6541eb7ee854476532e7531cea87cb5800cf1324402d7a90e8e800f0b33b784154e62279602e08e6a6b40744bb0ed7212a85d938b7eb680fc83fbde3735
+Description: Hernet Packages patched modules for official NGINX mainline
+
 Package: nginx-module-http-njs-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~bookworm-1
@@ -152,6 +191,19 @@ MD5sum: a68b8d3d033d805d67529c0df3f483cc
 SHA1: fcc7972cac8c4810e0d7c928954aed5c94e307b8
 SHA256: c3d099079b85cb109c7f6c06932c69f82b0677ed52ee0cf6f0e8e1949a94a356
 SHA512: 8a9fc9ae516887aa2f35ad23795a6a3c8a5359467e6388d29f8bded88e9575139e3b413c4d70aaedd4c88242c4cbbe49f80d1d43e08d22000828d06f3750d4d5
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-http-njs-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.35), libxml2 (>= 2.7.4)
+Filename: pool/nginx-module-http-njs-ha/bookworm/nginx-module-http-njs-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 1555404
+MD5sum: 546136325021cdd86709734a7c3e874a
+SHA1: 3b68712ccff8250e32a62468429646171d88ec19
+SHA256: 4ef9e2d2251c84af92d89ca9ca7a01e452a1c455873b7ede287a03afc8581b7e
+SHA512: c9d7c58e8daf40ea8dc4331044cd8c3975d3bc3553ebfd73554eeb35a6f91d50c568550c93bddff4cc72dc4afdb1e7eac29ee01f2d6a32fac7685da9ee2101ad
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-lua-ha
@@ -193,6 +245,19 @@ SHA256: 73a4d5dbc604e352302e376f5ec3762936beead3e5ba1bf7c132a622c8daf305
 SHA512: 5a998577336aa54ece72329dfd2202f75dd165c423c8cad559519566678aca72779112cefbae642da455d4643249bad78bea8066455c7a6e67f63f3cbf37fbb6
 Description: Hernet Packages patched modules for official NGINX mainline
 
+Package: nginx-module-lua-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.33), libluajit-5.1-2 (>= 2.0.4+dfsg) | libluajit2-5.1-2 (>= 2.1~), nginx-module-ndk-ha (= 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2), nginx-lua-libraries-ha (= 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2)
+Filename: pool/nginx-module-lua-ha/bookworm/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 829852
+MD5sum: 882b714df9d8cac49338f43a5d89477f
+SHA1: b6413d56826d3097dd4bfd63c7bd40691bd620a0
+SHA256: d7ab2c082f688b2c7fff0c830f095b91a2e247eda2b693703a8c99004c7dc781
+SHA512: fd684e6c026f29871b6636456e3d435f88b2a03c14ba275914a2de490c8343e8ccb422f3a4af0f00aba3c40c400ea7c33dea59aa562a479d75e90d2ed825125e
+Description: Hernet Packages patched modules for official NGINX mainline
+
 Package: nginx-module-ndk-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~bookworm-1
@@ -230,6 +295,19 @@ MD5sum: 2dc1fd3c770a4d0b19b29f4a853da399
 SHA1: ae26ba4b89c85c50f7562d3eba418b2e70e55ac0
 SHA256: 0b009ace70687c3602b5347df678139071fcf40c4fee03bd9acc7297adb31ec5
 SHA512: 0e88b7f1843d868d0bd401632dca084899951ec7b532c7898e847fbf3d91c8c181c5c6a4ee979e65bedd56b14df469dddbf39fa786332f8fb50917fbe400ac97
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-ndk-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.4)
+Filename: pool/nginx-module-ndk-ha/bookworm/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 109208
+MD5sum: 1669aa28d8b867a34f68202245a7109c
+SHA1: 6c18bfc96b79ac999b64da0648e789433a83a1ea
+SHA256: 4fdafaa27d028eb45b2c6f8600772527d7677d7502358fb3365da57e25999a0b
+SHA512: b65dcf2e4ba12aa82f957edb8314320a948274651d624ecbf2e0582146759ce19580cef2c4c555aef4475061097a792256202f7abd07591c71e91ad43268c0f8
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-rtmp-ha
@@ -271,6 +349,19 @@ SHA256: 1627900bd438df977dd4a1dfefc6c4823409112e1b8f72408a7ef4acf5965243
 SHA512: 8a7cd9b3ad8bb6eba4967c2d7e7881fe6d81cc11ceffe4714075b1acf87401d4974bcf7781edfbebc95568f7d7488240f01318a85e4cc92d26d838e7c38d2600
 Description: RTMP and HLS dynamic module for official NGINX 1.31.9
 
+Package: nginx-module-rtmp-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.9-1~bookworm-r2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.34)
+Filename: pool/nginx-module-rtmp-ha/bookworm/nginx-module-rtmp-ha_1.0.3+rtmp1.2.2+nginx1.31.9-1~bookworm-r2_amd64.deb
+Size: 452516
+MD5sum: f9ad0ae420f58c580f9288afbe11390e
+SHA1: 893cdc0199f642e59e7a52e7132e7eb772f8a7df
+SHA256: 34ffdc375bce049b524cc9ba61e529b146b3f8611ec3640b9dacd81815578302
+SHA512: 0f217fd1ba97c5a65f53f5aee1cab1156a3446ca8650506091d5c07cb0bb8360a31291adecfbdd875533b4e6747b5619fb50ba68386f7bc55eabeacfad0557de
+Description: RTMP and HLS dynamic module for official NGINX 1.31.9
+
 Package: nginx-module-stream-geoip2-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~bookworm-1
@@ -308,6 +399,19 @@ MD5sum: 21b75eec79930f374e6a2ed9d73e20b5
 SHA1: e4b52fe97f2ca88a0cac4894a16ca16fa626355a
 SHA256: e50efca5b112d655bd56028769d610ec564a3aaf0588c580ccc973557440762e
 SHA512: 997c29d7d2caec5016f29375cf2f084ce3438e9bf6e1667aca87f121df51c2f5648864f3e577e9b03256f45c1515b6b70228525244f09fdc368b52591dbe6258
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-stream-geoip2-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.33), libmaxminddb0 (>= 1.0.2)
+Filename: pool/nginx-module-stream-geoip2-ha/bookworm/nginx-module-stream-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 101336
+MD5sum: d476e8a4f001b46913d87b38f43fadff
+SHA1: 6230067349a9e6f61558f66e214fb51c8e6cdf1b
+SHA256: dae422fd0a576df2371fcb5ace8f89f57e666f89c8e734e8c8e81d5b90676936
+SHA512: e5868695ec0724baa44ada2989b039bd3c175fac25d01bb00050d89a7f987bf4ac3eb988914cf374836b6fae825b574f60dc426728ea055dd4d127a48f233356
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-stream-ha
@@ -349,6 +453,19 @@ SHA256: 70ef0b98f60d3b624a5416dbdae4f45095b3a567464ccd1213be9dc94fb3cc7f
 SHA512: 1aad4c4e02d9058db288987eb18a22fc2a712183aa938a19070470dfe832a2cfcbba91998d5f30065e58debfcbc856cfe0a1e1164cefecee6ad18ef0fc143048
 Description: Official built-in stream TCP UDP support for RTSP TCP forwarding for official NGINX 1.31.9
 
+Package: nginx-module-stream-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.9-1~bookworm-r2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm)
+Filename: pool/nginx-module-stream-ha/bookworm/nginx-module-stream-ha_1.0.3+rtmp1.2.2+nginx1.31.9-1~bookworm-r2_amd64.deb
+Size: 3332
+MD5sum: 53a4595fdcfdddeb1fc2a8a5a54abf59
+SHA1: 3a2438ab0ff2ea8bb75358433259d927bdd575b1
+SHA256: 075be28fea84fe53f7430942031454c08a0fa1216d4b0bd9a2587d88b5762c73
+SHA512: 51c401221107da97adbe79262b20fc5327dd1e3b2f390e612ccd00c57ba3dc3bcb530fb80aab362d29f564e7b8922a2ffffc5f86ac71a5c9cbf9bc4007247d34
+Description: Official built-in stream TCP UDP support for RTSP TCP forwarding for official NGINX 1.31.9
+
 Package: nginx-module-stream-njs-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~bookworm-1
@@ -386,6 +503,19 @@ MD5sum: 5d31424ad146bd708ce786fdd781ac1f
 SHA1: 1d6b7b630e11fe24bd0dfa3808c6dbf17cc3df23
 SHA256: e483b6544b7c2aa6376012aa51887eec2a952f975a297765260964b4ec35f767
 SHA512: e8160a99d5f1c4b5a3be54adee1a05b9b19430732150e09290b0e565355501c299927b9b0d06dff8ee9fc05bb149de2486f6ecf15ca387bd25881f9267b1943c
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-stream-njs-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.35), libxml2 (>= 2.7.4)
+Filename: pool/nginx-module-stream-njs-ha/bookworm/nginx-module-stream-njs-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 1515028
+MD5sum: f1bb70097193d5bd289a417b493e9a2c
+SHA1: 0d40da13a7f99112b82af81ddd2261b8d933f039
+SHA256: b6a388de275fd3ecfd07effe23a0ddb8b1c9827b9c1d5896014a985e7429aa45
+SHA512: ac1b4a691f23bb2fdd4a66084ab9c5d9dcd4330a18382712b9a4e0341a40cf9db32e6d616b0a7f7d4ba13ee04ada1c8b44167de099a1a61df08aaaefe4298ed9
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-vts-ha
@@ -427,6 +557,19 @@ SHA256: bb165077e56812b647e1600f241abfc11a02558be2098e0ba70d788d1c688ef6
 SHA512: 394cf42e6eb8017315b3dedfff5d60d913d9d2348edb995fbc176847ab83b9af217ef056112a48e7f36ace10081a0e050f4de0060be83c72430d3d4bf0d1a57b
 Description: Hernet Packages patched modules for official NGINX mainline
 
+Package: nginx-module-vts-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~bookworm), libc6 (>= 2.14)
+Filename: pool/nginx-module-vts-ha/bookworm/nginx-module-vts-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 261856
+MD5sum: 9681882913af17ff6f7ab1595c68da29
+SHA1: b7dbb4cdde8652eaac3709e95814c0572d8c90cd
+SHA256: 7c48b42f30ff50cbc9a5b0782ffdeb91d1c663a1619af4e6edf4911a9961b261
+SHA512: dead2e9fd280ebe7e32b1828ad643d4301c1f85cea725f289d3a8e38f899a42c979627b353ccf9f3e42fed2bb40b235119d335e2f4b817b579973c1e2497155f
+Description: Hernet Packages patched modules for official NGINX mainline
+
 Package: njs-cli-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~bookworm-1
@@ -464,5 +607,18 @@ MD5sum: ef0cf98b5c6c7a3a946f4ac74fc0be8c
 SHA1: 397628b714035ec0aca379fcaf3ef58625bb3b29
 SHA256: 0b48fb5ad4224f9db0a1c08bdc167284637297a18d2ebaf09cd219c9d304a322
 SHA512: bafce3b32bc4af016254562c1d357404f62bc5cae8ab2e75911c9a70322310532605814789bda90bed1b81518417ef217cb0797fc3d94196db8eaf1f1cb31c4b
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: njs-cli-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2
+Maintainer: Palvef <packages@palve.moe>
+Depends: libc6 (>= 2.35), libpcre2-8-0 (>= 10.32), libssl3 (>= 3.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Filename: pool/njs-cli-ha/bookworm/njs-cli-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~bookworm-2_amd64.deb
+Size: 1218404
+MD5sum: a4f8904f59f2e6e9cf11189630a77469
+SHA1: 5a3211913e3ca9a27cc959d1ba1a1e4711d70fc9
+SHA256: 89444911992cc740df4d2267d0106376513506859f677ee58ba420472cca5db0
+SHA512: 707d0b29f52d4626a4434828cf0c584fecaae55ffceeaada142d1a0c0fe1e82a0df296e31864c5b1389bb1f2e58eb49498f71dcc6f5018f08e1d0ceb03ac2e5f
 Description: Hernet Packages patched modules for official NGINX mainline
 

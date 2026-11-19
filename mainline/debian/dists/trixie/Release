@@ -1,19 +1,19 @@
 Architectures: amd64
 Codename: trixie
 Components: main
-Date: Thu, 19 Nov 2026 03:28:30 +0000
+Date: Thu, 19 Nov 2026 03:34:41 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: trixie
 MD5Sum:
- 85b933faaaa7e57e50a3e3138eb69d9e            26094 main/binary-amd64/Packages
- c4dd49198407d2f476cb19459376f1a8             7335 main/binary-amd64/Packages.gz
+ d540d6983152d55af22fbe30b6e7d334            34822 main/binary-amd64/Packages
+ 88cf895ef3231ccd6a5cd8a5da888148             9539 main/binary-amd64/Packages.gz
 SHA1:
- bbd838ee74f26d49f607cb121085f165bdf5239b            26094 main/binary-amd64/Packages
- 56604611ab0310f097ec5dcfa1539fd0a1fc1fe2             7335 main/binary-amd64/Packages.gz
+ 1ef6eda6afb4568f76a7eee261213810d140c115            34822 main/binary-amd64/Packages
+ f2aed2432fa6ca467f5c5f8e4bb617c30171eb47             9539 main/binary-amd64/Packages.gz
 SHA256:
- 7ea9e0c289b38ba528610e8ed3246f0b7e5c1fd87622850c9697179f22435309            26094 main/binary-amd64/Packages
- be01ac17f2d5142bc60cedd4023e66714dd50f04a949e911a9868a89dca6dfa9             7335 main/binary-amd64/Packages.gz
+ 879cddb10acb668fe60aec1447e2a84cbc5d3ef9ff2ab895bdfc8e6d82b9843c            34822 main/binary-amd64/Packages
+ 36cd309be4323e2d3e79e8961efc43abe6a519efd8f68cfdd34640cd258377be             9539 main/binary-amd64/Packages.gz
 SHA512:
- e25969c90cdd7d587cf13a9a408bd414a435924e55489f5108e4bbcb176f1321da0160187f0882f6970a2bd748348229e712761ed1639b2d2465d4a08a81e921            26094 main/binary-amd64/Packages
- b6f5979fecdc703fcf6db8860a342b0579b8c3b4db16232c38c02fdfc0c38f4776e26cde232013f73d06d2ebb9a63502368625294bf62a987fb1acf71238ce34             7335 main/binary-amd64/Packages.gz
+ d06aa0fe8c335184ffde566a3fafb8d5d3950d5e26f22d9bfdeeaee3f9f4139a6e7a6b5682888f89fe6cab545ccd1c9f136bd4fa864fffb9519000b56facc8d7            34822 main/binary-amd64/Packages
+ a52b8b9f48ef6ee8d2f6ef9fa60fe7046bed0c156b8a9cff4ef2bf26aea3a7c2a7f73f22719e060a678a26a775b3a671cbc529ccddf83c573f6485d3167dac07             9539 main/binary-amd64/Packages.gz
