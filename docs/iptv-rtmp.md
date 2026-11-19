@@ -31,4 +31,4 @@ The original `/usr/local/nginx/html/iptv` is the HTTP root. Existing IPTV relay 
 
 The optional TLS fragment requires real certificate files. The optional RTSP example must be assigned a real backend and renamed to `.conf` to enable it; it forwards TCP only and requires RTP interleaved over TCP. Default examples are inactive.
 
-Run `nginx -t`, test RTMP publishing and advancing HLS playlists, then gracefully reload. Keep core NGINX and the module at their exact matching versions; `load_module` in the separate template must name the versioned release path. Tests exercise the installed DEBs with synthetic RTMP publishing, HTTP HLS delivery, playlist advancement and actual video/audio decoding.
+Run `nginx -t`, test RTMP publishing and advancing HLS playlists, then gracefully reload. Keep core NGINX and the module at their exact matching versions; `load_module` in the separate template uses `/usr/lib/nginx/ha-modules/active/ngx_rtmp_module.so`. Tests exercise the installed DEBs with synthetic RTMP publishing, HTTP HLS delivery, playlist advancement and actual video/audio decoding.

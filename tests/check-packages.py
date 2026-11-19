@@ -3,6 +3,8 @@ import os
 import pathlib
 import subprocess
 import sys
+import tarfile
+import io
 sys.path.insert(0,'/repo/scripts')
 from package_layout import MODULES,module_directory
 pv=os.environ['pv']
@@ -18,11 +20,16 @@ for p in pathlib.Path('/out').glob('*.deb'):
   listing=subprocess.check_output(['dpkg-deb','-c',str(p)],text=True)
   modules=[]
   for line in listing.splitlines():
-   if line.endswith('.so'):
+   if line.startswith('-') and line.endswith('.so'):
     file=line.split()[-1]
     assert file=='.'+module_directory(pv,os.environ.get('BUILD_REVISION','1'))+'/'+MODULES[name],file
     modules.append(pathlib.PurePosixPath(file).name)
   assert modules==[MODULES[name]],(name,modules)
+  payload=subprocess.check_output(['dpkg-deb','--fsys-tarfile',str(p)])
+  with tarfile.open(fileobj=io.BytesIO(payload)) as tar:
+   alias=tar.getmember('./usr/lib/nginx/ha-modules/active/'+MODULES[name])
+   assert alias.issym() and not alias.linkname.startswith('/'),alias
+   assert alias.linkname.endswith('/'+MODULES[name]),alias.linkname
   found[name]=modules[0]
   for field in ['Breaks','Replaces','Conflicts']:
    relation=subprocess.check_output(['dpkg-deb','-f',str(p),field],text=True).strip()

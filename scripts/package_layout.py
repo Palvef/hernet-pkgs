@@ -18,3 +18,19 @@ def dependencies(name,nginx_version,package_version,shared_libraries):
 
 def module_directory(nginx_version,revision):
  return f'/usr/lib/nginx/ha-modules/{nginx_version}/hernet-1.0.3-r{revision}'
+
+MODULE_ENTRY_DIRECTORY = '/usr/lib/nginx/ha-modules/active'
+
+def install_module_payload(root, source, directory):
+ """Ship a versioned binary plus an independently owned, stable symlink."""
+ import os
+ from pathlib import Path
+ import shutil
+ source=Path(source);root=Path(root)
+ dest=root/directory.lstrip('/')/source.name
+ dest.parent.mkdir(parents=True,exist_ok=True)
+ shutil.copy2(source,dest)
+ alias=root/MODULE_ENTRY_DIRECTORY.lstrip('/')/source.name
+ alias.parent.mkdir(parents=True,exist_ok=True)
+ alias.symlink_to(os.path.relpath(dest,alias.parent))
+ return dest

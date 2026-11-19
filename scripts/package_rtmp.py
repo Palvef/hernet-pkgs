@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import shutil
 import subprocess
+from package_layout import install_module_payload, MODULE_ENTRY_DIRECTORY
 
 repo = Path('/repo')
 pv = os.environ['pv']
@@ -18,6 +19,7 @@ manifest = {
     'sources': json.loads((repo / 'rtmp-sources.json').read_text()),
     'nginx_package_version': pv,
     'module_directory': module_dir,
+    'module_entry_directory': MODULE_ENTRY_DIRECTORY,
     'nginx_version': v,
 }
 
@@ -26,9 +28,7 @@ for name in ['nginx-module-rtmp-ha', 'nginx-module-stream-ha']:
     root.mkdir(parents=True)
     depends = f'nginx (= {pv})'
     if name == 'nginx-module-rtmp-ha':
-        dest = root / module_dir.lstrip('/')
-        dest.mkdir(parents=True)
-        shutil.copy2(module, dest / module.name)
+        dest = install_module_payload(root, module, module_dir).parent
         (root / 'debian').mkdir()
         (root / 'debian/control').write_text(f'Source: hernet-rtmp\n\nPackage: {name}\nArchitecture: any\nDescription: RTMP module\n')
         libs = subprocess.check_output(['dpkg-shlibdeps', '-O', '-e' + str(dest / module.name)], cwd=root, text=True).strip().removeprefix('shlibs:Depends=')
@@ -40,6 +40,7 @@ for name in ['nginx-module-rtmp-ha', 'nginx-module-stream-ha']:
     package_manifest = dict(manifest, package=name, delivery='dynamic-module' if name.endswith('rtmp-ha') else 'official-built-in-stream')
     if name.endswith('stream-ha'):
         package_manifest['module_directory'] = None
+        package_manifest['module_entry_directory'] = None
     (docs / 'source-manifest.json').write_text(json.dumps(package_manifest, indent=2) + '\n')
     shutil.copy2(f'/work/nginx-{v}/LICENSE', docs / 'nginx-LICENSE')
     shutil.copy2('/work/nginx-rtmp-module/LICENSE', docs / 'rtmp-LICENSE')

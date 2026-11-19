@@ -25,7 +25,7 @@ def get(url):
 
 pv = os.environ['pv']
 revision = os.environ.get('RTMP_BUILD_REVISION', '1')
-module = f'/usr/lib/nginx/ha-modules/{pv}/hernet-rtmp-1.0.3-r{revision}/ngx_rtmp_module.so'
+module = '/usr/lib/nginx/ha-modules/active/ngx_rtmp_module.so'
 assert Path(module).is_file()
 flags = subprocess.check_output(['nginx', '-V'], stderr=subprocess.STDOUT).decode()
 assert ('nginx/' + os.environ['NGINX_VERSION']) in flags and '--with-stream ' in flags

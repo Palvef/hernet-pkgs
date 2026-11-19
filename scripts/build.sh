@@ -58,7 +58,7 @@ export NGINX_VERSION pv
 python3 /repo/scripts/package.py
 python3 /repo/tests/check-packages.py > /out/package-check.txt
 apt-get install -y --no-install-recommends /out/*.deb
-export HA_MODULE_DIR="/usr/lib/nginx/ha-modules/$pv/hernet-1.0.3-r${BUILD_REVISION:-1}"
+export HA_MODULE_DIR="/usr/lib/nginx/ha-modules/active"
 touch /work/MODULES_READY
 python3 /repo/tests/runtime-smoke.py > /out/runtime-smoke.txt 2>&1
 python3 /repo/tests/rsync-queue.py > /out/rsync-queue.txt 2>&1

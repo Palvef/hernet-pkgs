@@ -27,7 +27,7 @@ sudo apt install nginx-module-lua-ha nginx-module-http-njs-ha nginx-module-http-
 
 Modules are independent packages: `ndk`, `lua`, `fancyindex`, `http-geoip2`, `stream-geoip2`, `vts`, `http-njs`, `stream-njs`, `rtmp`, and `stream`, named `nginx-module-<name>-ha`. The `stream` package depends on the official NGINX binary's built-in stream support. Lua installs matching NDK and `nginx-lua-libraries-ha` dependencies. `njs-cli-ha` provides the CLI. Modules require the exact official NGINX package version used to build them.
 
-Locate module paths using `dpkg -L <package>` and configure `load_module` in the main NGINX context. Load NDK before Lua. Check with `nginx -t` before reloading. Package source manifests contain the selected NGINX version and module directory. No production configuration is overwritten.
+Configure `load_module /usr/lib/nginx/ha-modules/active/<module>.so;` in the main NGINX context. Each module DEB owns its stable symlink and replaces it during unpack, before the official NGINX post-install binary upgrade. Versioned payloads remain an internal packaging detail. Load NDK before Lua. Check with `nginx -t` before reloading. Package source manifests contain the selected NGINX version and module directory. No production configuration is overwritten.
 
 The website provides directory indexes, `install.txt`, and `lua-dependencies.txt` containing package download URLs. All module sets must pass installation and live module tests before publication. Original sources are pinned in `sources.json` and `rtmp-sources.json`; NGINX source signatures and official APT signatures are verified during builds. An incompatible patch fails the build and prevents publishing an incomplete set.
 
