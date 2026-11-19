@@ -10,7 +10,7 @@ apt install nginx-module-rtmp-ha nginx-module-stream-ha
 
 `nginx-module-stream-ha` is a dependency package binding the exact official core that already contains `--with-stream`. It ships no replacement `.so`: loading a second stream module into that core would duplicate the existing module. It provides TCP/UDP transport; it is not a standalone RTSP server or RTSP-to-HLS converter.
 
-Configuration is separate: obtain `config/iptv/` from this source repository, or the `iptv-nginx-config.tar.gz` build artifact. Neither DEB contains configuration, and installing them does not alter or reload running NGINX. Back up the existing configuration, web code, certificates and loaded modules before migrating. Replace `@RTMP_MODULE@` in the loader fragment with the path listed by `dpkg -L nginx-module-rtmp-ha`. Create `/tmp/hls`, owned by the configured NGINX worker user, before starting and after each boot (use a systemd tmpfiles rule).
+Configuration is separate: obtain `config/iptv/` from this source repository, or the `iptv-nginx-config.tar.gz` build artifact. Neither DEB contains configuration, and installing them does not alter or reload running NGINX. Back up the existing configuration, web code, certificates and loaded modules before migrating. Replace `@RTMP_MODULE@` in the loader fragment with `/usr/lib/nginx/ha-modules/active/ngx_rtmp_module.so`. Create `/tmp/hls`, owned by the configured NGINX worker user, before starting and after each boot (use a systemd tmpfiles rule).
 
 Layout:
 
