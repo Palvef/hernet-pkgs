@@ -1,0 +1,7 @@
+{
+  "image": "ubuntu:resolute",
+  "suite": "resolute",
+  "distro": "ubuntu",
+  "version": "1.31.9",
+  "package": "1.31.9-1~resolute"
+}

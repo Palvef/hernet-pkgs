@@ -24,6 +24,19 @@ SHA256: ef29feea0d4dec49e7d82469e6bd283788ddf75a2069be71fe47352d727f0bdf
 SHA512: ae590a0c3849bae6e19c8355410553e85a12eeb93ff3d400108844a2bf13515ae888c0cc7a1f3bbc32fbdcf1d5f60b1c32dc17347e5e1232c3756f542f5ed092
 Description: Hernet Packages patched modules for official NGINX mainline
 
+Package: nginx-lua-libraries-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: libc6 (>= 2.14)
+Filename: pool/nginx-lua-libraries-ha/jammy/nginx-lua-libraries-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 194612
+MD5sum: 38378852bbb35943804b558cf619a86f
+SHA1: 7693f27bda38be3ea242e518b0782248e03c1d17
+SHA256: 376b0475722305ccdeb434e35704fd018f80adeb653dca8a856b77e53995dd6d
+SHA512: 3f6c4d2a48a1ec9c71786fac69161fd2477551e679738b98c1601da7d875bfea40dd9b6ff760140aa98828bb3971835b76a8687058f8963ba9a6a6dfb1e96848
+Description: Hernet Packages patched modules for official NGINX mainline
+
 Package: nginx-module-fancyindex-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~jammy-1
@@ -48,6 +61,19 @@ MD5sum: 728cb8dbfd990cba87462e0d8816f6ab
 SHA1: 1bd58e3c2d9cfe3b3bde39bff449ca22259c7d2f
 SHA256: e56dc32a098b003b822f8d1f04622578322a7a8ccc9201b5fb54aab35e8eaeda
 SHA512: 9736204fbeb11907281fba37af95bb1a92f5935a00ad9f4e5baf992ff5331154dc39d876631a74e7c9a8b6fd0af8768a81b66a6499ba8e20d92fd84d0039781e
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-fancyindex-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.33)
+Filename: pool/nginx-module-fancyindex-ha/jammy/nginx-module-fancyindex-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 129798
+MD5sum: 32b085edc10b3d4565853531d04b25ea
+SHA1: bcee671163a21e8dca56bba875e56a3b81c8a4ad
+SHA256: a36b18fa9a0c02be2959e7fe126d7248dba74b86f1c2e36e77faa386e3242c70
+SHA512: 124575a2ca002c673534126bd2dcfe615e65615899bc8e2098177ceba72deffcb4694c1c838839e40c26c2d140dc0a97f16dc143ff9a3b56946ef3464f25dfc8
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-http-geoip2-ha
@@ -76,6 +102,19 @@ SHA256: 623aca757c5edde3fdc0c0967eb358e4043dedafb68fe3b4bd35739dd2b135bf
 SHA512: 9ab68ddad3f3828072ef77fcab580243387f9aaa3d5a5dc6bf1fd51314f7e3a9f6fe90a0eef85ce758c92a8700ebe22e5b126433e8b06feed0134fd081bbfe80
 Description: Hernet Packages patched modules for official NGINX mainline
 
+Package: nginx-module-http-geoip2-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.33), libmaxminddb0 (>= 1.0.2)
+Filename: pool/nginx-module-http-geoip2-ha/jammy/nginx-module-http-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 119884
+MD5sum: 2c1d157b49bd81d0eaa8795390720529
+SHA1: 88f25050d6f27c28abd5b5cf0b704b0b2263c25e
+SHA256: 0c198459c472440df5a1a3da592156720bfe8c1b788eb83c6d06d544aeb65fb0
+SHA512: d2ce092dd5d5d2d929c068e294b9f4ffb1528a256cc015f25396de374a137bdac5abfb53a6c5413c2674973db64333a563d81be2b29b38cf3c36bb68e72aa2f2
+Description: Hernet Packages patched modules for official NGINX mainline
+
 Package: nginx-module-http-njs-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~jammy-1
@@ -100,6 +139,19 @@ MD5sum: f5436436acfd0b593a95f312dc7f9864
 SHA1: 6e069654400eb45765bf993cf1e2bc948070f13b
 SHA256: 32aa6b718a5c7ba6af54f81be72f0d5385985041fbf739dc09aa1684b0d56eba
 SHA512: fc802e69abfccffa7fd4ece44e4357cebcf07e76e21a622c9885acbb2dc0576239ed6c9dd580ac85dacbb4190316d81088c5973d0d900c5fe80930edf5072d23
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-http-njs-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.35), libxml2 (>= 2.7.4)
+Filename: pool/nginx-module-http-njs-ha/jammy/nginx-module-http-njs-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 1758916
+MD5sum: 551c7201e6d9e61fb8d11cb3cbb15e24
+SHA1: 0097723b9526390d47923f7db9c0839a22c54fcd
+SHA256: 294df55a55488a0d8a292c4bd0e3fb24a0871f258812279f52099d64a9f4e5f6
+SHA512: b9d9331e2e10815091dc22df76a0ef82f69b2d34499f04d349ba59dbe2781e492eebff577306d5af8d34ba70269f447d8856bbbc613c062ec074480b0b48e292
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-lua-ha
@@ -128,6 +180,19 @@ SHA256: f20c3924afda3bc3b998a8888d963d12db530aa134399d2557f4bd8e39a67242
 SHA512: e8a4bb1021c929d0d19bee6bba3cc2c80d19b03d5e79b2660e250cdc8cb8263b7fd016269ea28d1c2355712ef3575b2dbe0e5227adf83b227080877f03fd36ac
 Description: Hernet Packages patched modules for official NGINX mainline
 
+Package: nginx-module-lua-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.33), libluajit-5.1-2 (>= 2.0.4+dfsg), nginx-module-ndk-ha (= 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1), nginx-lua-libraries-ha (= 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1)
+Filename: pool/nginx-module-lua-ha/jammy/nginx-module-lua-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 916274
+MD5sum: b1b075bd26fd0d9d4a1a500771d1b653
+SHA1: c491c490f41cd399480bcbc82d11791158b7ab92
+SHA256: f74cd06fd21e92471e3a718e8bba411cec21da2b08c49086cade4848a1979dd1
+SHA512: c33b5644588bafe15d752880e40df1ecb99273b3247416e9d2262cd1c8df2375767aa6fa64a34fb939e08f2b6707981b0dbf058686923da85c211be97e7fbece
+Description: Hernet Packages patched modules for official NGINX mainline
+
 Package: nginx-module-ndk-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~jammy-1
@@ -152,6 +217,19 @@ MD5sum: bf9d016c3d659f702858e7cbe0c7f0cd
 SHA1: 2cb375599ae2daa7b49af56b5bf144bb95f9f905
 SHA256: 76c97827a31a1c06069393501655a9303a285d995445ce647151c2b91554644a
 SHA512: fa8f8e74fa4db39bc2bf363fe7430bc95e920bba6325b3eb70817abc5b49100586c0b74ff6abc3250c3631ad1aaf6f41ffc537b3942f817803935fb73c47949b
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-ndk-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.4)
+Filename: pool/nginx-module-ndk-ha/jammy/nginx-module-ndk-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 117024
+MD5sum: 5974d526f20480e738312341dec6c74a
+SHA1: 4dc0c3f0543d88526f75a81d3b767d2efdc2ddbc
+SHA256: 13648d8d03331e3c6f2ec193930415ff32dddf15e8f567670ca325b25914487f
+SHA512: 79a3ad75d88f94bee44789bc92a26050797b367c39d9d0df79ff88d4569426591a28a3e77a9a163b9cf236a4498c6b90bcff4bff4789f2f8360eba4f55358ada
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-rtmp-ha
@@ -180,6 +258,19 @@ SHA256: d5cd4602a8e9589a7613d77486f09715840ede1c3e18f219c018b8e8b5a5cea3
 SHA512: f9c05c8ef30299c5fe25f5e3320fe25257e6aa480ccef56530056acdc186a6f1c7f4677634aad2ac9d1d32cf34d7657c2e73ebcfacf8ae36773b3e131dc3e52a
 Description: RTMP and HLS dynamic module for official NGINX 1.31.8
 
+Package: nginx-module-rtmp-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.9-1~jammy-r1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.33)
+Filename: pool/nginx-module-rtmp-ha/jammy/nginx-module-rtmp-ha_1.0.3+rtmp1.2.2+nginx1.31.9-1~jammy-r1_amd64.deb
+Size: 491276
+MD5sum: ae25b6b196e25022168121874c8264db
+SHA1: 5da099f904a20f2dccac55e016eea0f56bb048f7
+SHA256: baf1257bc2ffeaff1a445569649378e06be3923036d3e2601297aab2ff530bad
+SHA512: 66f5d85915fb26cb9331d1117a2d07f64f449f44fc8fa83717587ba504a1f772e95d532053dc5822320119114543d6d0b3bd520d9e80f9aa92aa37a3acc3ca8a
+Description: RTMP and HLS dynamic module for official NGINX 1.31.9
+
 Package: nginx-module-stream-geoip2-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~jammy-1
@@ -204,6 +295,19 @@ MD5sum: c581ce3297d32a8f4f4d0688bd0cea56
 SHA1: 0de82fcf9621eab3f4dd77aaa8b6189adb2d385f
 SHA256: 5172cafe5997e5a0de2a7417ba7bc56e7b93b8b0831b9edcebc7bba79547c582
 SHA512: 83929048c1c85032c5bf158d49c28d3f84226fc31abf626718627c5429869de7a6b3dbfa3abeb9f3182f62066326d7c3e766bd00e1ac2f062b1edb445a570993
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-stream-geoip2-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.33), libmaxminddb0 (>= 1.0.2)
+Filename: pool/nginx-module-stream-geoip2-ha/jammy/nginx-module-stream-geoip2-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 107544
+MD5sum: 43f5c9dbd8cbfb1874e7f4f1de24bd39
+SHA1: b10ab7da5c813a906c2ca8b9f9b81b2026f13f65
+SHA256: 6b78c7047fc1af7f1d7a48f52b8f0263c63f051f41978d130c12ba861e998a3f
+SHA512: fe358933032ba8cc4da02a57f6e89061e07904625e7f3dc245fb02edd8cc0cbe67bfddd287e4934343dadb5858bbc266cfe39d50c1c0d5cffd12c2c537248939
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-stream-ha
@@ -232,6 +336,19 @@ SHA256: 54552ea0eddc552c0ef4d5aa7d963fb4e049e20fbb10673536316ac767dcd7a1
 SHA512: 372cfd7fada598303d4aa80421433bf2be87f2bb8c79b05cc73c5730ae5c66769c6980a24fafec1abd429b0cb404bdb4634d7c724326913096037925056ed479
 Description: Official built-in stream TCP UDP support for RTSP TCP forwarding for official NGINX 1.31.8
 
+Package: nginx-module-stream-ha
+Architecture: amd64
+Version: 1.0.3+rtmp1.2.2+nginx1.31.9-1~jammy-r1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy)
+Filename: pool/nginx-module-stream-ha/jammy/nginx-module-stream-ha_1.0.3+rtmp1.2.2+nginx1.31.9-1~jammy-r1_amd64.deb
+Size: 3174
+MD5sum: 7c2e1098e2f9182a60d6c2dad68c1cd9
+SHA1: 69d99a6a381c3feebf0a939c186875e72584270b
+SHA256: 567fb1195af0fbee6250007b118eb85824f0cadaa0fbde9b318ffb4ea59ea492
+SHA512: a1c2d98a86010955cc347c36368467b25bf7d4547547e06243a4ae833c829d0b03938ab3d43b1ef78add79d718cb26a97449237a1ef01fb67855fb139619ee14
+Description: Official built-in stream TCP UDP support for RTSP TCP forwarding for official NGINX 1.31.9
+
 Package: nginx-module-stream-njs-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~jammy-1
@@ -256,6 +373,19 @@ MD5sum: dae31fc4be0aa6c2a9c69b627e852ad2
 SHA1: 5c84d111c24ac1c9f47aa4497fa4c4dcd7b8f670
 SHA256: fdcc83990a20024118b6205ef0dc4d0f76fafa30160ed1415645e2a564589d6a
 SHA512: a535e9d78950aeb6e80b674129fd5a2034c0d0474baa6dd13ed479912de8f7ca53c9ad12514600827cececb50769719a9702c554675cc96ffcc3dd80584b7de7
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: nginx-module-stream-njs-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.35), libxml2 (>= 2.7.4)
+Filename: pool/nginx-module-stream-njs-ha/jammy/nginx-module-stream-njs-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 1711318
+MD5sum: 3397366be4cd7fdbd07211bc93ecd3e0
+SHA1: a8a6995b8f016cb82a67eb78309d028b3893590a
+SHA256: 4f7756c2d6cc77c30b6c7612ebbc25d7d0b32d7adbf5118bcfed43ac9ed43b0d
+SHA512: 94a840b0c9c5b12b6aa5f6906bfa747c65e93d687955e858c22ea657bc6dbbecd2bd9185bbde915c769b9f86bc14a8563adc6fcdcd8b6227a7ff6945002f3b50
 Description: Hernet Packages patched modules for official NGINX mainline
 
 Package: nginx-module-vts-ha
@@ -284,6 +414,19 @@ SHA256: 6b9c127cd850ecba5403cb8bee656d5a3aeb6125549c1d720d63eb873790dd57
 SHA512: 72bd78bc0b52342bc739d824874d310efb526b52c8be983433f2b59a9490c706d243c319be6dc9b58b4c64f28fe8682c1afdf652d5ab2384af2e95f734d8e73e
 Description: Hernet Packages patched modules for official NGINX mainline
 
+Package: nginx-module-vts-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: nginx (= 1.31.9-1~jammy), libc6 (>= 2.14)
+Filename: pool/nginx-module-vts-ha/jammy/nginx-module-vts-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 289616
+MD5sum: 7f8c5479eab125d2ee80cebf3c4b137a
+SHA1: 4b050203dca5a464fe67f120aecd83e0ae1cd3c0
+SHA256: d2f60966d28ecd404d4bf6c4e0db69ab9ed5332b29792c4347462097f2c33113
+SHA512: f42876ade83f9a7d0922b988f84165b52baaaa40cd837c31a80ca34370f8972d42ac22576809ea25b96740c17c19960e1e1d540fd1e7bbe4e874708febf722ba
+Description: Hernet Packages patched modules for official NGINX mainline
+
 Package: njs-cli-ha
 Architecture: amd64
 Version: 1.0.3+git.a3aec77d+nginx1.31.7-1~jammy-1
@@ -308,5 +451,18 @@ MD5sum: 3abebf47b41466f031a67b45792b5e58
 SHA1: ee3b9c4446f685ee9841b8fbd02b1a13206061f0
 SHA256: 268fbe80eb44faa93e0c706d8acb924ff4416f1001ff531cba790ae282279701
 SHA512: d3d66db27308051fb00b293bb6a8e83fd9683f77b82a839f598b8fc7a07c7703e310314558a39b6fb038cccd7245bc53dc0ef30f95ed0e584da14d2dd3b3ed63
+Description: Hernet Packages patched modules for official NGINX mainline
+
+Package: njs-cli-ha
+Architecture: amd64
+Version: 1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1
+Maintainer: Palvef <packages@palve.moe>
+Depends: libc6 (>= 2.35), libpcre2-8-0 (>= 10.32), libssl3 (>= 3.0.0~~alpha1), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Filename: pool/njs-cli-ha/jammy/njs-cli-ha_1.0.3+git.a3aec77d+nginx1.31.9-1~jammy-1_amd64.deb
+Size: 1395864
+MD5sum: 0aba5f675bbb38922b29357dbb529ff2
+SHA1: ae3325281c8503d945e4799b175d31530ea86989
+SHA256: 1ab43f070fc2ecbfe711252359cc74322d4f9e12a24b7d88e18bf3e1c7f9cbc9
+SHA512: 3ded51fb4527988d1e70935b27f8304b41324e69b222baa46d3667f35ca40fefc289c30414d0080024e71c7a8b25e3d5c88cb36846109e56be0b4081c3e57909
 Description: Hernet Packages patched modules for official NGINX mainline
 

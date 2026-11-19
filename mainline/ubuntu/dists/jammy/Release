@@ -1,19 +1,19 @@
 Architectures: amd64
 Codename: jammy
 Components: main
-Date: Wed, 18 Nov 2026 11:34:24 +0000
+Date: Thu, 19 Nov 2026 03:13:54 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: jammy
 MD5Sum:
- 51f29815ca0fbd2e7e3c7c4b2fe8b104            17212 main/binary-amd64/Packages
- 3bfba9fafbf4f2c1ac9b5b597eb49402             5103 main/binary-amd64/Packages.gz
+ d90e60807c937efab91bb6ffbdbe6476            25863 main/binary-amd64/Packages
+ 56952979187735f25745236c55e4055b             7309 main/binary-amd64/Packages.gz
 SHA1:
- 2c80e79630fc00ad3d6780873a194413daaa0d51            17212 main/binary-amd64/Packages
- 2d4fb33f068ef88e7f91599cb409c5e804302cca             5103 main/binary-amd64/Packages.gz
+ 06b058410cb807c31c17c0a913cb12cedbea66e3            25863 main/binary-amd64/Packages
+ b183a38b4f2ce803db61b2eb3b5909e1301d90d3             7309 main/binary-amd64/Packages.gz
 SHA256:
- 6c9eb68153dc874e56146d888889f4927f0c78084c1c309829814479453c649f            17212 main/binary-amd64/Packages
- cff563230690270fa28b7a4dee76330b133192bdbe8cbb942441fb06e37422dd             5103 main/binary-amd64/Packages.gz
+ 04b3a6f23ace8e0e99ee01d3932e8f1366410d0e1f85dc6c3f7cbef810a3d408            25863 main/binary-amd64/Packages
+ e6d3597f1474bd9000fd8c45d05bf0e8db65b9c091cbdcf5fc8a8026decb72c5             7309 main/binary-amd64/Packages.gz
 SHA512:
- 618d3f2b10fcef141013f45c327437f864f3a5be455f4519bfc7e4148dd064d37d29e931c669c7dba0ebe70fb910e77003f5f8991addfce6108c1c3c3a3e8df9            17212 main/binary-amd64/Packages
- aadf5aaf74c02af04a247f1892ada018f4d03ee136ea6fe08661458342cb131c820b9955b5cfd497a03fe90f86ad8dc5a6218f9f671bf836b9519c44c6f4ab26             5103 main/binary-amd64/Packages.gz
+ c1d79b46311560cc1f7e0e24033cbd90a3f831c3ff1e768534fd6346ac611048fc7ed02b337e697ced19a706c5d583e0a84720d4f875ed91f9ac4557e8c17ef9            25863 main/binary-amd64/Packages
+ 9e44bf24b91285b9635dd09e8990f88ace5d01e33e7b1d6ecb2d2d442a89ef68cc834a011b11d360eeb6c12459fd99e5da2dc5d2afe5744ca055410279cdf35f             7309 main/binary-amd64/Packages.gz

@@ -4,33 +4,33 @@ Hash: SHA512
 Architectures: amd64
 Codename: bookworm
 Components: main
-Date: Wed, 18 Nov 2026 11:34:24 +0000
+Date: Thu, 19 Nov 2026 03:13:54 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: bookworm
 MD5Sum:
- ff5522e278f3be8097805fe30a861ca7            17542 main/binary-amd64/Packages
- a65c88637d4ef00f68c37aee7c27c4f7             5111 main/binary-amd64/Packages.gz
+ 4bf01e107ac815a1a72ac2c79f457a5e            26358 main/binary-amd64/Packages
+ ad0be528a1bd1c01b0b804f8158aeb48             7322 main/binary-amd64/Packages.gz
 SHA1:
- a23f1059cbac9545cbe239a2aee97602ccfcd70a            17542 main/binary-amd64/Packages
- 1c16172005f5b0211c74f1e5eb4ed20d22395765             5111 main/binary-amd64/Packages.gz
+ f9dc54474781dff8f153d1db1eb68ad6f0426092            26358 main/binary-amd64/Packages
+ 9891123a342f5d3ee050acbeda365b26410a9951             7322 main/binary-amd64/Packages.gz
 SHA256:
- 8eef35005244cae2539dafdfec6c013036b9b8addbf4fb812aaba652e9d12a5a            17542 main/binary-amd64/Packages
- f7facfd74b6727924e550f9d0cdbe6274951ca9299cd7e1f23da7882a39548b0             5111 main/binary-amd64/Packages.gz
+ e2447fd700fdd5c56a92fb88f90f229e6dd2ad7a27be00e40f29bb6cc40207a3            26358 main/binary-amd64/Packages
+ ed80a1d0e7d8461c2951681e324c59077bf7b1ab58bca44133084306b225af2e             7322 main/binary-amd64/Packages.gz
 SHA512:
- 60478935ed9cb88d35ed1d63d6b4dfdd41dcb2485ffba196a9edd115698f939f6aed905f374cf1a6d7e0a95f1b9f763d94b851a8ced15887165192ecafc5a126            17542 main/binary-amd64/Packages
- 12b6205a51eec74a49e11a350ace2a4185574a8f1fef63c723a2d9d6c276f0123f8c2ad5af24f432ceb2bcdce789067270f5517f3f28208e127a3d57db791e4b             5111 main/binary-amd64/Packages.gz
+ 7e5679f06293368730eb4c32f40b7989f3af43af2980f3dc24a88866bdf3f3e38a21b585e2bc13516f793e05501b4a55a8bda986fbe172505e1f55e764a378d2            26358 main/binary-amd64/Packages
+ b64a707071e33a3389c92b8d5e26db852fe39a23383c966d5f24132d9b5562c110786228f4a7803cc75377590247f3d72c199e2555f61bd7a000b9aac4d4d49a             7322 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmr9jUAACgkQtWh7jQGC
-sxKA1AwAkh+j3LX1MXaQNM83LTScKu+PalabgS3OIhQr0qj56XGAuZrtE/VNLNJX
-n+Gh5UFCNR8r04rOTND02qFYVDw7jUzCKeG6QxSXDUh0YPisK6L23GGGsAScg5ua
-ajew36e7LtI2TxYcVwIltKU2IezEuFwX+e/XRmsCuYvdlylseqG5FmSLchKU3+Yx
-hAiT0gmG9u5SCDRNUuITuWtac8wuqI1BrJzgc4YridxVgOYHQuA1XULlJBBhax/Y
-xaIPqvPZGBt2KoZioFAupTVtqtD1jT/yixz+joUzgpa0EhgF3Xe0vR3/qJMZXjqf
-RWc+THsEziJR7NHBLJZ+q+wVczXf0cs1++c9QtmJU7cY3lKxKar9rm78JnBehYhN
-pyuVUmtaLiRP/Fvf7mINom+12rziDykY4KoFBj85OwyJn31X9esC5V1olbkNtHmY
-Zbf0/CZT2JAndBJgbI1q8ZGWCrCWdzmrBYxm44fo3Qm6WykUsWHP4SZ6lpjMkopx
-6epXXca2
-=vLXt
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmr+aXIACgkQtWh7jQGC
+sxIO2AwAi0MlSXB2y+Po1nV8iZPSSciiO/xFdNRG3qPOUar/wcsIEk8ZiPaehXuU
+h7o9O1pyOdF5Reif4z7Qu2U1oi8nmm6CncoEXdh7jhUYVe2uyijYcbY4LWkQGZ6Y
+pql+KdwFAjQLkBo4gtqvoKfmGirWglH4jj7t3yptxMiXada8nPi11APZYMQD8hg2
+enP2Vub0ed8jyzN5/NUGolbr5Ubf4UISPyiupjpEGR1LYr3OXcxrpB1fScDWn4Oc
+nZJpjf1GgFDbU5AAY/jSm1gNw0i8LKsY2f2wRfwpp+2oesm/aqpjG9P1/wu0aUad
+LLKQOvQit56x6o/rAbGL5gS4R0B57Tl1FZZmh5IAEYR4/2qVV1b3MdRUSMjZ4v9R
+Cb9SOtUzJaBYYo5VRKIwx7z8hqFlCQ5p2KhAiruPX0ooiDVMM+QMwiUmPa52bh/L
+0jKyubzApmjShPx23c72IKn1swbsxJOKj5E8FH8K+ArAYKAZTa3Qasdixop/K4gY
+j3ii+q4Z
+=Tdkd
 -----END PGP SIGNATURE-----
