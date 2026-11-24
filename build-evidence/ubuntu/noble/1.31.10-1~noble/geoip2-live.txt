@@ -1,0 +1,1 @@
+{"checks": 1072, "workers": 2, "realip_ipv4_ipv6": true, "trusted_exemption": true, "auto_reload_seconds": 2, "same_ip_empty_populated_invalidation": true, "stream_same_ip_invalidation": true, "invalid_replacement_preserves_active": true, "trace91_and_json": true}

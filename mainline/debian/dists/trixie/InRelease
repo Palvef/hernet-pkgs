@@ -4,33 +4,33 @@ Hash: SHA512
 Architectures: amd64
 Codename: trixie
 Components: main
-Date: Mon, 23 Nov 2026 12:27:02 +0000
+Date: Tue, 24 Nov 2026 13:39:59 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: trixie
 MD5Sum:
- d540d6983152d55af22fbe30b6e7d334            34822 main/binary-amd64/Packages
- 88cf895ef3231ccd6a5cd8a5da888148             9539 main/binary-amd64/Packages.gz
+ 247876798b2abf805633882c18f88fa2            43588 main/binary-amd64/Packages
+ cfe0250836a21dfeef7749348ffbd548            11768 main/binary-amd64/Packages.gz
 SHA1:
- 1ef6eda6afb4568f76a7eee261213810d140c115            34822 main/binary-amd64/Packages
- f2aed2432fa6ca467f5c5f8e4bb617c30171eb47             9539 main/binary-amd64/Packages.gz
+ 9dde5f4e61790c1a7c98d2b44d5b7badc76be9bd            43588 main/binary-amd64/Packages
+ fd300ae2f9c765f6c46c594e3570555b7f33096d            11768 main/binary-amd64/Packages.gz
 SHA256:
- 879cddb10acb668fe60aec1447e2a84cbc5d3ef9ff2ab895bdfc8e6d82b9843c            34822 main/binary-amd64/Packages
- 36cd309be4323e2d3e79e8961efc43abe6a519efd8f68cfdd34640cd258377be             9539 main/binary-amd64/Packages.gz
+ 56ea8273cb4d1a86a41e492e57839f8b6800e75de6ca799754a3c0911015e5a7            43588 main/binary-amd64/Packages
+ dba41f56b6590f7de3d529bde3f6ee81a70113fefde55a8aa656956b388e0686            11768 main/binary-amd64/Packages.gz
 SHA512:
- d06aa0fe8c335184ffde566a3fafb8d5d3950d5e26f22d9bfdeeaee3f9f4139a6e7a6b5682888f89fe6cab545ccd1c9f136bd4fa864fffb9519000b56facc8d7            34822 main/binary-amd64/Packages
- a52b8b9f48ef6ee8d2f6ef9fa60fe7046bed0c156b8a9cff4ef2bf26aea3a7c2a7f73f22719e060a678a26a775b3a671cbc529ccddf83c573f6485d3167dac07             9539 main/binary-amd64/Packages.gz
+ 83758947862de0ada8d3ceba279c812af2a927eb20187bec70840148daed738f279e62526bc29f7f88b605ec08fcfb2db87459784485c8869818eda9215654a8            43588 main/binary-amd64/Packages
+ aa99bc3f143f039f5b0a952140f01745547cae1345bd8369e572a88ae1ca7f05d7712717b9fb6ab418c73d0699f10c7f7000ff2df0dfddc62165386fae25546c            11768 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmsEMRYACgkQtWh7jQGC
-sxIp4wv9EJmFBAkmcTgziWpO6F3Mah3/+O3fjoDIXt2JCRJjq+xGExDWnhsx2psY
-gkzzrdcOh7KXeh7i/lSSNxDBfHlm9AJSwCaAmJfloPmMG/LYJYd2VE1RCIg1Mmcl
-rlWf0WfuXJv3cktVAtmBEIKn5DuYhVNH4b0j21XXwsqivdq/q3AGbp0hMAdpJXe2
-SG38VWcnxn/EpZe4/pgGYOkX2/TkbthvuVRRwakV6Gg9dQPt2ThnBoO0u6JToSOc
-6JuguVBxee2Yjly5SpbPTGafr4umbsWEpEnBWANk0RB+0pojdoGkRAIKKOKI38+o
-SlUyV+jdo02WBn/pIqWZy2/m55Nj/+Qlt5GbD38Im2f6QAkDyS34lzdf3GGkjry2
-nkEjh8oGDwoTM/7GpX0kuRplAM7KIQ/kQvtLdC6R0ew78F5MGzxZ6EcdJE6Fa0+b
-xbfgoa9/XJ28I9ySg7rFCO0tBpHqYLDEJMP0ZgFSKkuuuE+/i7GwbWhuSXqH2phR
-o6qr/7Rr
-=JG/F
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmsFk68ACgkQtWh7jQGC
+sxKlLgwAj78+qrq+7dBIUL1oEGQNOJQufswEW0/Xfqu1KtR/TinRRDC4dB2/xeoL
+IMriH3FzKaYl2kI+lnBgnLilgHjmYpbM5NI+oeelI5RinzRl2OP620O/YVC4CDJU
+GdDXrGu8SLepmhXFhBWMpVuTtd6lW5tT12gJm4uRa7EmmOTIgJSIlrjCskPdHh6W
+6zFoa0yf8yrKp6t42+r/aeKM7ALwA4GnPo6sH9lQ5Smf6bZw0q/KuPxK/VVh5wrD
+1ojwyb7PhgirX7UQZcfXPZGaiwdgEwLbwbRpF0YVQxG27VA2Zv6oZugZIOSAUtvE
+mF+uChzzUcy7hOwiXsEkXiWx58AhZByI9FBC0NHeqdwHLrcQBuIhyeRkPfR2dXXf
+qxz2IN10mhjx6noJM/qBzjvdTzgHM2qOMv9Imu9e26yU8RtowbJiow9Ga5McP+/6
+b7HETOrjTJpjxXNmqIgXQ01zBrSJ8sFrXZaeVbaLR54P/bOv6F49mNzfVm/GGy+w
+FUrdBqq5
+=Walc
 -----END PGP SIGNATURE-----

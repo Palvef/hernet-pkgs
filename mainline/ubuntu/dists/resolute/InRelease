@@ -4,33 +4,33 @@ Hash: SHA512
 Architectures: amd64
 Codename: resolute
 Components: main
-Date: Mon, 23 Nov 2026 12:27:03 +0000
+Date: Tue, 24 Nov 2026 13:39:59 +0000
 Label: Hernet Packages
 Origin: Hernet Packages
 Suite: resolute
 MD5Sum:
- e2f3f87887b1c716ed8148b19de15381            35254 main/binary-amd64/Packages
- 7ad1938ae488481837a99cb17590a3dc             9554 main/binary-amd64/Packages.gz
+ 5efdfc75fd59ea4e29ed17a9eec22ca5            44128 main/binary-amd64/Packages
+ 008f83a4fe7cc4d46ecbe65bc50afaa0            11774 main/binary-amd64/Packages.gz
 SHA1:
- e091462cae7bee57fefb7d9245b825cf23b8b4ec            35254 main/binary-amd64/Packages
- 6a594a028dd0339f850cd17c1ae630ba02b8cbce             9554 main/binary-amd64/Packages.gz
+ 2b9f001aa0d42eda200e90bb121ca0fdd779fb2f            44128 main/binary-amd64/Packages
+ c2e2c824d0f9f57712dfde2a690d68f5d80c03f7            11774 main/binary-amd64/Packages.gz
 SHA256:
- e313c0df8341ff24760d467bdfc7e6da6597f00bd89e2b7ac07a53158a4946f7            35254 main/binary-amd64/Packages
- 742f5cc7b030017409de8f554de4b157fa59a4f2c1889cba4a4e33ccb1528424             9554 main/binary-amd64/Packages.gz
+ fa9040e40f4a6b9bc484b83e287d5c48a399477ba94fa788b1ed71434894d0b3            44128 main/binary-amd64/Packages
+ ef5182e883a9a28c4648e8f0423ab860e7ad733fdab8b6b52f4fcd547257039c            11774 main/binary-amd64/Packages.gz
 SHA512:
- bcb5db0bd13830623f61828752bbfc5805e74eecc64b86f3c758f98e43c41de86e083505ee92dd786bb0cd01841dc8998a6d3c06336308d4c3d398df766e7eea            35254 main/binary-amd64/Packages
- e98fed59a8df8b97767ca53fe4110d21b3507982603000aeaa913055ebcc6a7b6d100c2c4352810405a92bdbdb2f234d4aafe42643737843333353140e67ec3a             9554 main/binary-amd64/Packages.gz
+ 37efa2a685fef3af70a07ba615871401cc6f1521ade9819e7c47b7213041bbcf2965adc4df75f815854267f5fd9001397b43ce15f369d2663a376c1f0736be07            44128 main/binary-amd64/Packages
+ 4ef32fea6f51c6172ed964554ec89fdea071224de3de18a97c438ca39f6782322b214bcba9f12bf63bf2374e8f79747fda454fc086b9a030d607bce0c6c836d6            11774 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmsEMRcACgkQtWh7jQGC
-sxJ8Jwv/TV+twTlyXQdGJ/tSUoHEjHzqH9Or5/yjJzJfy/lcBiGZe+hSZHQ2BTYn
-3WWliJOY7jfLqi0LweTWqfgv6ewg/kQCA6tgA3nSSMhpi0+XalMkzViLiNhowET/
-8J5yDa74/S1zF1KcZ5OM1M+WWj/Irj6Sl1MhYdAz+axXhUxIgBTeDS8f9qL6jESE
-rXlPY+V7XEV0HWgqAv+faxEVD8PSnpZOCEUJ21NB7elKFdtxP9tQqCHRIJwP+lhl
-I0acnIwHhDBPpV8nZgsHeEXi3a9P8fahveTqgZgi6I1VWsxv4g1f8gzQoSUbAdJ1
-jjaNPQD2gaD/I73Ixzj+uYgG0UdWeco1elmz5dEHTE1/ufs9WZTeih7cCZIBD6bM
-mPykZxCfO3GYioneNr99x4LUqHxLhkiwNA8w+m9ArS8hMJoCOvy3CIbe8/hraB4c
-S780feHK+CDaYfF4kOL1Mpl2bkQNy8DATytP1fhmWFBvxUyQL7lWwSDf1l1wY1gg
-iMNEuvl4
-=3Vp9
+iQGzBAEBCgAdFiEE/BjAvOIYhVOP+kAQtWh7jQGCsxIFAmsFk68ACgkQtWh7jQGC
+sxJLLQv9GP5QIZ8xMM8+zIdUmM7NbwBibtMuCHg0U1h2r/bD94YLdlK0mVVp/Th5
+M7/pyZ1w7YqqOtdszFpQg+Dh9k1+nYrQ4JHeCZOJ0Qk4HWVG++H53fOC3MX0j1OP
+JWVqxspIczIMtBCC78rOIizyyisXEwbPsUHtTFinDmOA8yyH87h6Qk6tw6eW99Bs
+dOOsdD5o8+LgS2uHA17eY1sX1yoEPfSaLZJFv2vU4nH071+66HaUu3piaqqEW/i9
+5CaQ1x/VZC0qePeVk5mBwpSr0p4eREYZrdAjDLZ24lY1RngZE9IvZdy40iDWKDf0
+xrO1kf4OyRxQYBdStc2X5JdvQOVsGpWp/kqmRpeD4G9ahKm0P07eVI+Ph5/3i/81
+PBSzj4rXOkJ/FdScWdW9QIo8FuJXSRzQFZPigvGAV/A/Zp39bmL1/UaOjVmJhiU6
+n7RDQedncmCxHm8OJo6EBSDoIIr4QMd4YW/zCqAnWlcTrlDk0mih4/qe6zD9+HeJ
+hfJkz2HD
+=OnQW
 -----END PGP SIGNATURE-----
